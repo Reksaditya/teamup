@@ -1048,13 +1048,6 @@ export function Auth(p: Shared & { kind: string }) {
                 ? "Email terverifikasi membantu menjaga ruang kolaborasi."
                 : "Kita bantu kamu kembali ke ruang kolaborasi."}
         </p>
-        <div className="notice">
-          <Icon name="info" />
-          <span>
-            Simulasi frontend. Tidak ada email terkirim, koneksi Google, atau
-            password yang disimpan.
-          </span>
-        </div>
         {error && (
           <div role="alert" className="notice danger">
             {error}
@@ -1095,7 +1088,7 @@ export function Auth(p: Shared & { kind: string }) {
                 })
               }
             >
-              <span className="google-g">G</span> Lanjutkan dengan Google (demo)
+              <span className="google-g">G</span> Lanjutkan dengan Google
             </button>
             <div className="form-divider">
               <span />
