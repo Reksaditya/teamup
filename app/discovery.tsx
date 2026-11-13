@@ -10,7 +10,8 @@ import {
   type Team,
 } from "../lib/demo";
 import type { Shared } from "./teamup";
-import { Icon, Avatar, Badge, Status } from "./ui";
+import { Icon, Avatar, Status, Empty } from "./ui";
+
 export function PartnerCard({
   u,
   user,
@@ -24,7 +25,7 @@ export function PartnerCard({
   request: (id: string) => void;
   preview?: boolean;
 }) {
-  const r = state.requests.find(
+  const relation = state.requests.find(
     (r) =>
       [r.from, r.to].includes(u.id) &&
       [r.from, r.to].includes(user?.id || "") &&
@@ -35,38 +36,33 @@ export function PartnerCard({
       <div className="person-heading">
         <Avatar user={u} />
         <div>
-          <Link href={"/partner/" + u.id} className="person-name">
-            {u.name}
-          </Link>
+          <h2 className="person-name">
+            <Link href={"/partner/" + u.id}>{u.name}</Link>
+          </h2>
           <p>{u.institution}</p>
         </div>
-        <span className="person-spark">
-          <Icon name="spark" size={16} />
-        </span>
       </div>
       <p className="bio">{u.bio}</p>
-      <div className="topic-list">
+      <dl className="partner-topics">
         {u.topics.slice(0, 3).map((t) => (
-          <span className="topic" key={t.name}>
-            {t.name}
-            <span>{t.level}</span>
-          </span>
+          <div key={t.name}>
+            <dt>{t.name}</dt>
+            <dd>{t.level}</dd>
+          </div>
         ))}
-      </div>
-      <div className="metadata">
-        {(user || preview) && (
-          <>
-            <span>
-              <Icon name="pin" size={16} />
-              {u.city}
-            </span>
-            <span>
-              <Icon name="globe" size={16} />
-              {u.mode}
-            </span>
-          </>
-        )}
-      </div>
+      </dl>
+      {(user || preview) && (
+        <div className="metadata">
+          <span>
+            <Icon name="pin" size={16} />
+            {u.city}
+          </span>
+          <span>
+            <Icon name="globe" size={16} />
+            {u.mode}
+          </span>
+        </div>
+      )}
       {user && (
         <div className="schedule">
           <Icon name="clock" size={16} />
@@ -80,18 +76,18 @@ export function PartnerCard({
       )}
       <div className="card-bottom">
         <Link className="text-link" href={"/partner/" + u.id}>
-          Lihat profil <Icon name="arrow" size={16} />
+          Lihat profil
         </Link>
-        {r?.status === "Diterima" ? (
+        {relation?.status === "Diterima" ? (
           <Link
             className="button small secondary"
             href={"/pesan/" + personalId(user!.id, u.id)}
           >
             Buka chat
           </Link>
-        ) : r?.status === "Menunggu" ? (
+        ) : relation?.status === "Menunggu" ? (
           <Link className="button small secondary" href="/aktivitas">
-            Menunggu
+            Lihat permintaan
           </Link>
         ) : (
           <button
@@ -101,7 +97,7 @@ export function PartnerCard({
             }
             onClick={() => request(u.id)}
           >
-            <Icon name="plus" size={16} /> Ajak belajar
+            Ajak belajar
           </button>
         )}
       </div>
@@ -113,105 +109,63 @@ export function PartnerCard({
     </article>
   );
 }
+
 export function CompetitionCard({ c }: { c: Competition }) {
   return (
     <article className="competition-card card">
-      <Link
-        href={"/lomba/" + c.id}
-        className={"competition-art " + c.art}
-        tabIndex={-1}
-        aria-hidden="true"
-      >
-        <span className="art-grid" />
-        <span className="art-label">TEAMUP / EXPLORE</span>
-        <span className="art-symbol">
-          <Icon
-            name={
-              c.art === "design"
-                ? "spark"
-                : c.art === "code"
-                  ? "code"
-                  : c.art === "data"
-                    ? "grid"
-                    : "leaf"
-            }
-            size={58}
-          />
-        </span>
-        <span className="art-word">
-          {c.art === "design"
-            ? "design\nwhat’s next."
-            : c.art === "code"
-              ? "build a\nbetter tomorrow."
-              : c.art === "data"
-                ? "small data.\nbig possibilities."
-                : "ideas\ninto impact."}
-        </span>
-        <span className="art-index">2026 ↗</span>
-      </Link>
       <div className="competition-body">
         <div className="row between">
-          <Badge tone="info">{c.category}</Badge>
+          <span className="competition-category">{c.category}</span>
           <span className="fee">
             {c.fee ? "Rp" + c.fee.toLocaleString("id-ID") : "Gratis"}
           </span>
         </div>
-        <h3>
+        <h2>
           <Link href={"/lomba/" + c.id}>{c.name}</Link>
-        </h3>
+        </h2>
         <p>{c.organizer}</p>
         <div className="metadata">
-          <span>
-            <Icon name="globe" size={16} />
-            {c.level}
-          </span>
+          <span>{c.level}</span>
           {c.verified && (
             <span title="Diperiksa admin, bukan jaminan kualitas penyelenggaraan.">
-              <Icon name="shield" size={16} /> Informasi diperiksa
+              <Icon name="shield" size={16} />
+              Informasi diperiksa
             </span>
           )}
         </div>
         <div className="deadline">
           <Icon name="clock" size={16} />
           <span>
-            {closed(c)
-              ? "Pendaftaran ditutup"
-              : "Deadline " +
-                new Intl.DateTimeFormat("id-ID", {
-                  day: "numeric",
-                  month: "short",
-                  year: "numeric",
-                  timeZone: "Asia/Jakarta",
-                }).format(new Date(c.deadline))}
-            <small>{date(c.deadline)}</small>
+            {closed(c) ? "Pendaftaran ditutup" : "Batas pendaftaran"}
+            <time dateTime={c.deadline}>{date(c.deadline)}</time>
           </span>
         </div>
         <Link className="text-link" href={"/lomba/" + c.id}>
-          Lihat detail lomba <Icon name="arrow" size={16} />
+          Detail & kebutuhan tim <Icon name="arrow" size={16} />
         </Link>
       </div>
     </article>
   );
 }
+
 export function TeamCard({ t, state }: { t: Team; state: State }) {
-  const c = state.competitions.find((c) => c.id === t.competition)!;
+  const competition = state.competitions.find((c) => c.id === t.competition)!;
   return (
     <article className="team-card card">
       <div className="row between">
-        <span className="team-mark">
-          <Icon name="users" size={24} />
-        </span>
+        <span className="team-type">Tim lomba</span>
         <Status value={t.members.length >= t.capacity ? "Penuh" : t.status} />
       </div>
       <div>
-        <h3>
+        <h2>
           <Link href={"/tim/" + t.id}>{t.name}</Link>
-        </h3>
-        <p className="muted">{c.name}</p>
+        </h2>
+        <p className="muted">{competition.name}</p>
       </div>
       <p className="bio">{t.description}</p>
-      <div className="topic-list">
-        <span className="topic">{t.role}</span>
+      <div className="team-role">
+        <span>Mencari</span>
+        <strong>{t.role}</strong>
       </div>
       <div className="row between">
         <div className="avatar-stack">
@@ -244,282 +198,372 @@ export function TeamCard({ t, state }: { t: Team; state: State }) {
     </article>
   );
 }
+
 export function Landing(p: Shared) {
-  const [tab, setTab] = useState(0);
+  const [preview, setPreview] = useState("partner");
+  const people = p.state.users
+    .filter(
+      (u) => !u.admin && !u.suspended && u.complete && u.id !== p.user?.id,
+    )
+    .slice(0, 3);
+  const competitions = p.state.competitions
+    .filter((c) => c.status === "Tayang" && !closed(c))
+    .slice(0, 3);
+  const teams = p.state.teams
+    .filter(
+      (t) =>
+        t.status === "Merekrut" &&
+        t.members.length < t.capacity &&
+        !closed(p.state.competitions.find((c) => c.id === t.competition)!),
+    )
+    .slice(0, 2);
   return (
     <main>
-      <section className="hero">
-        <div className="hero-grid" />
-        <div className="container hero-content">
-          <div className="hero-kicker">
-            Ruang bertemu, belajar, dan bertumbuh
-          </div>
+      <section className="home-intro container">
+        <div className="intro-copy">
+          <p className="hero-kicker">Ruang bertemu, belajar, dan bertumbuh</p>
           <h1>
-            Langkah besarmu,
+            Belajar bareng.
             <br />
-            dimulai <span>bersama.</span>
-            <svg
-              className="hero-underline"
-              viewBox="0 0 360 18"
-              aria-hidden="true"
-            >
-              <path
-                d="M3 13Q170-6 355 9"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="3"
-                strokeLinecap="round"
-              />
-            </svg>
+            Melangkah{" "}
+            <span className="curved-underline">
+              lebih jauh
+              <svg
+                viewBox="0 0 300 18"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+              >
+                <path d="M3 13 Q145 -3 297 11" />
+              </svg>
+            </span>
+            .
           </h1>
-          <p>
-            Temukan partner belajar yang sefrekuensi, jelajahi lomba,
-            <br className="desktop-break" /> dan bangun tim yang saling
-            melengkapi.
+          <p className="intro-description">
+            Ada hal yang lebih mudah dipelajari bersama. Temukan teman diskusi,
+            siapkan tim lomba, dan mulai dari tujuan yang sama.
           </p>
-          <div className="actions center">
+          <div className="actions">
             <Link className="button primary" href="/partner">
-              Temukan partner belajar <Icon name="arrow" />
+              Cari partner belajar
             </Link>
-            <Link className="button secondary" href="/lomba">
-              <Icon name="trophy" /> Jelajahi lomba
+            <Link className="button secondary" href="/tim">
+              Temukan tim lomba
             </Link>
           </div>
-          <div className="hero-note">
-            <Icon name="check" size={15} /> Gratis untuk mulai <span /> Dibuat
-            untuk siswa & mahasiswa
-          </div>
-          <div className="product-preview">
-            <div className="preview-top">
-              <div className="window-dots">
-                <i />
-                <i />
-                <i />
-              </div>
-              <span>Temukan ruang kolaborasimu</span>
-              <Badge>Contoh tampilan</Badge>
-            </div>
-            <div className="preview-layout">
-              <div className="preview-sidebar">
-                <span className="eyebrow">BELAJAR BARENG</span>
-                <h3>
-                  Partner yang tepat.
-                  <br />
-                  Semangat yang baru.
-                </h3>
-                <p>Mulai dari minat yang sama, lalu tumbuh bersama.</p>
-                <div className="preview-tags">
-                  <span>
-                    <Icon name="code" size={16} /> Web Development
-                  </span>
-                  <span>
-                    <Icon name="spark" size={16} /> UI/UX Design
-                  </span>
-                  <span>
-                    <Icon name="grid" size={16} /> Data Science
-                  </span>
-                </div>
-                <span className="preview-foot">
-                  <span className="live-dot" /> Satu langkah menuju kolaborasi
-                </span>
-              </div>
-              <div className="preview-partner">
-                {p.partnerCard(p.state.users[1], true)}
-              </div>
-              <div className="preview-team">
-                <div className="row between">
-                  <span className="team-mark">
-                    <Icon name="users" />
-                  </span>
-                  <Badge tone="success">Merekrut</Badge>
-                </div>
-                <h3>Pixel Pioneers</h3>
-                <p>Ide hebat butuh tim hebat.</p>
-                <div className="preview-orbit">
-                  <div className="orbit-ring" />
-                  <Avatar user={p.state.users[1]} />
-                  <Avatar user={p.state.users[4]} />
-                  <span className="orbit-plus">+</span>
-                </div>
-                <div className="topic-list">
-                  <span className="topic">UI/UX Designer</span>
-                </div>
-                <Link className="text-link" href="/tim/pixel">
-                  Kenalan dengan tim <Icon name="arrow" size={16} />
-                </Link>
-              </div>
-            </div>
-          </div>
+          <p className="intro-footnote">
+            Untuk siswa dan mahasiswa. Dari diskusi pertama sampai kerja tim.
+          </p>
         </div>
-      </section>
-      <section className="section container">
-        <div className="section-heading centered">
-          <div className="eyebrow">LEBIH DARI SEKADAR KONEKSI</div>
-          <h2>Tujuanmu, ketemu jalannya.</h2>
-          <p>Dari “ingin belajar” jadi “ayo kita mulai”. Semua ada di sini.</p>
-        </div>
-        <div className="benefit-grid">
-          <Link href="/partner" className="benefit-card benefit-main">
-            <span className="feature-icon">
-              <Icon name="users" size={24} />
+        <aside className="study-board" aria-label="Ruang kolaborasi TeamUp">
+          <div className="workspace-rail">
+            <span className="workspace-brand">
+              TeamUp<span>.</span>
             </span>
-            <h3>Belajar nggak harus sendiri.</h3>
-            <p>
-              Temukan teman diskusi berdasarkan bidang, level, dan waktu
-              luangmu. Saling bantu, saling maju.
-            </p>
-            <div className="mini-connect">
-              <Avatar user={p.state.users[0]} />
-              <span className="connect-line" />
-              <span className="connect-center">
-                <Icon name="spark" />
+            <p>Ruang kolaborasi</p>
+            <div
+              role="tablist"
+              aria-label="Jenis kolaborasi"
+              className="preview-tabs"
+              onKeyDown={(event) => {
+                if (
+                  ![
+                    "ArrowRight",
+                    "ArrowLeft",
+                    "ArrowDown",
+                    "ArrowUp",
+                    "Home",
+                    "End",
+                  ].includes(event.key)
+                )
+                  return;
+                event.preventDefault();
+                const next =
+                  event.key === "Home"
+                    ? "partner"
+                    : event.key === "End"
+                      ? "tim"
+                      : preview === "partner"
+                        ? "tim"
+                        : "partner";
+                setPreview(next);
+                event.currentTarget
+                  .querySelector<HTMLButtonElement>(
+                    next === "partner" ? "#partner-tab" : "#team-tab",
+                  )
+                  ?.focus();
+              }}
+            >
+              <button
+                type="button"
+                role="tab"
+                id="partner-tab"
+                tabIndex={preview === "partner" ? 0 : -1}
+                aria-controls="collaboration-preview"
+                aria-selected={preview === "partner"}
+                onClick={() => setPreview("partner")}
+              >
+                <Icon name="users" size={18} />
+                Partner belajar
+              </button>
+              <button
+                type="button"
+                role="tab"
+                id="team-tab"
+                tabIndex={preview === "tim" ? 0 : -1}
+                aria-controls="collaboration-preview"
+                aria-selected={preview === "tim"}
+                onClick={() => setPreview("tim")}
+              >
+                <Icon name="trophy" size={18} />
+                Tim lomba
+              </button>
+            </div>
+            <div className="rail-note">
+              <Icon name="book" size={20} />
+              <span>
+                Tujuan sama.
+                <br />
+                Langkah bersama.
               </span>
-              <span className="connect-line" />
-              <Avatar user={p.state.users[2]} />
             </div>
-            <span className="text-link">
-              Cari partner belajar <Icon name="arrow" size={16} />
-            </span>
-          </Link>
-          <Link href="/lomba" className="benefit-card">
-            <span className="feature-icon mint">
-              <Icon name="trophy" size={24} />
-            </span>
-            <h3>
-              Berani ambil
-              <br />
-              peluang baru.
-            </h3>
-            <p>Jelajahi lomba yang sesuai minat dan tantang kemampuanmu.</p>
-            <span className="text-link">
-              Jelajahi lomba <Icon name="arrow" size={16} />
-            </span>
-          </Link>
-          <Link href="/tim" className="benefit-card">
-            <span className="feature-icon violet">
-              <Icon name="chat" size={24} />
-            </span>
-            <h3>
-              Ide berbeda.
-              <br />
-              Satu tujuan.
-            </h3>
-            <p>Bangun tim, bagi peran, dan koordinasi dalam satu ruang.</p>
-            <span className="text-link">
-              Temukan tim <Icon name="arrow" size={16} />
-            </span>
-          </Link>
-        </div>
-      </section>
-      <section className="how-section">
-        <div className="container section">
-          <div className="section-heading centered">
-            <div className="eyebrow">SESEDERHANA ITU</div>
-            <h2>Kolaborasi dimulai dari kamu.</h2>
-            <p>Tiga langkah kecil untuk peluang yang lebih besar.</p>
           </div>
-          <div className="segmented centered-segment">
-            <button
-              className={tab === 0 ? "selected" : ""}
-              onClick={() => setTab(0)}
-            >
-              Partner belajar
-            </button>
-            <button
-              className={tab === 1 ? "selected" : ""}
-              onClick={() => setTab(1)}
-            >
-              Tim lomba
-            </button>
-          </div>
-          <div className="grid three steps">
-            {(tab === 0
-              ? [
-                  [
-                    "Bikin profilmu",
-                    "Ceritakan minat, level, dan jadwal belajarmu.",
-                    "book",
-                  ],
-                  [
-                    "Temukan partner",
-                    "Cari teman dengan bidang dan waktu yang sesuai.",
-                    "search",
-                  ],
-                  [
-                    "Mulai belajar bareng",
-                    "Kirim permintaan, terhubung, lalu mulai diskusi.",
-                    "chat",
-                  ],
-                ]
-              : [
-                  [
-                    "Pilih tantanganmu",
-                    "Jelajahi lomba dan pelajari persyaratannya.",
-                    "trophy",
-                  ],
-                  [
-                    "Temukan atau buat tim",
-                    "Bawa kemampuanmu ke tim yang saling melengkapi.",
-                    "users",
-                  ],
-                  [
-                    "Wujudkan ide bersama",
-                    "Tinjau lamaran dan koordinasikan lewat chat grup.",
-                    "spark",
-                  ],
-                ]
-            ).map(([title, text, icon], i) => (
-              <div className="step" key={title}>
-                <div className="step-number">
-                  0{i + 1}
-                  <span>
-                    <Icon name={icon} size={22} />
-                  </span>
-                </div>
-                <h3>{title}</h3>
-                <p>{text}</p>
+          <div
+            className="workspace-content"
+            role="tabpanel"
+            id="collaboration-preview"
+            aria-labelledby={preview === "partner" ? "partner-tab" : "team-tab"}
+          >
+            <div className="board-heading">
+              <div>
+                <p className="section-label">Teman satu tujuan</p>
+                <h2>
+                  {preview === "partner"
+                    ? "Mulai dari minat yang sama."
+                    : "Temukan ruang untuk kontribusimu."}
+                </h2>
               </div>
-            ))}
+              <Link
+                className="text-link"
+                href={preview === "partner" ? "/partner" : "/tim"}
+              >
+                Lihat semua <Icon name="arrow" size={16} />
+              </Link>
+            </div>
+            <div className="board-people">
+              {preview === "partner"
+                ? people.map((u) => (
+                    <Link
+                      className="board-person"
+                      key={u.id}
+                      href={"/partner/" + u.id}
+                    >
+                      <Avatar user={u} />
+                      <div>
+                        <strong>{u.name}</strong>
+                        <span>{u.topics[0]?.name || "Belajar bersama"}</span>
+                        <small>{u.topics[0]?.level} · kemampuan mandiri</small>
+                      </div>
+                      <Icon name="arrow" size={18} />
+                    </Link>
+                  ))
+                : teams.map((t) => (
+                    <Link
+                      className="board-person"
+                      key={t.id}
+                      href={"/tim/" + t.id}
+                    >
+                      <span className="preview-team-icon">
+                        <Icon name="users" />
+                      </span>
+                      <div>
+                        <strong>{t.name}</strong>
+                        <span>{t.role}</span>
+                        <small>
+                          {t.capacity - t.members.length} tempat tersedia
+                        </small>
+                      </div>
+                      <Icon name="arrow" size={18} />
+                    </Link>
+                  ))}
+              {!(preview === "partner" ? people.length : teams.length) && (
+                <Empty
+                  title="Ruang baru menantimu"
+                  text="Lengkapi profilmu untuk memulai kolaborasi."
+                />
+              )}
+            </div>
+            <div className="board-note">
+              <Icon name="book" size={18} />
+              <p>
+                Bidang, level, dan jadwal membantu kamu memulai percakapan yang
+                tepat.
+              </p>
+            </div>
           </div>
-        </div>
+        </aside>
       </section>
-      <section className="section container">
-        <div className="section-heading row between">
-          <div>
-            <div className="eyebrow">WAKTUNYA UNJUK IDE</div>
-            <h2>Tantangan baru menantimu.</h2>
-            <p>Temukan kesempatan untuk belajar lewat pengalaman.</p>
-          </div>
-          <Link className="button secondary" href="/lomba">
-            Semua lomba <Icon name="arrow" size={18} />
+
+      <section
+        className="learning-paths container"
+        aria-labelledby="paths-title"
+      >
+        <div className="paths-intro">
+          <p className="section-label">Pilih langkahmu</p>
+          <h2 id="paths-title">Mau mulai dari mana?</h2>
+        </div>
+        <div className="path-options">
+          <Link href="/partner" className="path-option">
+            <span className="path-number">01</span>
+            <div>
+              <h3>Cari teman belajar</h3>
+              <p>
+                Cocokkan bidang, level, dan waktu luang. Kirim permintaan untuk
+                mulai diskusi.
+              </p>
+            </div>
+            <Icon name="arrow" size={20} />
+          </Link>
+          <Link href="/lomba" className="path-option">
+            <span className="path-number">02</span>
+            <div>
+              <h3>Siapkan tim lomba</h3>
+              <p>
+                Pilih lomba, baca kebutuhan peran, lalu temukan tempat untuk
+                kontribusimu.
+              </p>
+            </div>
+            <Icon name="arrow" size={20} />
           </Link>
         </div>
-        <p className="demo-caption">
-          <Icon name="info" size={14} /> Data contoh, bukan pengumuman lomba
-          nyata.
-        </p>
-        <div className="grid three">
-          {p.state.competitions
-            .filter((c) => c.status === "Tayang" && !closed(c))
-            .slice(0, 3)
-            .map(p.competitionCard)}
+      </section>
+
+      <section
+        className="competition-agenda container"
+        aria-labelledby="agenda-title"
+      >
+        <div className="section-heading">
+          <div>
+            <p className="section-label">Kesempatan berikutnya</p>
+            <h2 id="agenda-title">Ada tantangan untuk idemu.</h2>
+          </div>
+          <Link href="/lomba" className="text-link">
+            Lihat daftar lomba <Icon name="arrow" size={16} />
+          </Link>
+        </div>
+        <div className="agenda-list">
+          {competitions.length ? (
+            competitions.map((c) => (
+              <article className="agenda-row" key={c.id}>
+                <div className="agenda-date">
+                  <span>Deadline</span>
+                  <time dateTime={c.deadline}>
+                    {new Intl.DateTimeFormat("id-ID", {
+                      day: "numeric",
+                      month: "short",
+                      timeZone: "Asia/Jakarta",
+                    }).format(new Date(c.deadline))}
+                  </time>
+                  <small>
+                    {new Intl.DateTimeFormat("id-ID", {
+                      hour: "2-digit",
+                      minute: "2-digit",
+                      timeZone: "Asia/Jakarta",
+                    }).format(new Date(c.deadline))}{" "}
+                    WIB
+                  </small>
+                </div>
+                <div className="agenda-description">
+                  <p>
+                    {c.category} <span> / </span> {c.level}
+                  </p>
+                  <h3>
+                    <Link href={"/lomba/" + c.id}>{c.name}</Link>
+                  </h3>
+                  <span>{c.organizer}</span>
+                </div>
+                <span className="agenda-fee">
+                  {c.fee ? "Rp" + c.fee.toLocaleString("id-ID") : "Gratis"}
+                </span>
+                <Link
+                  className="agenda-link icon-button"
+                  href={"/lomba/" + c.id}
+                  aria-label={"Detail " + c.name}
+                >
+                  <Icon name="arrow" />
+                </Link>
+              </article>
+            ))
+          ) : (
+            <Empty
+              title="Belum ada lomba terbuka"
+              text="Lomba yang masih membuka pendaftaran akan ditampilkan di sini."
+            />
+          )}
         </div>
       </section>
-      <section className="container cta-section">
-        <span className="cta-decoration" aria-hidden="true">
-          <Icon name="spark" size={150} />
-        </span>
-        <div>
-          <div className="eyebrow">LET’S TEAM UP</div>
-          <h2>
-            Jangan cuma punya rencana.
-            <br />
-            Punya teman untuk memulainya.
-          </h2>
-          <p>Langkah pertama menuju kolaborasi berikutnya ada di sini.</p>
+
+      <section className="team-section">
+        <div className="container team-section-inner">
+          <div className="team-section-copy">
+            <p className="section-label">Ruang untuk kontribusimu</p>
+            <h2>
+              Tim yang tepat{" "}
+              <br />
+              saling melengkapi.
+            </h2>
+            <p>
+              Tidak harus bisa semuanya. Kenali peran yang dibutuhkan dan
+              ceritakan apa yang ingin kamu kerjakan.
+            </p>
+            <Link className="text-link" href="/tim">
+              Cari tim yang masih merekrut <Icon name="arrow" size={16} />
+            </Link>
+          </div>
+          <div className="team-notes">
+            {teams.map((t) => (
+              <article className="team-note" key={t.id}>
+                <div className="row between">
+                  <h3>
+                    <Link href={"/tim/" + t.id}>{t.name}</Link>
+                  </h3>
+                  <Status value="Merekrut" />
+                </div>
+                <p>
+                  {
+                    p.state.competitions.find((c) => c.id === t.competition)
+                      ?.name
+                  }
+                </p>
+                <div className="team-note-role">
+                  <span>Peran terbuka</span>
+                  <strong>{t.role}</strong>
+                </div>
+                <Link className="text-link" href={"/tim/" + t.id}>
+                  Lihat kebutuhan tim <Icon name="arrow" size={16} />
+                </Link>
+              </article>
+            ))}
+            {!teams.length && (
+              <Empty
+                title="Belum ada tim merekrut"
+                text="Kamu bisa membuat tim untuk lomba yang terbuka."
+              />
+            )}
+          </div>
         </div>
-        <Link className="button primary" href="/daftar">
-          Mulai perjalananmu <Icon name="arrow" />
+      </section>
+
+      <section className="home-closing container">
+        <div>
+          <p className="section-label">Dari kenalan jadi rekan</p>
+          <h2>Mulai dengan memperkenalkan diri.</h2>
+          <p>
+            Isi bidang dan jadwalmu. Percakapan terbuka setelah permintaan
+            partner atau lamaran tim diterima.
+          </p>
+        </div>
+        <Link className="button primary" href={p.user ? "/profil" : "/daftar"}>
+          {p.user ? "Lengkapi profil saya" : "Buat profil belajar"}
         </Link>
       </section>
     </main>

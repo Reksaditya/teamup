@@ -1,5 +1,7 @@
 # TeamUp
 
+Pembaruan visual 1.2 mengikuti `DESIGN.md`: light mode default putih/navy, switch tema navbar, hero terpusat dengan underline lengkung, serta panel partner/tim interaktif. Pemeriksaan pasangan warna kedua tema dapat diulang dengan `node work/check-design.mjs` dan menghasilkan `outputs/light-dark-contrast.json`.
+
 Frontend interaktif berbahasa Indonesia untuk partner belajar dan tim lomba. Dibangun dengan Next.js 16, React 19, TypeScript, serta CSS token terpusat berdasarkan AGENTS.md, PRD, dan Design Requirement pada folder outputs. Seluruh profil, lomba, dan percakapan adalah contoh.
 
 ## Menjalankan
@@ -15,18 +17,18 @@ Memerlukan Node.js 22.6+ (pengujian menggunakan Node.js 24) dan npm.
 
 ## Menjelajahi demo
 
-Pilih persona pada bilah Mode demo di bawah layar. Alya memiliki permintaan masuk dari Citra, partner Bima, dan memimpin Beyond the Bytes dengan satu lamaran masuk dari Rafi. Bima memimpin Pixel Pioneers. Citra memimpin Insight Collective. Pengguna Baru belum terverifikasi dan profilnya belum lengkap. Admin TeamUp dapat mengelola lomba, pengguna, laporan, dan catatan tindakan.
+Alya memiliki permintaan masuk dari Citra, partner Bima, dan memimpin Beyond the Bytes dengan satu lamaran masuk dari Rafi. Bima memimpin Pixel Pioneers. Citra memimpin Insight Collective. Pengguna Baru belum terverifikasi dan profilnya belum lengkap. Admin TeamUp dapat mengelola lomba, pengguna, laporan, dan catatan tindakan. Bilah persona dan label demo/contoh dihapus dari UI atas permintaan pengguna pada revisi 1.2.
 
-Untuk simulasi login email gunakan email persona, misalnya alya@demo.teamup.test, serta teks password contoh minimal delapan karakter. Password tidak disimpan atau diverifikasi sebagai kredensial nyata. Registrasi membuat akun demo lokal. Verifikasi, Google, dan reset diberi label simulasi. Jangan menggunakan password atau data pribadi asli.
+Untuk pengujian login email gunakan email seed, misalnya alya@teamup.test atau admin@teamup.test, serta teks password uji minimal delapan karakter. Password tidak disimpan atau diverifikasi sebagai kredensial nyata. Registrasi membuat akun lokal. Google menampilkan pesan belum terhubung. Verifikasi dan reset belum terintegrasi layanan email. Jangan menggunakan password atau data pribadi asli.
 
-Coba dua alur berikut dengan mengganti persona setelah mengirim permintaan atau lamaran:
+Coba dua alur berikut dengan logout dan login ke akun seed penerima setelah mengirim permintaan atau lamaran:
 
 1. Daftar → verifikasi simulasi → onboarding → cari partner → ajak belajar → penerima menerima di Aktivitas → chat personal.
 2. Lomba → cari/buat tim → ajukan lamaran → ketua menerima di Aktivitas → ringkasan anggota → chat grup.
 
-Di chat, Simulasi putus koneksi mempertahankan pesan gagal. Sambungkan kembali lalu pilih Kirim ulang. Kontrol Simulasi data pada daftar mendemonstrasikan loading, kosong, gagal, serta akses ditolak. Blokir dan laporan tersedia di profil serta pesan; laporan pesan menyertakan bukti terpilih.
+Kontrol simulasi data dan putus koneksi dihapus dari UI pada revisi 1.2. Komponen state dan retry tetap tersedia di source. Blokir dan laporan tersedia di profil serta pesan; laporan pesan menyertakan bukti terpilih.
 
-Perubahan tersimpan di localStorage dengan kunci teamup-demo-v1. Reset seluruh data demo mengembalikan seed dan mengakhiri sesi demo. Perubahan pada tab lain di origin yang sama disinkronkan melalui storage event. localhost dan 127.0.0.1 memiliki penyimpanan terpisah.
+Perubahan tersimpan di localStorage dengan kunci teamup-demo-v1. Penghapusan penyimpanan situs melalui browser mengembalikan seed. Perubahan pada tab lain di origin yang sama disinkronkan melalui storage event. Pilihan tema disimpan pada teamup-theme. localhost dan 127.0.0.1 memiliki penyimpanan terpisah.
 
 ## Halaman P1
 

@@ -195,7 +195,7 @@ export function RoleEditor({
   const [roles, setRoles] = useState(initial || [{ name: "", slots: 1 }]);
   return (
     <div className="role-editor">
-      <h3>Peran & slot terbuka</h3>
+      <h2>Peran & slot terbuka</h2>
       <p className="muted">
         Total slot maksimal {remaining}. Kapasitas mencakup ketua.
       </p>
@@ -213,7 +213,7 @@ export function RoleEditor({
                   ),
                 )
               }
-              placeholder="Contoh: UI/UX Designer"
+              placeholder="UI/UX Designer"
             />
           </Field>
           <Field label="Slot">

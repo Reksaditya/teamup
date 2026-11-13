@@ -1,5 +1,13 @@
 # Design Requirement — TeamUp Belajar
 
+## Revisi aktif 1.2, 13 November 2026
+
+Arahan terbaru pengguna: light mode default dengan canvas #FFFFFF, teks/aksi navy #000321, switch tema pada navbar, hero terpusat mengikuti referensi lampiran terbaru, dan underline sedikit melengkung pada “lebih jauh”. Light/dark memakai token terpusat dalam app/globals.css; rincian alasan desain pada [DESIGN.md](../DESIGN.md). Ini menggantikan keputusan tema gelap tetap, tanpa toggle, hero terbagi, dan larangan underline pada revisi sebelumnya. Panel partner/tim berfungsi sebagai preview interaktif; logo, statistik, dan testimoni referensi tidak disalin. Label demo/contoh serta kontrol simulasi dihapus dari UI atas permintaan langsung pengguna. Frontend tetap lokal; perubahan visual tidak mengesahkan backend, integrasi OAuth/email, atau kesiapan produksi. Seluruh cakupan P1 serta aturan akses/domain tetap mengacu PRD.
+
+## Revisi visual 1.1, 13 November 2026
+
+Pengguna meminta tampilan yang tidak generik dan warna lebih tenang, dengan antislop during. [Arah pembaruan visual](../DESIGN.md) menjadi acuan aktif untuk palet, radius, dan komposisi pengganti. Ukuran container, grid responsif, font, aksesibilitas, struktur navigasi, dan seluruh cakupan P1 pada dokumen ini tetap berlaku. Glow/grid hero, preview browser, bento promosi, serta poster lomba dekoratif diganti dengan komposisi partner dan agenda lomba yang berfokus pada isi. Tema gelap tetap mengikuti identitas navy yang diminta, tanpa menambah theme toggle.
+
 Penyesuaian pengguna: pengantar hero “Ruang bertemu, belajar, dan bertumbuh” tampil sebagai teks saja, tanpa background, border, titik dekoratif, atau ikon panah. Menggantikan bentuk badge/pill pada pengantar tersebut.
 
 Versi 1.0 · 13 November 2026 · Website responsif · Bahasa Indonesia  

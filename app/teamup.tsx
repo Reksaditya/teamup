@@ -3,7 +3,6 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import {
-  seed,
   uid,
   now,
   requestPartner,
@@ -16,6 +15,7 @@ import {
 } from "../lib/demo";
 import { Icon, Avatar, Empty, Title, formData } from "./ui";
 import { useDemoState } from "./store";
+import { ThemeSwitch } from "./theme";
 import { PartnerCard, CompetitionCard, TeamCard, Landing } from "./discovery";
 import {
   PartnerSearch,
@@ -193,7 +193,7 @@ export default function TeamUp() {
                     },
                   ],
                 }),
-                "Laporan demo tersimpan. Lihat statusnya di Bantuan.",
+                "Laporan tersimpan. Lihat statusnya di Bantuan.",
               )
             )
               setModal(null);
@@ -219,7 +219,7 @@ export default function TeamUp() {
               placeholder="Ceritakan hal yang perlu ditinjau admin…"
             />
           </label>
-          <button className="button primary full">Kirim laporan demo</button>
+          <button className="button primary full">Kirim laporan</button>
         </form>
       ),
     });
@@ -244,7 +244,7 @@ export default function TeamUp() {
             if (
               commit(
                 (s) => applyTeam(s, user!.id, t.id, f.role, f.message),
-                "Lamaran demo terkirim. Lihat statusnya di Aktivitas.",
+                "Lamaran terkirim. Lihat statusnya di Aktivitas.",
               )
             )
               setModal(null);
@@ -312,6 +312,7 @@ export default function TeamUp() {
       return (
         <main className="container page">
           <Empty
+            page
             title="Masuk untuk melanjutkan"
             text="Temukan teman belajar dan mulai kolaborasimu di TeamUp."
           >
@@ -328,6 +329,7 @@ export default function TeamUp() {
       return (
         <main className="container page">
           <Empty
+            page
             title="Akun ditangguhkan"
             text="Akses privat akun ini dibatasi. Hubungi bantuan untuk peninjauan."
           >
@@ -341,6 +343,7 @@ export default function TeamUp() {
       return (
         <main className="container page">
           <Empty
+            page
             title="Akses khusus admin"
             text="Kamu tidak memiliki izin untuk membuka halaman ini."
           />
@@ -445,6 +448,7 @@ export default function TeamUp() {
     content = (
       <main className="container page">
         <Empty
+          page
           title="Halaman tidak ditemukan"
           text="Tautan ini belum tersedia di TeamUp."
         >
@@ -471,10 +475,6 @@ export default function TeamUp() {
       <header className="topbar">
         <div className="container header-inner">
           <Link href="/" className="brand" aria-label="TeamUp beranda">
-            <span className="brand-symbol">
-              <span />
-              <span />
-            </span>
             Team<span className="brand-up">Up</span>
             <span className="brand-dot">.</span>
           </Link>
@@ -503,15 +503,20 @@ export default function TeamUp() {
             )}
           </nav>
           <div className="header-actions">
+            <ThemeSwitch />
             {user ? (
               <>
-                <Link className="account-link" href="/profil">
+                <Link
+                  className="account-link"
+                  href="/profil"
+                  aria-label="Profil saya"
+                >
                   <Avatar user={user} size="tiny" />
                   <span>{user.name.split(" ")[0]}</span>
                 </Link>
                 <button
                   className="icon-button logout"
-                  aria-label="Keluar dari akun demo"
+                  aria-label="Keluar dari akun"
                   onClick={() => {
                     setState((s) => ({ ...s, session: null }));
                     router.push("/");
@@ -526,7 +531,7 @@ export default function TeamUp() {
                   Masuk
                 </Link>
                 <Link className="button primary small" href="/daftar">
-                  Mulai gratis <Icon name="arrow" size={16} />
+                  Buat akun
                 </Link>
               </>
             )}
@@ -577,7 +582,7 @@ export default function TeamUp() {
                           }}
                         >
                           <Icon name="logout" />
-                          Keluar dari akun demo
+                          Keluar dari akun
                         </button>
                       )}
                     </nav>
@@ -599,7 +604,7 @@ export default function TeamUp() {
                 <div className="skeleton card-skeleton" key={x} />
               ))}
             </div>
-            <p className="muted">Memuat demo TeamUp…</p>
+            <p className="muted">Memuat TeamUp…</p>
           </main>
         ) : (
           <>
@@ -646,63 +651,11 @@ export default function TeamUp() {
             <div className="footer-links">
               <Link href="/privasi">Privasi</Link>
               <Link href="/bantuan">Bantuan</Link>
-              <span>© 2026 TeamUp · Demo</span>
+              <span>© 2026 TeamUp</span>
             </div>
           </div>
         </footer>
       )}
-      <div className="demo-toolbar">
-        <div className="demo-label">
-          <span className="live-dot" />
-          <strong>Mode demo</strong>
-          <span className="demo-detail">
-            Data contoh · tersimpan di browser
-          </span>
-        </div>
-        <label className="persona-label">
-          <span>Jelajahi sebagai</span>
-          <select
-            aria-label="Ganti persona demo"
-            value={state.session || ""}
-            onChange={(e) => {
-              setModal(null);
-              setState((s) => ({ ...s, session: e.target.value || null }));
-              setToast("Persona demo diganti.");
-            }}
-          >
-            <option value="">Pengunjung</option>
-            {state.users.map((u) => (
-              <option key={u.id} value={u.id}>
-                {u.name}
-                {u.admin
-                  ? " · Admin"
-                  : u.suspended
-                    ? " · Ditangguhkan"
-                    : !u.verified
-                      ? " · Belum verifikasi"
-                      : ""}
-              </option>
-            ))}
-          </select>
-        </label>
-        <button
-          className="icon-button"
-          aria-label="Reset seluruh data demo"
-          onClick={() =>
-            confirm(
-              "Reset data demo?",
-              "Semua perubahan lokal akan diganti dengan data contoh awal.",
-              () => {
-                setState(seed());
-                router.push("/");
-              },
-              "Reset data",
-            )
-          }
-        >
-          <Icon name="reset" size={17} />
-        </button>
-      </div>
       {toast && (
         <div className="toast" role="status">
           <Icon name="info" />

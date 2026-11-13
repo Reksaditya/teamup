@@ -28,7 +28,7 @@ import {
   topics,
   levels,
 } from "./ui";
-import { DataState, StateView } from "./pages";
+import { StateView } from "./pages";
 import { PhotoInput, ScheduleEditor } from "./controls";
 export function Activities(p: Shared) {
   const [tab, setTab] = useState("partner"),
@@ -96,7 +96,6 @@ export function Activities(p: Shared) {
             <option key={s}>{s}</option>
           ))}
         </select>
-        <DataState value={view} onChange={setView} />
       </div>
       <StateView value={view} retry={() => setView("normal")}>
         {tab === "partner" ? (
@@ -402,14 +401,14 @@ export function Chat(p: Shared & { id?: string }) {
     if (p.offline) {
       p.commit(() => {
         throw Error(
-          "Koneksi simulasi masih terputus. Sambungkan kembali untuk mencoba.",
+          "Koneksi masih terputus. Sambungkan kembali untuk mencoba.",
         );
       });
       return;
     }
     p.commit(
       (s) => sendMessage(s, id, p.user!.id, m.text, m.id),
-      "Pesan demo terkirim.",
+      "Pesan terkirim.",
     );
   }
   return (
@@ -542,20 +541,10 @@ export function Chat(p: Shared & { id?: string }) {
                 </button>
               </div>
             </div>
-            <div className="chat-tools">
-              <button
-                className={"text-link " + (p.offline ? "warning-text" : "")}
-                onClick={() => p.setOffline(!p.offline)}
-              >
-                <Icon name="wifi" size={15} />
-                {p.offline ? "Sambungkan kembali" : "Simulasi putus koneksi"}
-              </button>
-              <DataState value={view} onChange={setView} />
-            </div>
             {p.offline && (
               <div className="notice warning">
-                Koneksi simulasi terputus. Pesan gagal tetap tersimpan untuk
-                dikirim ulang.
+                Koneksi terputus. Pesan gagal tetap tersimpan untuk dikirim
+                ulang.
               </div>
             )}
             {t &&
@@ -587,7 +576,7 @@ export function Chat(p: Shared & { id?: string }) {
                     Muat pesan sebelumnya
                   </button>
                 )}
-                <div className="chat-date">Riwayat demo · semua waktu WIB</div>
+                <div className="chat-date">Semua waktu dalam WIB</div>
                 {!messages.length && (
                   <Empty
                     title="Mulai percakapanmu"
@@ -622,9 +611,7 @@ export function Chat(p: Shared & { id?: string }) {
                               m.status === "Gagal" ? "danger-text" : ""
                             }
                           >
-                            {m.status === "Terkirim"
-                              ? "Terkirim (demo)"
-                              : m.status}
+                            {m.status === "Terkirim" ? "Terkirim" : m.status}
                           </span>
                           {!hidden && m.user !== p.user!.id && (
                             <button
@@ -819,7 +806,7 @@ export function ProfileForm(p: Shared) {
                 u.id === profile.id ? { ...profile, complete: true } : u,
               ),
             }),
-            "Profil demo berhasil disimpan.",
+            "Profil berhasil disimpan.",
           );
           router.push("/partner");
         }}
@@ -882,7 +869,7 @@ export function ProfileForm(p: Shared) {
           </>
         ) : step === 1 ? (
           <>
-            <h3>Bidang yang menarik buatmu</h3>
+            <h2>Bidang yang menarik buatmu</h2>
             <p className="muted">
               Pilih sedikitnya satu bidang. Level merupakan penilaian mandiri.
             </p>
@@ -992,7 +979,6 @@ export function Auth(p: Shared & { kind: string }) {
     [show, setShow] = useState(false),
     [error, setError] = useState(""),
     [sent, setSent] = useState(false),
-    [reset, setReset] = useState(false),
     [used, setUsed] = useState(false),
     [cooldown, setCooldown] = useState(0);
   useEffect(() => {
@@ -1013,16 +999,21 @@ export function Auth(p: Shared & { kind: string }) {
   return (
     <main className="auth-page">
       <div className="auth-decoration" aria-hidden="true">
-        <Icon name="spark" size={60} />
         <p>
           Mulai sendiri.
           <br />
           <span>Tumbuh bersama.</span>
         </p>
-        <div className="avatar-stack">
-          {p.state.users.slice(0, 4).map((u) => (
-            <Avatar user={u} key={u.id} />
-          ))}
+        <div className="auth-context">
+          <div>
+            <Icon name="book" size={18} /> Bidang dan jadwal belajar
+          </div>
+          <div>
+            <Icon name="users" size={18} /> Peran yang saling melengkapi
+          </div>
+          <div>
+            <Icon name="chat" size={18} /> Ruang diskusi setelah terhubung
+          </div>
         </div>
         <small>Temukan ruang untuk ide dan ambisimu.</small>
       </div>
@@ -1059,28 +1050,19 @@ export function Auth(p: Shared & { kind: string }) {
               className="button secondary full"
               onClick={() =>
                 p.setModal({
-                  title: "Simulasi login Google",
+                  title: "Google belum terhubung",
                   content: (
                     <>
                       <p className="dialog-description">
-                        Ini bukan OAuth nyata. Lanjutkan sebagai akun demo Alya,
-                        atau batalkan tanpa membuat akun.
+                        Login Google belum tersedia. Kamu bisa melanjutkan
+                        dengan email.
                       </p>
                       <div className="actions end">
                         <button
                           className="button secondary"
                           onClick={() => p.setModal(null)}
                         >
-                          Batal
-                        </button>
-                        <button
-                          className="button primary"
-                          onClick={() => {
-                            p.setModal(null);
-                            finish("alya");
-                          }}
-                        >
-                          Lanjutkan simulasi
+                          Kembali
                         </button>
                       </div>
                     </>
@@ -1143,7 +1125,7 @@ export function Auth(p: Shared & { kind: string }) {
                   };
                   p.commit(
                     (s) => ({ ...s, users: [...s.users, u], session: id }),
-                    "Akun demo dibuat.",
+                    "Akun dibuat.",
                   );
                   router.push("/verifikasi");
                 }
@@ -1165,13 +1147,10 @@ export function Auth(p: Shared & { kind: string }) {
                   name="email"
                   required
                   autoComplete="email"
-                  placeholder="alya@demo.teamup.test"
+                  placeholder="nama@email.com"
                 />
               </Field>
-              <Field
-                label="Password (wajib)"
-                hint="Minimal 8 karakter. Gunakan password contoh, bukan password asli."
-              >
+              <Field label="Password (wajib)" hint="Minimal 8 karakter.">
                 <div className="password-field">
                   <input
                     type={show ? "text" : "password"}
@@ -1202,12 +1181,12 @@ export function Auth(p: Shared & { kind: string }) {
               ) : (
                 <p className="privacy-copy">
                   Data digunakan untuk profil, pencarian, dan kolaborasi. Baca{" "}
-                  <Link href="/privasi">pemberitahuan privasi demo</Link>{" "}
-                  sebelum melanjutkan.
+                  <Link href="/privasi">pemberitahuan privasi</Link> sebelum
+                  melanjutkan.
                 </p>
               )}
               <button className="button primary full">
-                {kind === "masuk" ? "Masuk ke TeamUp" : "Buat akun demo"}{" "}
+                {kind === "masuk" ? "Masuk ke TeamUp" : "Buat akun"}{" "}
                 <Icon name="arrow" />
               </button>
             </form>
@@ -1217,11 +1196,6 @@ export function Auth(p: Shared & { kind: string }) {
                 {kind === "masuk" ? "Daftar gratis" : "Masuk"}
               </Link>
             </p>
-            <small>
-              Untuk akun demo gunakan email pada persona, misalnya
-              alya@demo.teamup.test, dengan teks password contoh minimal 8
-              karakter.
-            </small>
           </>
         ) : kind === "verifikasi" ? (
           p.user ? (
@@ -1231,10 +1205,10 @@ export function Auth(p: Shared & { kind: string }) {
               </div>
               <p className="centered">
                 {p.user.verified ? (
-                  "Email demo sudah diverifikasi."
+                  "Email sudah diverifikasi."
                 ) : (
                   <>
-                    Tautan contoh untuk <strong>{p.user.email}</strong>
+                    Verifikasi untuk <strong>{p.user.email}</strong>
                   </>
                 )}
               </p>
@@ -1251,12 +1225,12 @@ export function Auth(p: Shared & { kind: string }) {
                             u.id === p.user!.id ? { ...u, verified: true } : u,
                           ),
                         }),
-                        "Email demo terverifikasi.",
+                        "Status verifikasi diperbarui.",
                       );
                       setUsed(true);
                     }}
                   >
-                    Buka tautan verifikasi simulasi <Icon name="arrow" />
+                    Verifikasi email <Icon name="arrow" />
                   </button>
                   <button
                     className="text-link"
@@ -1268,24 +1242,13 @@ export function Auth(p: Shared & { kind: string }) {
                   >
                     {cooldown
                       ? `Kirim ulang dalam ${cooldown} dtk`
-                      : "Simulasi kirim ulang email"}
+                      : "Kirim ulang email"}
                   </button>
                   {sent && (
                     <div className="notice">
-                      Permintaan kirim ulang demo dicatat. Tidak ada email nyata
-                      yang dikirim.
+                      Pengiriman email belum tersedia. Coba kembali nanti.
                     </div>
                   )}
-                  <button
-                    className="text-link"
-                    onClick={() =>
-                      setError(
-                        "Tautan verifikasi tidak valid, sudah dipakai, atau kedaluwarsa. Minta tautan baru.",
-                      )
-                    }
-                  >
-                    Uji tautan tidak valid
-                  </button>
                 </>
               ) : (
                 <Link className="button primary full" href="/onboarding">
@@ -1316,69 +1279,14 @@ export function Auth(p: Shared & { kind: string }) {
                   />
                 </Field>
                 <button className="button primary full">
-                  Minta petunjuk reset demo
+                  Minta petunjuk reset
                 </button>
               </form>
-            ) : !reset ? (
-              <>
-                <div className="notice success">
-                  Jika email ini terdaftar, petunjuk reset akan dikirim. Ini
-                  adalah simulasi tanpa pengiriman email.
-                </div>
-                <button
-                  className="button secondary full"
-                  onClick={() => setReset(true)}
-                >
-                  Buka tautan reset simulasi
-                </button>
-                <button
-                  className="text-link"
-                  onClick={() =>
-                    setError(
-                      "Tautan reset tidak valid atau kedaluwarsa. Minta tautan baru.",
-                    )
-                  }
-                >
-                  Uji tautan kedaluwarsa
-                </button>
-              </>
             ) : (
-              <form
-                onSubmit={(e) => {
-                  formData(e);
-                  if (used) {
-                    setError(
-                      "Tautan reset sudah digunakan. Minta tautan baru.",
-                    );
-                    return;
-                  }
-                  setUsed(true);
-                  p.commit(
-                    (s) => ({ ...s, session: null }),
-                    "Simulasi reset selesai. Sesi demo saat ini diakhiri; password tidak disimpan.",
-                  );
-                }}
-              >
-                <Field label="Password baru contoh">
-                  <input
-                    type="password"
-                    name="password"
-                    required
-                    minLength={8}
-                    placeholder="Minimal 8 karakter"
-                  />
-                </Field>
-                <button className="button primary full">
-                  {used
-                    ? "Uji penggunaan ulang tautan"
-                    : "Simpan password contoh"}
-                </button>
-                {used && (
-                  <Link className="text-link" href="/masuk">
-                    Kembali masuk
-                  </Link>
-                )}
-              </form>
+                <div className="notice" role="status">
+                  Pengiriman email belum tersedia. Permintaan reset belum dapat
+                  diproses.
+                </div>
             )}
             <Link className="text-link" href="/masuk">
               Kembali ke halaman masuk
@@ -1458,7 +1366,7 @@ export function Admin(p: Shared & { section: string }) {
                   ),
                 ],
               }),
-              "Draf lomba demo disimpan.",
+              "Draf lomba disimpan.",
             );
             p.setModal(null);
           }}
@@ -1562,7 +1470,7 @@ export function Admin(p: Shared & { section: string }) {
               defaultValue={c?.source || "https://example.com/"}
             />
           </Field>
-          <button className="button primary full">Simpan draf demo</button>
+          <button className="button primary full">Simpan draf</button>
         </form>
       ),
     });
@@ -1616,11 +1524,7 @@ export function Admin(p: Shared & { section: string }) {
             {label}
           </Link>
         ))}
-        <p>
-          Panel demo.
-          <br />
-          Seluruh tindakan hanya mengubah data browser ini.
-        </p>
+        <p>Tinjau informasi lomba dan kelola laporan pengguna.</p>
       </aside>
       <section>
         <Title
@@ -1661,7 +1565,6 @@ export function Admin(p: Shared & { section: string }) {
               <option key={s}>{s}</option>
             ))}
           </select>
-          <DataState value={view} onChange={setView} />
         </div>
         <StateView value={view} retry={() => setView("normal")}>
           {p.section === "lomba" ? (
@@ -1676,7 +1579,7 @@ export function Admin(p: Shared & { section: string }) {
                   <article className="card admin-row" key={c.id}>
                     <div className="row between">
                       <div>
-                        <h3>{c.name}</h3>
+                        <h2>{c.name}</h2>
                         <p>{c.organizer}</p>
                         <small>
                           Deadline: {date(c.deadline)} ·{" "}
@@ -1750,7 +1653,7 @@ export function Admin(p: Shared & { section: string }) {
                                         ),
                                       ],
                                     }),
-                                    "Lomba demo ditayangkan.",
+                                    "Lomba ditayangkan.",
                                   ),
                               )
                             }
@@ -1838,7 +1741,7 @@ export function Admin(p: Shared & { section: string }) {
                     <div className="person-heading">
                       <Avatar user={u} />
                       <div>
-                        <h3>{u.name}</h3>
+                        <h2>{u.name}</h2>
                         <p>{u.email}</p>
                       </div>
                       <Status value={u.suspended ? "Ditangguhkan" : "Aktif"} />
@@ -1870,7 +1773,7 @@ export function Admin(p: Shared & { section: string }) {
                                   ),
                                 ],
                               }),
-                              "Status akun demo diperbarui.",
+                              "Status akun diperbarui.",
                             ),
                         )
                       }
@@ -1894,7 +1797,7 @@ export function Admin(p: Shared & { section: string }) {
                   .map((r) => (
                     <article className="card admin-row" key={r.id}>
                       <div className="row between">
-                        <h3>{r.target}</h3>
+                        <h2>{r.target}</h2>
                         <Status value={r.status} />
                       </div>
                       <p>
@@ -2053,76 +1956,72 @@ export function Information(p: Shared & { kind: string }) {
         title={privacy ? "Kolaborasi yang kamu pahami." : "Butuh bantuan?"}
         text={
           privacy
-            ? "Pemberitahuan penggunaan data untuk prototipe TeamUp."
+            ? "Pahami bagaimana data profil dan kolaborasimu digunakan."
             : "Panduan singkat untuk langkah kolaborasimu."
         }
       />
       <section className="card detail-card">
         {privacy ? (
           <>
-            <h3>Ini adalah prototipe frontend</h3>
+            <h2>Penyimpanan data</h2>
             <p>
-              Data contoh dan perubahanmu disimpan di localStorage browser ini.
-              Tidak ada backend, email transaksi, OAuth Google, atau
-              sinkronisasi antarperangkat. Jangan masukkan data sensitif atau
-              password asli.
+              Perubahan profil dan percakapan disimpan pada browser yang kamu
+              gunakan. Data belum tersinkronisasi antarperangkat. Hindari
+              memasukkan informasi sensitif.
             </p>
-            <h3>Data yang digunakan</h3>
+            <h2>Data yang digunakan</h2>
             <p>
               Profil berisi nama, institusi, jurusan/kelas, kota, bidang, level
               mandiri, mode, dan jadwal. Data dipakai untuk pencarian partner,
-              perekrutan tim, dan percakapan demo.
+              perekrutan tim, dan percakapan.
             </p>
-            <h3>Visibilitas profil</h3>
+            <h2>Visibilitas profil</h2>
             <p>
               Pengunjung melihat nama tampilan dan bidang. Member dapat melihat
               detail akademik, kota, dan jadwal. Email tidak ditampilkan pada
-              profil publik. Pembatasan demo di browser bukan otorisasi server.
+              profil publik.
             </p>
-            <h3>Akses, koreksi, dan penghapusan</h3>
+            <h2>Akses, koreksi, dan penghapusan</h2>
             <p>
-              Koreksi profil melalui menu Profil. Gunakan tombol reset pada
-              bilah demo untuk menghapus perubahan lokal dan memulihkan data
-              awal. Alur permintaan data melalui admin nyata belum tersedia.
+              Koreksi profil melalui menu Profil. Data pada perangkat dapat
+              dihapus melalui pengaturan penyimpanan situs pada browser kamu.
             </p>
-            <h3>Sebelum peluncuran publik</h3>
+            <h2>Ketersediaan layanan</h2>
             <p>
-              Kebijakan usia, persetujuan, retensi chat/laporan/backup, dan
-              prosedur penghapusan masih perlu ditetapkan. Halaman ini belum
-              merupakan kebijakan layanan produksi.
+              Login Google, pengiriman email, dan pemulihan data antarperangkat
+              belum tersedia. Pengaturan data yang tersimpan mengikuti browser
+              yang kamu gunakan.
             </p>
           </>
         ) : (
           <>
-            <h3>Bagaimana memulai?</h3>
+            <h2>Bagaimana memulai?</h2>
             <p>
-              Daftar akun demo, lakukan simulasi verifikasi, dan lengkapi
-              profil. Kamu juga bisa memilih persona pada bilah Mode demo untuk
-              langsung menjelajahi aplikasi.
+              Buat akun dan lengkapi profil dengan bidang belajar, level
+              mandiri, kota, serta waktu luangmu. Cari partner atau pilih lomba
+              yang ingin kamu ikuti.
             </p>
-            <h3>Kapan chat bisa dibuka?</h3>
+            <h2>Kapan chat bisa dibuka?</h2>
             <p>
               Chat personal dibuka setelah permintaan partner diterima. Chat
-              grup tersedia bagi anggota tim. Ganti persona untuk mencoba
-              keputusan dari sisi penerima atau ketua.
+              grup tersedia bagi anggota tim. Lihat keputusan permintaan dan
+              lamaran di Aktivitas.
             </p>
-            <h3>Bagaimana mencoba kegagalan?</h3>
+            <h2>Bagaimana jika pesan gagal?</h2>
             <p>
-              Gunakan kontrol Simulasi data pada halaman daftar. Di chat, pilih
-              Simulasi putus koneksi, kirim pesan, sambungkan kembali, lalu
-              pilih Kirim ulang.
+              Isi pesan tetap tersedia ketika pengiriman gagal. Periksa
+              koneksimu, lalu pilih Kirim ulang pada pesan tersebut.
             </p>
-            <h3>Kontak bantuan sementara</h3>
+            <h2>Melaporkan masalah</h2>
             <div className="notice">
-              <Icon name="mail" />
+              <Icon name="flag" />
               <span>
-                halo@teamup.example ·{" "}
-                <strong>kontak dummy, tidak menerima pesan</strong>
+                Gunakan tombol Laporkan pada profil atau percakapan terkait.
               </span>
             </div>
             <p>
-              Belum ada layanan bantuan atau waktu respons yang dijanjikan.
-              Semua laporan hanya tersimpan dalam demo browser ini.
+              Sertakan alasan dan pesan yang relevan. Status laporan dapat
+              dilihat di halaman ini setelah kamu masuk.
             </p>
             <div className="actions">
               <Link className="button secondary" href="/diblokir">
@@ -2135,7 +2034,7 @@ export function Information(p: Shared & { kind: string }) {
             {p.user && (
               <>
                 <hr />
-                <h3>Status laporan saya</h3>
+                <h2>Status laporan saya</h2>
                 {p.state.reports.filter((r) => r.user === p.user?.id).length ? (
                   p.state.reports
                     .filter((r) => r.user === p.user?.id)

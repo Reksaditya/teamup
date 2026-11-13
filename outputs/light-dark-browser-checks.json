@@ -1,0 +1,1482 @@
+[
+  {
+    "label": "mobile light keyboard tabs",
+    "background": "rgb(255, 255, 255)",
+    "client": 345,
+    "copy": null,
+    "h1": "Belajar bareng.Melangkah lebih jauh.",
+    "path": "/",
+    "scroll": 345,
+    "theme": "light",
+    "width": 360
+  },
+  {
+    "label": "reload retains light",
+    "background": "rgb(255, 255, 255)",
+    "client": 345,
+    "copy": null,
+    "path": "/",
+    "scroll": 345,
+    "theme": "light",
+    "width": 360
+  },
+  {
+    "label": "dark persists after reload",
+    "background": "rgb(17, 24, 33)",
+    "client": 345,
+    "copy": null,
+    "h1": "Belajar bareng.Melangkah lebih jauh.",
+    "path": "/",
+    "scroll": 345,
+    "theme": "dark",
+    "width": 360
+  },
+  {
+    "label": "tablet dark",
+    "background": "rgb(17, 24, 33)",
+    "client": 753,
+    "copy": null,
+    "h1": "Belajar bareng.Melangkah lebih jauh.",
+    "path": "/",
+    "scroll": 753,
+    "theme": "dark",
+    "width": 768
+  },
+  {
+    "label": "tablet light",
+    "background": "rgb(255, 255, 255)",
+    "client": 753,
+    "copy": null,
+    "h1": "Belajar bareng.Melangkah lebih jauh.",
+    "path": "/",
+    "scroll": 753,
+    "theme": "light",
+    "width": 768
+  },
+  {
+    "label": "tablet account",
+    "background": "rgb(255, 255, 255)",
+    "client": 753,
+    "copy": null,
+    "h1": "Awal dari cerita baru.",
+    "path": "/daftar",
+    "scroll": 753,
+    "theme": "light",
+    "width": 768
+  },
+  {
+    "label": "member partner light",
+    "background": "rgb(255, 255, 255)",
+    "client": 753,
+    "copy": null,
+    "h1": "Belajar lebih jauh, bersama.",
+    "path": "/partner",
+    "scroll": 753,
+    "theme": "light",
+    "width": 768
+  },
+  {
+    "label": "desktop light",
+    "background": "rgb(255, 255, 255)",
+    "client": 1425,
+    "copy": null,
+    "h1": "Belajar bareng.Melangkah lebih jauh.",
+    "path": "/",
+    "scroll": 1425,
+    "theme": "light",
+    "width": 1440,
+    "contrast": {
+      "checked": 103,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop light",
+    "background": "rgb(255, 255, 255)",
+    "client": 1425,
+    "copy": null,
+    "h1": "Belajar lebih jauh, bersama.",
+    "path": "/partner",
+    "scroll": 1425,
+    "theme": "light",
+    "width": 1440,
+    "contrast": {
+      "checked": 94,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop light",
+    "background": "rgb(255, 255, 255)",
+    "client": 1425,
+    "copy": null,
+    "h1": "Temukan tantangan berikutnya.",
+    "path": "/lomba",
+    "scroll": 1425,
+    "theme": "light",
+    "width": 1440,
+    "contrast": {
+      "checked": 68,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop light",
+    "background": "rgb(255, 255, 255)",
+    "client": 1425,
+    "copy": null,
+    "h1": "Innovate UI/UX Challenge 2026",
+    "path": "/lomba/innovate",
+    "scroll": 1425,
+    "theme": "light",
+    "width": 1440,
+    "contrast": {
+      "checked": 51,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop light",
+    "background": "rgb(255, 255, 255)",
+    "client": 1425,
+    "copy": null,
+    "h1": "Tim hebat dimulai dari sini.",
+    "path": "/tim",
+    "scroll": 1425,
+    "theme": "light",
+    "width": 1440,
+    "contrast": {
+      "checked": 65,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop light",
+    "background": "rgb(255, 255, 255)",
+    "client": 1425,
+    "copy": null,
+    "h1": "Beyond the Bytes",
+    "path": "/tim/byte",
+    "scroll": 1425,
+    "theme": "light",
+    "width": 1440,
+    "contrast": {
+      "checked": 48,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop light",
+    "background": "rgb(255, 255, 255)",
+    "client": 1425,
+    "copy": null,
+    "h1": "Bangun tim versimu.",
+    "path": "/tim/buat",
+    "scroll": 1425,
+    "theme": "light",
+    "width": 1440,
+    "contrast": {
+      "checked": 35,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop light",
+    "background": "rgb(255, 255, 255)",
+    "client": 1425,
+    "copy": null,
+    "h1": "Edit tim",
+    "path": "/tim/byte/edit",
+    "scroll": 1425,
+    "theme": "light",
+    "width": 1440,
+    "contrast": {
+      "checked": 36,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop light",
+    "background": "rgb(255, 255, 255)",
+    "client": 1440,
+    "copy": null,
+    "h1": "Setiap koneksi punya cerita.",
+    "path": "/aktivitas",
+    "scroll": 1440,
+    "theme": "light",
+    "width": 1440,
+    "contrast": {
+      "checked": 33,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop light",
+    "background": "rgb(255, 255, 255)",
+    "client": 1440,
+    "copy": null,
+    "h1": "Pesan.",
+    "path": "/pesan/personal:alya:bima",
+    "scroll": 1440,
+    "theme": "light",
+    "width": 1440,
+    "contrast": {
+      "checked": 37,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop light",
+    "background": "rgb(255, 255, 255)",
+    "client": 1440,
+    "copy": null,
+    "h1": "Pesan.",
+    "path": "/pesan/team:byte",
+    "scroll": 1440,
+    "theme": "light",
+    "width": 1440,
+    "contrast": {
+      "checked": 31,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop light",
+    "background": "rgb(255, 255, 255)",
+    "client": 1425,
+    "copy": null,
+    "h1": "Profil kecil. Peluang besar.",
+    "path": "/profil",
+    "scroll": 1425,
+    "theme": "light",
+    "width": 1440,
+    "contrast": {
+      "checked": 41,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop light",
+    "background": "rgb(255, 255, 255)",
+    "client": 1425,
+    "copy": null,
+    "h1": "Butuh bantuan?",
+    "path": "/bantuan",
+    "scroll": 1425,
+    "theme": "light",
+    "width": 1440,
+    "contrast": {
+      "checked": 37,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop light",
+    "background": "rgb(255, 255, 255)",
+    "client": 1425,
+    "copy": null,
+    "h1": "Kolaborasi yang kamu pahami.",
+    "path": "/privasi",
+    "scroll": 1425,
+    "theme": "light",
+    "width": 1440,
+    "contrast": {
+      "checked": 32,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop light",
+    "background": "rgb(255, 255, 255)",
+    "client": 1425,
+    "copy": null,
+    "h1": "Senang kamu kembali.",
+    "path": "/masuk",
+    "scroll": 1425,
+    "theme": "light",
+    "width": 1440,
+    "contrast": {
+      "checked": 38,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop light",
+    "background": "rgb(255, 255, 255)",
+    "client": 1425,
+    "copy": null,
+    "h1": "Awal dari cerita baru.",
+    "path": "/daftar",
+    "scroll": 1425,
+    "theme": "light",
+    "width": 1440,
+    "contrast": {
+      "checked": 40,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop light",
+    "background": "rgb(255, 255, 255)",
+    "client": 1440,
+    "copy": null,
+    "h1": "Verifikasi emailmu.",
+    "path": "/verifikasi",
+    "scroll": 1440,
+    "theme": "light",
+    "width": 1440,
+    "contrast": {
+      "checked": 30,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop light",
+    "background": "rgb(255, 255, 255)",
+    "client": 1440,
+    "copy": null,
+    "h1": "Lupa password?",
+    "path": "/reset-password",
+    "scroll": 1440,
+    "theme": "light",
+    "width": 1440,
+    "contrast": {
+      "checked": 31,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop dark",
+    "client": 1425,
+    "copy": null,
+    "path": "/",
+    "scroll": 1425,
+    "theme": "dark",
+    "contrast": {
+      "checked": 103,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop dark",
+    "client": 1425,
+    "copy": null,
+    "path": "/partner",
+    "scroll": 1425,
+    "theme": "dark",
+    "contrast": {
+      "checked": 94,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop dark",
+    "client": 1425,
+    "copy": null,
+    "path": "/lomba",
+    "scroll": 1425,
+    "theme": "dark",
+    "contrast": {
+      "checked": 68,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop dark",
+    "client": 1425,
+    "copy": null,
+    "path": "/lomba/innovate",
+    "scroll": 1425,
+    "theme": "dark",
+    "contrast": {
+      "checked": 51,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop dark",
+    "client": 1425,
+    "copy": null,
+    "path": "/tim",
+    "scroll": 1425,
+    "theme": "dark",
+    "contrast": {
+      "checked": 65,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop dark",
+    "client": 1425,
+    "copy": null,
+    "path": "/tim/byte",
+    "scroll": 1425,
+    "theme": "dark",
+    "contrast": {
+      "checked": 48,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop dark",
+    "client": 1425,
+    "copy": null,
+    "path": "/tim/buat",
+    "scroll": 1425,
+    "theme": "dark",
+    "contrast": {
+      "checked": 35,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop dark",
+    "client": 1425,
+    "copy": null,
+    "path": "/tim/byte/edit",
+    "scroll": 1425,
+    "theme": "dark",
+    "contrast": {
+      "checked": 36,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop dark",
+    "client": 1440,
+    "copy": null,
+    "path": "/aktivitas",
+    "scroll": 1440,
+    "theme": "dark",
+    "contrast": {
+      "checked": 33,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop dark",
+    "client": 1440,
+    "copy": null,
+    "path": "/pesan/personal:alya:bima",
+    "scroll": 1440,
+    "theme": "dark",
+    "contrast": {
+      "checked": 37,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop dark",
+    "client": 1440,
+    "copy": null,
+    "path": "/pesan/team:byte",
+    "scroll": 1440,
+    "theme": "dark",
+    "contrast": {
+      "checked": 31,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop dark",
+    "client": 1425,
+    "copy": null,
+    "path": "/profil",
+    "scroll": 1425,
+    "theme": "dark",
+    "contrast": {
+      "checked": 41,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop dark",
+    "client": 1425,
+    "copy": null,
+    "path": "/bantuan",
+    "scroll": 1425,
+    "theme": "dark",
+    "contrast": {
+      "checked": 37,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop dark",
+    "client": 1425,
+    "copy": null,
+    "path": "/privasi",
+    "scroll": 1425,
+    "theme": "dark",
+    "contrast": {
+      "checked": 32,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop dark",
+    "client": 1425,
+    "copy": null,
+    "path": "/masuk",
+    "scroll": 1425,
+    "theme": "dark",
+    "contrast": {
+      "checked": 38,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop dark",
+    "client": 1425,
+    "copy": null,
+    "path": "/daftar",
+    "scroll": 1425,
+    "theme": "dark",
+    "contrast": {
+      "checked": 40,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop dark",
+    "client": 1440,
+    "copy": null,
+    "path": "/verifikasi",
+    "scroll": 1440,
+    "theme": "dark",
+    "contrast": {
+      "checked": 30,
+      "failed": []
+    }
+  },
+  {
+    "label": "desktop dark",
+    "client": 1440,
+    "copy": null,
+    "path": "/reset-password",
+    "scroll": 1440,
+    "theme": "dark",
+    "contrast": {
+      "checked": 31,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile dark",
+    "client": 345,
+    "copy": null,
+    "path": "/",
+    "scroll": 345,
+    "theme": "dark",
+    "contrast": {
+      "checked": 92,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile dark",
+    "client": 345,
+    "copy": null,
+    "path": "/partner",
+    "scroll": 345,
+    "theme": "dark",
+    "contrast": {
+      "checked": 76,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile dark",
+    "client": 345,
+    "copy": null,
+    "path": "/lomba",
+    "scroll": 345,
+    "theme": "dark",
+    "contrast": {
+      "checked": 61,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile dark",
+    "client": 345,
+    "copy": null,
+    "path": "/lomba/innovate",
+    "scroll": 345,
+    "theme": "dark",
+    "contrast": {
+      "checked": 44,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile dark",
+    "client": 345,
+    "copy": null,
+    "path": "/tim",
+    "scroll": 345,
+    "theme": "dark",
+    "contrast": {
+      "checked": 58,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile dark",
+    "client": 345,
+    "copy": null,
+    "path": "/tim/byte",
+    "scroll": 345,
+    "theme": "dark",
+    "contrast": {
+      "checked": 41,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile dark",
+    "client": 345,
+    "copy": null,
+    "path": "/tim/buat",
+    "scroll": 345,
+    "theme": "dark",
+    "contrast": {
+      "checked": 28,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile dark",
+    "client": 345,
+    "copy": null,
+    "path": "/tim/byte/edit",
+    "scroll": 345,
+    "theme": "dark",
+    "contrast": {
+      "checked": 29,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile dark",
+    "client": 345,
+    "copy": null,
+    "path": "/aktivitas",
+    "scroll": 345,
+    "theme": "dark",
+    "contrast": {
+      "checked": 26,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile dark",
+    "client": 360,
+    "copy": null,
+    "path": "/pesan/personal:alya:bima",
+    "scroll": 360,
+    "theme": "dark",
+    "contrast": {
+      "checked": 19,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile dark",
+    "client": 360,
+    "copy": null,
+    "path": "/pesan/team:byte",
+    "scroll": 360,
+    "theme": "dark",
+    "contrast": {
+      "checked": 13,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile dark",
+    "client": 345,
+    "copy": null,
+    "path": "/profil",
+    "scroll": 345,
+    "theme": "dark",
+    "contrast": {
+      "checked": 34,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile dark",
+    "client": 345,
+    "copy": null,
+    "path": "/bantuan",
+    "scroll": 345,
+    "theme": "dark",
+    "contrast": {
+      "checked": 30,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile dark",
+    "client": 345,
+    "copy": null,
+    "path": "/privasi",
+    "scroll": 345,
+    "theme": "dark",
+    "contrast": {
+      "checked": 25,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile dark",
+    "client": 345,
+    "copy": null,
+    "path": "/masuk",
+    "scroll": 345,
+    "theme": "dark",
+    "contrast": {
+      "checked": 25,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile dark",
+    "client": 345,
+    "copy": null,
+    "path": "/daftar",
+    "scroll": 345,
+    "theme": "dark",
+    "contrast": {
+      "checked": 27,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile dark",
+    "client": 360,
+    "copy": null,
+    "path": "/verifikasi",
+    "scroll": 360,
+    "theme": "dark",
+    "contrast": {
+      "checked": 17,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile dark",
+    "client": 360,
+    "copy": null,
+    "path": "/reset-password",
+    "scroll": 360,
+    "theme": "dark",
+    "contrast": {
+      "checked": 18,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile light",
+    "client": 345,
+    "copy": null,
+    "path": "/",
+    "scroll": 345,
+    "theme": "light",
+    "contrast": {
+      "checked": 92,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile light",
+    "client": 345,
+    "copy": null,
+    "path": "/partner",
+    "scroll": 345,
+    "theme": "light",
+    "contrast": {
+      "checked": 76,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile light",
+    "client": 345,
+    "copy": null,
+    "path": "/lomba",
+    "scroll": 345,
+    "theme": "light",
+    "contrast": {
+      "checked": 61,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile light",
+    "client": 345,
+    "copy": null,
+    "path": "/lomba/innovate",
+    "scroll": 345,
+    "theme": "light",
+    "contrast": {
+      "checked": 44,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile light",
+    "client": 345,
+    "copy": null,
+    "path": "/tim",
+    "scroll": 345,
+    "theme": "light",
+    "contrast": {
+      "checked": 58,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile light",
+    "client": 345,
+    "copy": null,
+    "path": "/tim/byte",
+    "scroll": 345,
+    "theme": "light",
+    "contrast": {
+      "checked": 41,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile light",
+    "client": 345,
+    "copy": null,
+    "path": "/tim/buat",
+    "scroll": 345,
+    "theme": "light",
+    "contrast": {
+      "checked": 28,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile light",
+    "client": 345,
+    "copy": null,
+    "path": "/tim/byte/edit",
+    "scroll": 345,
+    "theme": "light",
+    "contrast": {
+      "checked": 29,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile light",
+    "client": 345,
+    "copy": null,
+    "path": "/aktivitas",
+    "scroll": 345,
+    "theme": "light",
+    "contrast": {
+      "checked": 26,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile light",
+    "client": 360,
+    "copy": null,
+    "path": "/pesan/personal:alya:bima",
+    "scroll": 360,
+    "theme": "light",
+    "contrast": {
+      "checked": 19,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile light",
+    "client": 360,
+    "copy": null,
+    "path": "/pesan/team:byte",
+    "scroll": 360,
+    "theme": "light",
+    "contrast": {
+      "checked": 13,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile light",
+    "client": 345,
+    "copy": null,
+    "path": "/profil",
+    "scroll": 345,
+    "theme": "light",
+    "contrast": {
+      "checked": 34,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile light",
+    "client": 345,
+    "copy": null,
+    "path": "/bantuan",
+    "scroll": 345,
+    "theme": "light",
+    "contrast": {
+      "checked": 30,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile light",
+    "client": 345,
+    "copy": null,
+    "path": "/privasi",
+    "scroll": 345,
+    "theme": "light",
+    "contrast": {
+      "checked": 25,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile light",
+    "client": 345,
+    "copy": null,
+    "path": "/masuk",
+    "scroll": 345,
+    "theme": "light",
+    "contrast": {
+      "checked": 25,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile light",
+    "client": 345,
+    "copy": null,
+    "path": "/daftar",
+    "scroll": 345,
+    "theme": "light",
+    "contrast": {
+      "checked": 27,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile light",
+    "client": 360,
+    "copy": null,
+    "path": "/verifikasi",
+    "scroll": 360,
+    "theme": "light",
+    "contrast": {
+      "checked": 17,
+      "failed": []
+    }
+  },
+  {
+    "label": "mobile light",
+    "client": 360,
+    "copy": null,
+    "path": "/reset-password",
+    "scroll": 360,
+    "theme": "light",
+    "contrast": {
+      "checked": 18,
+      "failed": []
+    }
+  },
+  {
+    "interaction": "Tab Tim lomba",
+    "result": "Teman satu tujuan\n\nTemukan ruang untuk kontribusimu.\nLihat semua\nPixel Pioneers\nUI/UX Designer\n2 tempat tersedia\nBeyond the Bytes\nFrontend Developer\n2 tempat tersedia\n\nBidang, level, dan jadwal membantu kamu memulai percakapan yang tepat."
+  },
+  {
+    "interaction": "Home pada tab",
+    "result": "true"
+  },
+  {
+    "interaction": "Landing main link click-through",
+    "clicked": [
+      {
+        "name": "Cari partner belajar",
+        "href": "/partner",
+        "url": "http://127.0.0.1:3000/partner"
+      },
+      {
+        "name": "Temukan tim lomba",
+        "href": "/tim",
+        "url": "http://127.0.0.1:3000/tim"
+      },
+      {
+        "name": "Lihat semua",
+        "href": "/partner",
+        "url": "http://127.0.0.1:3000/partner"
+      },
+      {
+        "name": "BP\nBima Pratama\nWeb Development\nMenengah · kemampuan mandiri",
+        "href": "/partner/bima",
+        "url": "http://127.0.0.1:3000/partner/bima"
+      },
+      {
+        "name": "CM\nCitra Maharani\nData Science\nMenengah · kemampuan mandiri",
+        "href": "/partner/citra",
+        "url": "http://127.0.0.1:3000/partner/citra"
+      },
+      {
+        "name": "DS\nDimas Saputra\nWeb Development\nMahir · kemampuan mandiri",
+        "href": "/partner/dimas",
+        "url": "http://127.0.0.1:3000/partner/dimas"
+      },
+      {
+        "name": "01\nCari teman belajar\n\nCocokkan bidang, level, dan waktu luang. Kirim permintaan untuk mulai diskusi.",
+        "href": "/partner",
+        "url": "http://127.0.0.1:3000/partner"
+      },
+      {
+        "name": "02\nSiapkan tim lomba\n\nPilih lomba, baca kebutuhan peran, lalu temukan tempat untuk kontribusimu.",
+        "href": "/lomba",
+        "url": "http://127.0.0.1:3000/lomba"
+      },
+      {
+        "name": "Lihat daftar lomba",
+        "href": "/lomba",
+        "url": "http://127.0.0.1:3000/lomba"
+      },
+      {
+        "name": "Innovate UI/UX Challenge 2026",
+        "href": "/lomba/innovate",
+        "url": "http://127.0.0.1:3000/lomba/innovate"
+      },
+      {
+        "name": "",
+        "href": "/lomba/innovate",
+        "url": "http://127.0.0.1:3000/lomba/innovate"
+      },
+      {
+        "name": "Build for Tomorrow Hackathon",
+        "href": "/lomba/hack",
+        "url": "http://127.0.0.1:3000/lomba/hack"
+      },
+      {
+        "name": "",
+        "href": "/lomba/hack",
+        "url": "http://127.0.0.1:3000/lomba/hack"
+      },
+      {
+        "name": "Data for Good Competition",
+        "href": "/lomba/data",
+        "url": "http://127.0.0.1:3000/lomba/data"
+      },
+      {
+        "name": "",
+        "href": "/lomba/data",
+        "url": "http://127.0.0.1:3000/lomba/data"
+      },
+      {
+        "name": "Cari tim yang masih merekrut",
+        "href": "/tim",
+        "url": "http://127.0.0.1:3000/tim"
+      },
+      {
+        "name": "Pixel Pioneers",
+        "href": "/tim/pixel",
+        "url": "http://127.0.0.1:3000/tim/pixel"
+      },
+      {
+        "name": "Lihat kebutuhan tim",
+        "href": "/tim/pixel",
+        "url": "http://127.0.0.1:3000/tim/pixel"
+      },
+      {
+        "name": "Beyond the Bytes",
+        "href": "/tim/byte",
+        "url": "http://127.0.0.1:3000/tim/byte"
+      },
+      {
+        "name": "Lihat kebutuhan tim",
+        "href": "/tim/byte",
+        "url": "http://127.0.0.1:3000/tim/byte"
+      },
+      {
+        "name": "Lengkapi profil saya",
+        "href": "/profil",
+        "url": "http://127.0.0.1:3000/profil"
+      }
+    ]
+  },
+  {
+    "interaction": "Team preview link",
+    "href": "/tim",
+    "url": "http://127.0.0.1:3000/tim"
+  },
+  {
+    "interaction": "Team preview link",
+    "href": "/tim/pixel",
+    "url": "http://127.0.0.1:3000/tim/pixel"
+  },
+  {
+    "interaction": "Team preview link",
+    "href": "/tim/byte",
+    "url": "http://127.0.0.1:3000/tim/byte"
+  },
+  {
+    "label": "admin 1440",
+    "client": 1425,
+    "copy": null,
+    "path": "/admin/lomba",
+    "scroll": 1425,
+    "theme": "light",
+    "contrast": {
+      "checked": 53,
+      "failed": []
+    }
+  },
+  {
+    "label": "admin 1440",
+    "client": 1425,
+    "copy": null,
+    "path": "/admin/pengguna",
+    "scroll": 1425,
+    "theme": "light",
+    "contrast": {
+      "checked": 63,
+      "failed": []
+    }
+  },
+  {
+    "label": "admin 1440",
+    "client": 1440,
+    "copy": null,
+    "path": "/admin/laporan",
+    "scroll": 1440,
+    "theme": "light",
+    "contrast": {
+      "checked": 36,
+      "failed": []
+    }
+  },
+  {
+    "label": "admin 1440",
+    "client": 1440,
+    "copy": [
+      "demo"
+    ],
+    "path": "/admin/catatan",
+    "scroll": 1440,
+    "theme": "light",
+    "contrast": {
+      "checked": 36,
+      "failed": []
+    }
+  },
+  {
+    "label": "admin 1440",
+    "client": 1425,
+    "copy": null,
+    "path": "/admin/lomba",
+    "scroll": 1425,
+    "theme": "dark",
+    "contrast": {
+      "checked": 53,
+      "failed": []
+    }
+  },
+  {
+    "label": "admin 1440",
+    "client": 1425,
+    "copy": null,
+    "path": "/admin/pengguna",
+    "scroll": 1425,
+    "theme": "dark",
+    "contrast": {
+      "checked": 63,
+      "failed": []
+    }
+  },
+  {
+    "label": "admin 1440",
+    "client": 1440,
+    "copy": null,
+    "path": "/admin/laporan",
+    "scroll": 1440,
+    "theme": "dark",
+    "contrast": {
+      "checked": 36,
+      "failed": []
+    }
+  },
+  {
+    "label": "admin 1440",
+    "client": 1440,
+    "copy": [
+      "demo"
+    ],
+    "path": "/admin/catatan",
+    "scroll": 1440,
+    "theme": "dark",
+    "contrast": {
+      "checked": 36,
+      "failed": []
+    }
+  },
+  {
+    "label": "admin 360",
+    "client": 345,
+    "copy": null,
+    "path": "/admin/lomba",
+    "scroll": 345,
+    "theme": "light",
+    "contrast": {
+      "checked": 43,
+      "failed": []
+    }
+  },
+  {
+    "label": "admin 360",
+    "client": 345,
+    "copy": null,
+    "path": "/admin/pengguna",
+    "scroll": 345,
+    "theme": "light",
+    "contrast": {
+      "checked": 53,
+      "failed": []
+    }
+  },
+  {
+    "label": "admin 360",
+    "client": 345,
+    "copy": null,
+    "path": "/admin/laporan",
+    "scroll": 345,
+    "theme": "light",
+    "contrast": {
+      "checked": 26,
+      "failed": []
+    }
+  },
+  {
+    "label": "admin 360",
+    "client": 345,
+    "copy": [
+      "demo"
+    ],
+    "path": "/admin/catatan",
+    "scroll": 345,
+    "theme": "light",
+    "contrast": {
+      "checked": 26,
+      "failed": []
+    }
+  },
+  {
+    "label": "admin 360",
+    "client": 345,
+    "copy": null,
+    "path": "/admin/lomba",
+    "scroll": 345,
+    "theme": "dark",
+    "contrast": {
+      "checked": 43,
+      "failed": []
+    }
+  },
+  {
+    "label": "admin 360",
+    "client": 345,
+    "copy": null,
+    "path": "/admin/pengguna",
+    "scroll": 345,
+    "theme": "dark",
+    "contrast": {
+      "checked": 53,
+      "failed": []
+    }
+  },
+  {
+    "label": "admin 360",
+    "client": 345,
+    "copy": null,
+    "path": "/admin/laporan",
+    "scroll": 345,
+    "theme": "dark",
+    "contrast": {
+      "checked": 26,
+      "failed": []
+    }
+  },
+  {
+    "label": "admin 360",
+    "client": 345,
+    "copy": [
+      "demo"
+    ],
+    "path": "/admin/catatan",
+    "scroll": 345,
+    "theme": "dark",
+    "contrast": {
+      "checked": 26,
+      "failed": []
+    }
+  },
+  {
+    "label": "tablet admin",
+    "background": "rgb(17, 24, 33)",
+    "client": 768,
+    "copy": [
+      "demo"
+    ],
+    "h1": "Catatan tindakan",
+    "path": "/admin/catatan",
+    "scroll": 768,
+    "theme": "dark",
+    "width": 768
+  },
+  {
+    "interaction": "Navbar link",
+    "href": "/partner",
+    "url": "http://127.0.0.1:3000/"
+  },
+  {
+    "interaction": "Navbar link",
+    "href": "/lomba",
+    "url": "http://127.0.0.1:3000/lomba"
+  },
+  {
+    "interaction": "Navbar link",
+    "href": "/tim",
+    "url": "http://127.0.0.1:3000/tim"
+  },
+  {
+    "interaction": "Navbar link",
+    "href": "/aktivitas",
+    "url": "http://127.0.0.1:3000/aktivitas"
+  },
+  {
+    "interaction": "Navbar link",
+    "href": "/pesan",
+    "url": "http://127.0.0.1:3000/pesan"
+  },
+  {
+    "label": "guest landing 320",
+    "background": "rgb(255, 255, 255)",
+    "client": 305,
+    "copy": null,
+    "h1": "Belajar bareng.Melangkah lebih jauh.",
+    "path": "/",
+    "scroll": 309,
+    "theme": "light",
+    "width": 320,
+    "contrast": {
+      "checked": 92,
+      "failed": []
+    }
+  },
+  {
+    "label": "guest landing 320",
+    "background": "rgb(17, 24, 33)",
+    "client": 305,
+    "copy": null,
+    "h1": "Belajar bareng.Melangkah lebih jauh.",
+    "path": "/",
+    "scroll": 309,
+    "theme": "dark",
+    "width": 320,
+    "contrast": {
+      "checked": 92,
+      "failed": []
+    }
+  },
+  {
+    "label": "guest landing 768",
+    "background": "rgb(255, 255, 255)",
+    "client": 753,
+    "copy": null,
+    "h1": "Belajar bareng.Melangkah lebih jauh.",
+    "path": "/",
+    "scroll": 753,
+    "theme": "light",
+    "width": 768,
+    "contrast": {
+      "checked": 102,
+      "failed": []
+    }
+  },
+  {
+    "label": "guest landing 768",
+    "background": "rgb(17, 24, 33)",
+    "client": 753,
+    "copy": null,
+    "h1": "Belajar bareng.Melangkah lebih jauh.",
+    "path": "/",
+    "scroll": 753,
+    "theme": "dark",
+    "width": 768,
+    "contrast": {
+      "checked": 102,
+      "failed": []
+    }
+  },
+  {
+    "label": "guest landing 320 corrected",
+    "background": "rgb(17, 24, 33)",
+    "client": 305,
+    "copy": null,
+    "h1": "Belajar bareng.Melangkah lebih jauh.",
+    "path": "/",
+    "scroll": 305,
+    "theme": "dark",
+    "width": 320
+  },
+  {
+    "label": "guest landing 320 corrected",
+    "background": "rgb(255, 255, 255)",
+    "client": 305,
+    "copy": null,
+    "h1": "Belajar bareng.Melangkah lebih jauh.",
+    "path": "/",
+    "scroll": 305,
+    "theme": "light",
+    "width": 320
+  },
+  {
+    "interaction": "Mobile menu Bantuan",
+    "url": "http://127.0.0.1:3000/bantuan"
+  },
+  {
+    "interaction": "Reset request",
+    "result": "Pengiriman email belum tersedia. Permintaan reset belum dapat diproses."
+  },
+  {
+    "interaction": "Keyboard focus ring",
+    "result": {
+      "offset": "2.4px",
+      "outline": "rgb(72, 101, 138) solid 1.6px",
+      "tag": "A"
+    }
+  },
+  {
+    "interaction": "Console check",
+    "logs": []
+  },
+  {
+    "interaction": "Account UI",
+    "results": [
+      "Google opens unavailable dialog and Kembali closes it",
+      "Empty signup triggers required field validation",
+      "Show password toggles field type",
+      "Email login as Alya then admin succeeds locally",
+      "Logout returns to guest",
+      "Mobile menu opens, Escape closes and focus returns",
+      "Space and Enter operate theme switch; reload preserves choice",
+      "ArrowRight and Home operate preview tabs"
+    ]
+  }
+]

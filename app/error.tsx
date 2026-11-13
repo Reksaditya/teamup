@@ -6,7 +6,7 @@ export default function ErrorPage({ reset }: { reset: () => void }) {
       <div className="empty">
         <h1>Halaman belum bisa dimuat.</h1>
         <p>
-          Data demo yang sudah tersimpan di browser tetap tersedia. Coba muat
+          Data yang sudah tersimpan di browser tetap tersedia. Coba muat
           ulang halaman ini.
         </p>
         <div className="actions">

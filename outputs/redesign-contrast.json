@@ -1,0 +1,268 @@
+[
+  {
+    "foreground": "text",
+    "background": "canvas",
+    "ratio": 15.24,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "text",
+    "background": "surface",
+    "ratio": 13.87,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "text",
+    "background": "raised",
+    "ratio": 11.93,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "text",
+    "background": "input",
+    "ratio": 14.97,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "text",
+    "background": "selected",
+    "ratio": 10.04,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "secondary",
+    "background": "canvas",
+    "ratio": 10.13,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "secondary",
+    "background": "surface",
+    "ratio": 9.22,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "secondary",
+    "background": "raised",
+    "ratio": 7.93,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "secondary",
+    "background": "input",
+    "ratio": 9.95,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "secondary",
+    "background": "selected",
+    "ratio": 6.67,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "muted",
+    "background": "canvas",
+    "ratio": 7.81,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "muted",
+    "background": "surface",
+    "ratio": 7.11,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "muted",
+    "background": "raised",
+    "ratio": 6.12,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "muted",
+    "background": "input",
+    "ratio": 7.68,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "muted",
+    "background": "selected",
+    "ratio": 5.15,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "link",
+    "background": "canvas",
+    "ratio": 11.01,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "link",
+    "background": "surface",
+    "ratio": 10.02,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "link",
+    "background": "raised",
+    "ratio": 8.62,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "link",
+    "background": "input",
+    "ratio": 10.82,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "link",
+    "background": "selected",
+    "ratio": 7.25,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "info-text",
+    "background": "info-bg",
+    "ratio": 8.86,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "success-text",
+    "background": "success-bg",
+    "ratio": 8.41,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "warning-text",
+    "background": "warning-bg",
+    "ratio": 8.3,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "danger-text",
+    "background": "danger-bg",
+    "ratio": 8.43,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "on-accent",
+    "background": "brand",
+    "ratio": 8,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "on-accent",
+    "background": "hover",
+    "ratio": 9.94,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "on-accent",
+    "background": "pressed",
+    "ratio": 6.49,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "neutral-text",
+    "background": "neutral-bg",
+    "ratio": 8.61,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "foreground": "control",
+    "background": "canvas",
+    "ratio": 5.11,
+    "target": 3,
+    "pass": true
+  },
+  {
+    "foreground": "focus",
+    "background": "canvas",
+    "ratio": 11.96,
+    "target": 3,
+    "pass": true
+  },
+  {
+    "foreground": "control",
+    "background": "surface",
+    "ratio": 4.65,
+    "target": 3,
+    "pass": true
+  },
+  {
+    "foreground": "focus",
+    "background": "surface",
+    "ratio": 10.88,
+    "target": 3,
+    "pass": true
+  },
+  {
+    "foreground": "control",
+    "background": "raised",
+    "ratio": 4,
+    "target": 3,
+    "pass": true
+  },
+  {
+    "foreground": "focus",
+    "background": "raised",
+    "ratio": 9.36,
+    "target": 3,
+    "pass": true
+  },
+  {
+    "foreground": "control",
+    "background": "input",
+    "ratio": 5.02,
+    "target": 3,
+    "pass": true
+  },
+  {
+    "foreground": "focus",
+    "background": "input",
+    "ratio": 11.75,
+    "target": 3,
+    "pass": true
+  },
+  {
+    "foreground": "control",
+    "background": "selected",
+    "ratio": 3.37,
+    "target": 3,
+    "pass": true
+  },
+  {
+    "foreground": "focus",
+    "background": "selected",
+    "ratio": 7.88,
+    "target": 3,
+    "pass": true
+  }
+]

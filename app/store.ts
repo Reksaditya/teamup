@@ -31,6 +31,19 @@ function read() {
     } catch {
       warning = true;
     }
+    // Migrate presentation labels from the earlier seed without discarding local edits.
+    state = {
+      ...state,
+      users: state.users.map((user) => ({
+        ...user,
+        email: user.email.replace(/@demo\.teamup\.test$/, "@teamup.test"),
+      })),
+      competitions: state.competitions.map((competition) => ({
+        ...competition,
+        organizer: competition.organizer.replace(/ \(demo\)$/, ""),
+        prize: competition.prize?.replace(/ \(contoh hadiah\)$/, ""),
+      })),
+    };
     snapshot = { state, warning };
   }
   return snapshot;

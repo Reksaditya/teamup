@@ -255,3 +255,11 @@ Sampaikan dalam bahasa Indonesia kecuali pengguna meminta lain: hasil utama, fil
 ## 12. Mandat implementasi saat ini — 13 November 2026
 
 Pengguna mengesahkan frontend interaktif dengan data demo untuk seluruh halaman P1. Baca `outputs/Implementation_Decisions.md` untuk keputusan final dan batas prototype. Gunakan Next.js/React/TypeScript yang ada; CSS terpusat. `npm run dev`, `npm run build`, `npm run lint`, dan `npm test` adalah perintah proyek. Jangan melakukan commit git atau deployment. Seluruh keamanan server pada bagian sebelumnya tetap menjadi persyaratan integrasi berikutnya; simulasi lokal tidak membuktikannya.
+
+## 13. Revisi visual 1.1
+
+Pengguna memilih antislop during dan meminta desain yang lebih khas dengan warna lebih redup. Untuk pekerjaan UI berikutnya, baca `DESIGN.md` dan revisi 1.1 pada design requirement. Palet dan radius di sana menggantikan ringkasan visual versi 1.0 pada bagian 6. Struktur P1, font, grid, dan aturan akses tetap berlaku. Jangan mengembalikan glow, grid hero, sparkle dekoratif, atau poster lomba buatan sebagai dekorasi default. Permintaan pengguna sebelumnya tentang pengantar hero dan label Google tetap berlaku.
+
+## 14. Revisi visual aktif 1.2
+
+Arahan terbaru pengguna menggantikan tema tetap gelap: light mode default #FFFFFF dengan teks/tombol navy #000321, dark mode melalui switch navbar, hero terpusat sesuai referensi terakhir dan underline lengkung pada “lebih jauh”. Baca revisi 1.2 pada DESIGN.md dan design requirement. Pengguna meminta label demo/contoh dan kontrol simulasi dihapus dari UI; ini mengesampingkan aturan penanda data di antarmuka sebelumnya. Mandat frontend lokal tetap berlaku, dokumentasi harus tetap jujur tentang batas integrasi. Jangan mengklaim backend atau layanan Google/email telah tersedia. Jangan commit/deploy.

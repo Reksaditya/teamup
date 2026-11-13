@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   blocked,
   closed,
@@ -65,30 +65,6 @@ export function Pagination({
     </nav>
   );
 }
-export function DataState({
-  value,
-  onChange,
-}: {
-  value: string;
-  onChange: (s: string) => void;
-}) {
-  return (
-    <label className="state-control">
-      Simulasi data
-      <select
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        aria-label="Simulasi state halaman"
-      >
-        <option value="normal">Normal</option>
-        <option value="loading">Memuat</option>
-        <option value="empty">Kosong</option>
-        <option value="error">Gagal</option>
-        <option value="denied">Akses ditolak</option>
-      </select>
-    </label>
-  );
-}
 export function StateView({
   value,
   retry,
@@ -106,9 +82,9 @@ export function StateView({
             <div className="skeleton card-skeleton" key={n} />
           ))}
         </div>
-        <p>Memuat data contoh…</p>
+        <p>Memuat data…</p>
         <button className="button secondary" onClick={retry}>
-          Selesaikan simulasi
+          Muat ulang
         </button>
       </div>
     );
@@ -116,7 +92,7 @@ export function StateView({
     return (
       <Empty
         title="Data belum bisa dimuat"
-        text="Terjadi kegagalan simulasi. Data yang sudah tersimpan tetap aman."
+        text="Koneksi belum tersedia. Coba muat kembali."
       >
         <button className="button primary" onClick={retry}>
           Coba lagi
@@ -132,9 +108,9 @@ export function StateView({
     );
   if (value === "empty")
     return (
-      <Empty text="Belum ada data pada simulasi ini.">
+      <Empty text="Belum ada data untuk ditampilkan.">
         <button className="button secondary" onClick={retry}>
-          Kembali ke data demo
+          Muat kembali
         </button>
       </Empty>
     );
@@ -169,6 +145,13 @@ export function PartnerSearch(p: Shared) {
     [page, setPage] = useState(1),
     [drawer, setDrawer] = useState(false),
     [view, setView] = useState("normal");
+  const filterRef = useRef<HTMLElement>(null);
+  useEffect(() => {
+    if (!drawer) return;
+    const previous = document.activeElement as HTMLElement | null;
+    filterRef.current?.querySelector<HTMLSelectElement>("select")?.focus();
+    return () => previous?.focus();
+  }, [drawer]);
   function match(u: User) {
     if (
       u.id === p.user?.id ||
@@ -207,7 +190,11 @@ export function PartnerSearch(p: Shared) {
       return false;
     if (filters.mode && u.mode !== filters.mode && u.mode !== "Keduanya")
       return false;
-    if((filters.day||filters.start||filters.end)&&!matchesAvailability(u,filters))return false;
+    if (
+      (filters.day || filters.start || filters.end) &&
+      !matchesAvailability(u, filters)
+    )
+      return false;
     return true;
   }
   const results = p.state.users
@@ -228,11 +215,17 @@ export function PartnerSearch(p: Shared) {
         }}
       />
       <div className="search-layout">
-        <aside className={"filter-panel card " + (drawer ? "filter-open" : "")}>
+        <aside
+          ref={filterRef}
+          onKeyDown={(e) => {
+            if (e.key === "Escape") setDrawer(false);
+          }}
+          className={"filter-panel card " + (drawer ? "filter-open" : "")}
+        >
           <div className="row between">
-            <h3>
+            <h2>
               <Icon name="filter" /> Filter partner
-            </h3>
+            </h2>
             <button
               className="text-link"
               onClick={() => {
@@ -241,6 +234,13 @@ export function PartnerSearch(p: Shared) {
               }}
             >
               Reset
+            </button>
+            <button
+              className="icon-button filter-close"
+              aria-label="Tutup filter"
+              onClick={() => setDrawer(false)}
+            >
+              <Icon name="close" />
             </button>
           </div>
           <form
@@ -278,7 +278,7 @@ export function PartnerSearch(p: Shared) {
               <input
                 name="city"
                 defaultValue={filters.city}
-                placeholder="Contoh: Bandung"
+                placeholder="Bandung"
               />
             </Field>
             <Field label="Mode belajar">
@@ -330,7 +330,6 @@ export function PartnerSearch(p: Shared) {
             >
               <Icon name="filter" /> Filter
             </button>
-            <DataState value={view} onChange={setView} />
           </div>
           <div className="filter-chips">
             {Object.entries({ ...filters, ...(q ? { pencarian: q } : {}) })
@@ -349,9 +348,7 @@ export function PartnerSearch(p: Shared) {
                 </button>
               ))}
           </div>
-          <p className="sort-note">
-            Diurutkan berdasarkan nama A–Z · seluruh profil adalah data demo
-          </p>
+          <p className="sort-note">Diurutkan berdasarkan nama A–Z</p>
           <StateView value={view} retry={() => setView("normal")}>
             {results.length ? (
               <>
@@ -396,6 +393,7 @@ export function ProfileDetail(p: Shared & { id: string }) {
     return (
       <main className="container page">
         <Empty
+          page
           title="Profil tidak tersedia"
           text="Profil tidak ditemukan atau interaksi dibatasi."
         />
@@ -426,14 +424,14 @@ export function ProfileDetail(p: Shared & { id: string }) {
               )}
             </div>
           </div>
-          <h3>Tentang saya</h3>
+          <h2>Tentang saya</h2>
           <p>
             {p.user
               ? u.bio
               : "Pengguna TeamUp yang tertarik untuk belajar dan berkolaborasi."}
           </p>
           <hr />
-          <h3>Bidang & kemampuan</h3>
+          <h2>Bidang & kemampuan</h2>
           <div className="topic-list">
             {u.topics.map((t) => (
               <span className="topic" key={t.name}>
@@ -446,7 +444,7 @@ export function ProfileDetail(p: Shared & { id: string }) {
           {p.user ? (
             <>
               <hr />
-              <h3>Preferensi belajar</h3>
+              <h2>Preferensi belajar</h2>
               <div className="info-grid">
                 <div>
                   <span>Kota / kabupaten</span>
@@ -478,7 +476,7 @@ export function ProfileDetail(p: Shared & { id: string }) {
           <span className="feature-icon">
             <Icon name="users" />
           </span>
-          <h3>Mulai dari satu sapaan.</h3>
+          <h2>Mulai dari satu sapaan.</h2>
           <p>
             Kenalan, diskusi, dan temukan cara belajar yang pas untuk kalian.
           </p>
@@ -610,12 +608,7 @@ export function Competitions(p: Shared) {
         >
           Reset filter
         </button>
-        <DataState value={view} onChange={setView} />
       </div>
-      <p className="demo-caption">
-        <Icon name="info" size={14} /> Seluruh lomba dan tautan pendaftaran
-        merupakan contoh.
-      </p>
       <StateView value={view} retry={() => setView("normal")}>
         {results.length ? (
           <>
@@ -642,7 +635,7 @@ export function CompetitionDetail(p: Shared & { id: string }) {
   if (!c)
     return (
       <main className="container page">
-        <Empty title="Lomba tidak tersedia" />
+        <Empty page title="Lomba tidak tersedia" />
       </main>
     );
   return (
@@ -668,15 +661,15 @@ export function CompetitionDetail(p: Shared & { id: string }) {
               </span>
             </div>
           )}
-          <h3>Tentang lomba</h3>
+          <h2>Tentang lomba</h2>
           <p>{c.description}</p>
           <hr />
-          <h3>Persyaratan peserta</h3>
+          <h2>Persyaratan peserta</h2>
           <p>{c.requirements}</p>
           {c.prize && (
             <>
               <hr />
-              <h3>Hadiah & kesempatan</h3>
+              <h2>Hadiah & kesempatan</h2>
               <p>{c.prize}</p>
             </>
           )}
@@ -702,27 +695,25 @@ export function CompetitionDetail(p: Shared & { id: string }) {
             </div>
           </div>
           <hr />
-          <h3>Sumber informasi</h3>
+          <h2>Sumber informasi</h2>
           <a
             className="text-link"
             href={c.source}
             target="_blank"
             rel="noreferrer"
           >
-            {new URL(c.source).hostname} · tautan contoh{" "}
-            <Icon name="external" size={16} />
+            {new URL(c.source).hostname} <Icon name="external" size={16} />
             <span className="sr-only">(buka tab baru)</span>
           </a>
           <small>
-            Data lomba demo. Konfirmasi informasi di situs penyelenggara sebelum
-            mendaftar.
+            Konfirmasi informasi di situs penyelenggara sebelum mendaftar.
           </small>
         </section>
         <aside className="card action-card">
           <span className="feature-icon mint">
             <Icon name="trophy" />
           </span>
-          <h3>Idemu butuh tim yang tepat.</h3>
+          <h2>Idemu butuh tim yang tepat.</h2>
           <p>Temukan rekan dengan kemampuan yang saling melengkapi.</p>
           <Link href={"/tim?lomba=" + c.id} className="button primary">
             Cari tim <Icon name="users" />
@@ -751,10 +742,7 @@ export function CompetitionDetail(p: Shared & { id: string }) {
             Daftar di situs penyelenggara <Icon name="external" size={16} />
             <span className="sr-only">(buka tab baru)</span>
           </a>
-          <small>
-            Pendaftaran resmi dilakukan di luar TeamUp. Tautan saat ini adalah
-            dummy.
-          </small>
+          <small>Pendaftaran resmi dilakukan di luar TeamUp.</small>
         </aside>
       </div>
     </main>
@@ -819,7 +807,7 @@ export function Teams(p: Shared) {
           <input
             value={role}
             onChange={(e) => setRole(e.target.value)}
-            placeholder="Contoh: Designer"
+            placeholder="Designer"
           />
         </Field>
         <label className="check-field">
@@ -855,7 +843,6 @@ export function Teams(p: Shared) {
         >
           Reset filter
         </button>
-        <DataState value={view} onChange={setView} />
       </div>
       <StateView value={view} retry={() => setView("normal")}>
         {results.length ? (
@@ -880,7 +867,7 @@ export function TeamDetail(p: Shared & { id: string }) {
   if (!t)
     return (
       <main className="container page">
-        <Empty title="Tim tidak ditemukan" />
+        <Empty page title="Tim tidak ditemukan" />
       </main>
     );
   const c = p.state.competitions.find((c) => c.id === t.competition)!;
@@ -933,7 +920,7 @@ export function TeamDetail(p: Shared & { id: string }) {
           </Link>
           <p>{t.description}</p>
           <hr />
-          <h3>Peran yang dibutuhkan</h3>
+          <h2>Peran yang dibutuhkan</h2>
           {(
             t.roles || [{ name: t.role, slots: t.capacity - t.members.length }]
           ).map((r) => (
@@ -961,7 +948,7 @@ export function TeamDetail(p: Shared & { id: string }) {
             Kapasitas termasuk ketua. Lamaran menunggu tidak memakai slot.
           </small>
           <hr />
-          <h3>{member ? "Anggota tim" : "Ketua tim"}</h3>
+          <h2>{member ? "Anggota tim" : "Ketua tim"}</h2>
           {(member ? t.members : [t.leader]).map((id) => {
             const u = p.state.users.find((u) => u.id === id)!;
             return (
@@ -1009,9 +996,9 @@ export function TeamDetail(p: Shared & { id: string }) {
           )}
         </section>
         <aside className="card action-card">
-          <h3>
+          <h2>
             {member ? "Ruang kolaborasi timmu" : "Bawa idemu ke tim ini."}
-          </h3>
+          </h2>
           <p>Deadline lomba: {date(c.deadline)}</p>
           {member ? (
             <>
@@ -1149,6 +1136,7 @@ export function TeamForm(p: Shared & { id?: string }) {
     return (
       <main className="container page">
         <Empty
+          page
           title="Akses ditolak"
           text="Hanya ketua tim aktif yang dapat mengedit tim."
         />
@@ -1226,7 +1214,7 @@ export function TeamForm(p: Shared & { id?: string }) {
                 ...s,
                 teams: [...s.teams.filter((x) => x.id !== id), next],
               }),
-              "Tim demo tersimpan.",
+              "Tim tersimpan.",
             );
             router.push("/tim/" + id);
           } catch (err) {

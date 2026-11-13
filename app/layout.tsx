@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "TeamUp — Temukan partner. Tumbuh bersama.",
+  title: "TeamUp | Teman belajar dan tim lomba",
   description:
-    "Partner belajar dan tim lomba. Prototipe interaktif dengan data demo.",
+    "Temukan partner belajar dan rekan tim lomba berdasarkan bidang, jadwal, dan tujuanmu.",
 };
 
 export default function RootLayout({
@@ -13,7 +13,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="id" data-scroll-behavior="smooth">
+    <html
+      lang="id"
+      data-theme="light"
+      data-scroll-behavior="smooth"
+      suppressHydrationWarning
+    >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "try{document.documentElement.dataset.theme=localStorage.getItem('teamup-theme')==='dark'?'dark':'light'}catch{}",
+          }}
+        />
+      </head>
       <body>{children}</body>
     </html>
   );

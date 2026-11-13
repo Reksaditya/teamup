@@ -1,0 +1,8022 @@
+[
+  {
+    "label": "Beranda desktop",
+    "url": "http://127.0.0.1:3000/",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari partner belajar",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Saya mencari tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "APAlya PutriUI/UX DesignMenengah · kemampuan mandiri",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "BPBima PratamaWeb DevelopmentMenengah · kemampuan mandiri",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "CMCitra MaharaniData ScienceMenengah · kemampuan mandiri",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "01Cari teman belajarCocokkan bidang, level, dan waktu luang. Kirim permintaan un",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "02Siapkan tim lombaPilih lomba, baca kebutuhan peran, lalu temukan tempat untuk ",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat daftar lomba",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Innovate UI/UX Challenge 2026",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail Innovate UI/UX Challenge 2026",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Build for Tomorrow Hackathon",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail Build for Tomorrow Hackathon",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Data for Good Competition",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail Data for Good Competition",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Cari tim yang masih merekrut",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Pixel Pioneers",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Beyond the Bytes",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Buat profil belajar",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Belajar bareng.Melangkah lebih jauh."
+      },
+      {
+        "level": "H2",
+        "text": "Mulai dari minat yang sama."
+      },
+      {
+        "level": "H2",
+        "text": "Mau mulai dari mana?"
+      },
+      {
+        "level": "H3",
+        "text": "Cari teman belajar"
+      },
+      {
+        "level": "H3",
+        "text": "Siapkan tim lomba"
+      },
+      {
+        "level": "H2",
+        "text": "Ada tantangan untuk idemu."
+      },
+      {
+        "level": "H3",
+        "text": "Innovate UI/UX Challenge 2026"
+      },
+      {
+        "level": "H3",
+        "text": "Build for Tomorrow Hackathon"
+      },
+      {
+        "level": "H3",
+        "text": "Data for Good Competition"
+      },
+      {
+        "level": "H2",
+        "text": "Tim yang tepatsaling melengkapi."
+      },
+      {
+        "level": "H3",
+        "text": "Pixel Pioneers"
+      },
+      {
+        "level": "H3",
+        "text": "Beyond the Bytes"
+      },
+      {
+        "level": "H2",
+        "text": "Mulai dengan memperkenalkan diri."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Cari partner pengunjung: akses login",
+    "url": "http://127.0.0.1:3000/partner",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Masuk ke TeamUp",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H2",
+        "text": "Masuk untuk melanjutkan"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H2",
+        "text": "Masuk untuk melanjutkan"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1440,
+    "width": 1440
+  },
+  {
+    "label": "Masuk dari tujuan partner",
+    "url": "http://127.0.0.1:3000/masuk?next=%2Fpartner",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "G Lanjutkan dengan Google",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Email (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Password (wajib)Minimal 8 karakter. Gunakan password contoh, bukan password asli",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Tampilkan password",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Lupa password?",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Masuk ke TeamUp",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Daftar gratis",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Senang kamu kembali."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H2",
+        "text": "Masuk untuk melanjutkan"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H2",
+        "text": "Masuk untuk melanjutkan"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Google batal dan toggle password",
+    "url": "http://127.0.0.1:3000/masuk?next=%2Fpartner",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "G Lanjutkan dengan Google",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Email (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Password (wajib)Minimal 8 karakter. Gunakan password contoh, bukan password asli",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Sembunyikan password",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Lupa password?",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Masuk ke TeamUp",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Daftar gratis",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Senang kamu kembali."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Senang kamu kembali."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Senang kamu kembali."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Filter gabungan UI/UX, Mahir, Bandung",
+    "url": "http://127.0.0.1:3000/partner",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari nama, institusi, atau bidang belajar…",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Cari",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Reset",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Semua bidangUI/UX DesignWeb DevelopmentData SciencePythonBisnis",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua levelPemulaMenengahMahir",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Kota / kabupaten",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua modeOnlineOffline",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua hariSeninSelasaRabuKamisJumatSabtuMinggu",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Mulai",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Selesai",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "WIB · UTC+7WITA · UTC+8WIT · UTC+9",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Terapkan filter",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "UI/UX Design",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Mahir",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Bandung",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Nadia Rahma",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat profil",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Ajak belajar",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": true,
+        "label": "Halaman sebelumnya",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "1",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": true,
+        "label": "Halaman berikutnya",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Belajar lebih jauh, bersama."
+      },
+      {
+        "level": "H2",
+        "text": " Filter partner"
+      },
+      {
+        "level": "H2",
+        "text": "Nadia Rahma"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Belajar lebih jauh, bersama."
+      },
+      {
+        "level": "H2",
+        "text": " Filter partner"
+      },
+      {
+        "level": "H2",
+        "text": "Bima Pratama"
+      },
+      {
+        "level": "H2",
+        "text": "Citra Maharani"
+      },
+      {
+        "level": "H2",
+        "text": "Dimas Saputra"
+      },
+      {
+        "level": "H2",
+        "text": "Nadia Rahma"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Belajar lebih jauh, bersama."
+      },
+      {
+        "level": "H2",
+        "text": " Filter partner"
+      },
+      {
+        "level": "H2",
+        "text": "Bima Pratama"
+      },
+      {
+        "level": "H2",
+        "text": "Citra Maharani"
+      },
+      {
+        "level": "H2",
+        "text": "Dimas Saputra"
+      },
+      {
+        "level": "H2",
+        "text": "Nadia Rahma"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Partner: reset dan pagination",
+    "url": "http://127.0.0.1:3000/partner",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari nama, institusi, atau bidang belajar…",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Cari",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Reset",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Semua bidangUI/UX DesignWeb DevelopmentData SciencePythonBisnis",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua levelPemulaMenengahMahir",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Kota / kabupaten",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua modeOnlineOffline",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua hariSeninSelasaRabuKamisJumatSabtuMinggu",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Mulai",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Selesai",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "WIB · UTC+7WITA · UTC+8WIT · UTC+9",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Terapkan filter",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Rafi Ardiansyah",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat profil",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Ajak belajar",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Halaman sebelumnya",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "1",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "2",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": true,
+        "label": "Halaman berikutnya",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Belajar lebih jauh, bersama."
+      },
+      {
+        "level": "H2",
+        "text": " Filter partner"
+      },
+      {
+        "level": "H2",
+        "text": "Rafi Ardiansyah"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Belajar lebih jauh, bersama."
+      },
+      {
+        "level": "H2",
+        "text": " Filter partner"
+      },
+      {
+        "level": "H2",
+        "text": "Bima Pratama"
+      },
+      {
+        "level": "H2",
+        "text": "Citra Maharani"
+      },
+      {
+        "level": "H2",
+        "text": "Dimas Saputra"
+      },
+      {
+        "level": "H2",
+        "text": "Nadia Rahma"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Belajar lebih jauh, bersama."
+      },
+      {
+        "level": "H2",
+        "text": " Filter partner"
+      },
+      {
+        "level": "H2",
+        "text": "Bima Pratama"
+      },
+      {
+        "level": "H2",
+        "text": "Citra Maharani"
+      },
+      {
+        "level": "H2",
+        "text": "Dimas Saputra"
+      },
+      {
+        "level": "H2",
+        "text": "Nadia Rahma"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "State gagal",
+    "url": "http://127.0.0.1:3000/partner",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari nama, institusi, atau bidang belajar…",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Cari",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Reset",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Semua bidangUI/UX DesignWeb DevelopmentData SciencePythonBisnis",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua levelPemulaMenengahMahir",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Kota / kabupaten",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua modeOnlineOffline",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua hariSeninSelasaRabuKamisJumatSabtuMinggu",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Mulai",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Selesai",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "WIB · UTC+7WITA · UTC+8WIT · UTC+9",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Terapkan filter",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Coba lagi",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Belajar lebih jauh, bersama."
+      },
+      {
+        "level": "H2",
+        "text": " Filter partner"
+      },
+      {
+        "level": "H2",
+        "text": "Data belum bisa dimuat"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Belajar lebih jauh, bersama."
+      },
+      {
+        "level": "H2",
+        "text": " Filter partner"
+      },
+      {
+        "level": "H2",
+        "text": "Bima Pratama"
+      },
+      {
+        "level": "H2",
+        "text": "Citra Maharani"
+      },
+      {
+        "level": "H2",
+        "text": "Dimas Saputra"
+      },
+      {
+        "level": "H2",
+        "text": "Nadia Rahma"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Belajar lebih jauh, bersama."
+      },
+      {
+        "level": "H2",
+        "text": " Filter partner"
+      },
+      {
+        "level": "H2",
+        "text": "Bima Pratama"
+      },
+      {
+        "level": "H2",
+        "text": "Citra Maharani"
+      },
+      {
+        "level": "H2",
+        "text": "Dimas Saputra"
+      },
+      {
+        "level": "H2",
+        "text": "Nadia Rahma"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "State kosong",
+    "url": "http://127.0.0.1:3000/partner",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari nama, institusi, atau bidang belajar…",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Cari",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Reset",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Semua bidangUI/UX DesignWeb DevelopmentData SciencePythonBisnis",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua levelPemulaMenengahMahir",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Kota / kabupaten",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua modeOnlineOffline",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua hariSeninSelasaRabuKamisJumatSabtuMinggu",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Mulai",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Selesai",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "WIB · UTC+7WITA · UTC+8WIT · UTC+9",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Terapkan filter",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Kembali ke data demo",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Belajar lebih jauh, bersama."
+      },
+      {
+        "level": "H2",
+        "text": " Filter partner"
+      },
+      {
+        "level": "H2",
+        "text": "Belum ada hasil"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Belajar lebih jauh, bersama."
+      },
+      {
+        "level": "H2",
+        "text": " Filter partner"
+      },
+      {
+        "level": "H2",
+        "text": "Bima Pratama"
+      },
+      {
+        "level": "H2",
+        "text": "Citra Maharani"
+      },
+      {
+        "level": "H2",
+        "text": "Dimas Saputra"
+      },
+      {
+        "level": "H2",
+        "text": "Nadia Rahma"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Belajar lebih jauh, bersama."
+      },
+      {
+        "level": "H2",
+        "text": " Filter partner"
+      },
+      {
+        "level": "H2",
+        "text": "Bima Pratama"
+      },
+      {
+        "level": "H2",
+        "text": "Citra Maharani"
+      },
+      {
+        "level": "H2",
+        "text": "Dimas Saputra"
+      },
+      {
+        "level": "H2",
+        "text": "Nadia Rahma"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "State memuat",
+    "url": "http://127.0.0.1:3000/partner",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari nama, institusi, atau bidang belajar…",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Cari",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Reset",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Semua bidangUI/UX DesignWeb DevelopmentData SciencePythonBisnis",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua levelPemulaMenengahMahir",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Kota / kabupaten",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua modeOnlineOffline",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua hariSeninSelasaRabuKamisJumatSabtuMinggu",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Mulai",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Selesai",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "WIB · UTC+7WITA · UTC+8WIT · UTC+9",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Terapkan filter",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Selesaikan simulasi",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Belajar lebih jauh, bersama."
+      },
+      {
+        "level": "H2",
+        "text": " Filter partner"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Belajar lebih jauh, bersama."
+      },
+      {
+        "level": "H2",
+        "text": " Filter partner"
+      },
+      {
+        "level": "H2",
+        "text": "Bima Pratama"
+      },
+      {
+        "level": "H2",
+        "text": "Citra Maharani"
+      },
+      {
+        "level": "H2",
+        "text": "Dimas Saputra"
+      },
+      {
+        "level": "H2",
+        "text": "Nadia Rahma"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Belajar lebih jauh, bersama."
+      },
+      {
+        "level": "H2",
+        "text": " Filter partner"
+      },
+      {
+        "level": "H2",
+        "text": "Bima Pratama"
+      },
+      {
+        "level": "H2",
+        "text": "Citra Maharani"
+      },
+      {
+        "level": "H2",
+        "text": "Dimas Saputra"
+      },
+      {
+        "level": "H2",
+        "text": "Nadia Rahma"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "State akses ditolak",
+    "url": "http://127.0.0.1:3000/partner",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari nama, institusi, atau bidang belajar…",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Cari",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Reset",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Semua bidangUI/UX DesignWeb DevelopmentData SciencePythonBisnis",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua levelPemulaMenengahMahir",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Kota / kabupaten",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua modeOnlineOffline",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua hariSeninSelasaRabuKamisJumatSabtuMinggu",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Mulai",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Selesai",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "WIB · UTC+7WITA · UTC+8WIT · UTC+9",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Terapkan filter",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Belajar lebih jauh, bersama."
+      },
+      {
+        "level": "H2",
+        "text": " Filter partner"
+      },
+      {
+        "level": "H2",
+        "text": "Akses ditolak"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Belajar lebih jauh, bersama."
+      },
+      {
+        "level": "H2",
+        "text": " Filter partner"
+      },
+      {
+        "level": "H2",
+        "text": "Bima Pratama"
+      },
+      {
+        "level": "H2",
+        "text": "Citra Maharani"
+      },
+      {
+        "level": "H2",
+        "text": "Dimas Saputra"
+      },
+      {
+        "level": "H2",
+        "text": "Nadia Rahma"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Belajar lebih jauh, bersama."
+      },
+      {
+        "level": "H2",
+        "text": " Filter partner"
+      },
+      {
+        "level": "H2",
+        "text": "Bima Pratama"
+      },
+      {
+        "level": "H2",
+        "text": "Citra Maharani"
+      },
+      {
+        "level": "H2",
+        "text": "Dimas Saputra"
+      },
+      {
+        "level": "H2",
+        "text": "Nadia Rahma"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Desktop /lomba",
+    "url": "http://127.0.0.1:3000/lomba",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari lomba yang ingin kamu ikuti…",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Cari",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Semua kategoriUI/UX DesignWeb DevelopmentData SciencePythonBisnis",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua tingkatNasionalRegional",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua biayaGratisBerbayar",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Deadline mulai (WIB)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Deadline akhir (WIB)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Terapkan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Reset filter",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Innovate UI/UX Challenge 2026",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail & kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Build for Tomorrow Hackathon",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail & kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Data for Good Competition",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail & kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Student Business Plan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail & kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": true,
+        "label": "Halaman sebelumnya",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "1",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": true,
+        "label": "Halaman berikutnya",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Temukan tantangan berikutnya."
+      },
+      {
+        "level": "H2",
+        "text": "Innovate UI/UX Challenge 2026"
+      },
+      {
+        "level": "H2",
+        "text": "Build for Tomorrow Hackathon"
+      },
+      {
+        "level": "H2",
+        "text": "Data for Good Competition"
+      },
+      {
+        "level": "H2",
+        "text": "Student Business Plan"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Desktop /lomba/innovate",
+    "url": "http://127.0.0.1:3000/lomba/innovate",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Jelajahi lomba",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "example.com · tautan contoh (buka tab baru)",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Cari tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Buat tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Daftar di situs penyelenggara (buka tab baru)",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Innovate UI/UX Challenge 2026"
+      },
+      {
+        "level": "H2",
+        "text": "Tentang lomba"
+      },
+      {
+        "level": "H2",
+        "text": "Persyaratan peserta"
+      },
+      {
+        "level": "H2",
+        "text": "Hadiah & kesempatan"
+      },
+      {
+        "level": "H2",
+        "text": "Sumber informasi"
+      },
+      {
+        "level": "H2",
+        "text": "Idemu butuh tim yang tepat."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Desktop /tim",
+    "url": "http://127.0.0.1:3000/tim",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Buat tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Cari nama tim…",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Cari",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Semua lombaInnovate UI/UX Challenge 2026Build for Tomorrow HackathonData for Goo",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Bidang / peran",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Hanya slot terbuka",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Tim saya",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Reset filter",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Pixel Pioneers",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Beyond the Bytes",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Insight Collective",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Tim hebat dimulai dari sini."
+      },
+      {
+        "level": "H2",
+        "text": "Pixel Pioneers"
+      },
+      {
+        "level": "H2",
+        "text": "Beyond the Bytes"
+      },
+      {
+        "level": "H2",
+        "text": "Insight Collective"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Desktop /tim/pixel",
+    "url": "http://127.0.0.1:3000/tim/pixel",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Innovate UI/UX Challenge 2026",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Bima Pratama",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Ajukan lamaran",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Pixel Pioneers"
+      },
+      {
+        "level": "H2",
+        "text": "Peran yang dibutuhkan"
+      },
+      {
+        "level": "H2",
+        "text": "Ketua tim"
+      },
+      {
+        "level": "H2",
+        "text": "Bawa idemu ke tim ini."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Desktop /tim/buat",
+    "url": "http://127.0.0.1:3000/tim/buat",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Innovate UI/UX Challenge 2026Build for Tomorrow HackathonData for Good Competiti",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Nama tim (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Tentang tim (wajib)",
+        "tag": "TEXTAREA"
+      },
+      {
+        "disabled": false,
+        "label": "Kapasitas total (wajib)Termasuk ketua. Kapasitas mengikuti batas anggota lomba.",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Peran 1 (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Slot",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Tambah peran",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Batal",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Buat tim",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Bangun tim versimu."
+      },
+      {
+        "level": "H2",
+        "text": "Peran & slot terbuka"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Desktop /tim/byte/edit",
+    "url": "http://127.0.0.1:3000/tim/byte/edit",
+    "controls": [
+      {
+        "disabled": true,
+        "label": "Innovate UI/UX Challenge 2026Build for Tomorrow HackathonData for Good Competiti",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Nama tim (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Membangun platform kecil dengan dampak besar. Yuk, bawa ide dan semangat kolabor",
+        "tag": "TEXTAREA"
+      },
+      {
+        "disabled": false,
+        "label": "Kapasitas total (wajib)Termasuk ketua. Kapasitas mengikuti batas anggota lomba.",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Peran 1 (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Slot",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Tambah peran",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Batal",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Simpan perubahan",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Edit tim"
+      },
+      {
+        "level": "H2",
+        "text": "Peran & slot terbuka"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Desktop /aktivitas",
+    "url": "http://127.0.0.1:3000/aktivitas",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Permintaan partner",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Lamaran tim",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Masuk",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Terkirim",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Filter status aktivitas",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Citra Maharani",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Tolak",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Terima",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Setiap koneksi punya cerita."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1440,
+    "width": 1440
+  },
+  {
+    "label": "Desktop /pesan/team:byte",
+    "url": "http://127.0.0.1:3000/pesan/team:byte",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari percakapan",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "BPBima PratamaPersonalHai Bima! Aku lagi eksplorasi desain sistem dan React. Sab",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Beyond the BytesGrup timHalo tim! Aku sudah menyiapkan beberapa ide untuk kita b",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Laporkan percakapan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi putus koneksi",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Laporkan pesan dari Dimas Saputra",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Tulis pesan",
+        "tag": "TEXTAREA"
+      },
+      {
+        "disabled": true,
+        "label": "Kirim pesan",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Pesan."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1440,
+    "width": 1440
+  },
+  {
+    "label": "Mobile 360 /",
+    "url": "http://127.0.0.1:3000/",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari partner belajar",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Saya mencari tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "BPBima PratamaWeb DevelopmentMenengah · kemampuan mandiri",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "CMCitra MaharaniData ScienceMenengah · kemampuan mandiri",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "DSDimas SaputraWeb DevelopmentMahir · kemampuan mandiri",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "01Cari teman belajarCocokkan bidang, level, dan waktu luang. Kirim permintaan un",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "02Siapkan tim lombaPilih lomba, baca kebutuhan peran, lalu temukan tempat untuk ",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat daftar lomba",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Innovate UI/UX Challenge 2026",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail Innovate UI/UX Challenge 2026",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Build for Tomorrow Hackathon",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail Build for Tomorrow Hackathon",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Data for Good Competition",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail Data for Good Competition",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Cari tim yang masih merekrut",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Pixel Pioneers",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Beyond the Bytes",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lengkapi profil saya",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Belajar bareng.Melangkah lebih jauh."
+      },
+      {
+        "level": "H2",
+        "text": "Mulai dari minat yang sama."
+      },
+      {
+        "level": "H2",
+        "text": "Mau mulai dari mana?"
+      },
+      {
+        "level": "H3",
+        "text": "Cari teman belajar"
+      },
+      {
+        "level": "H3",
+        "text": "Siapkan tim lomba"
+      },
+      {
+        "level": "H2",
+        "text": "Ada tantangan untuk idemu."
+      },
+      {
+        "level": "H3",
+        "text": "Innovate UI/UX Challenge 2026"
+      },
+      {
+        "level": "H3",
+        "text": "Build for Tomorrow Hackathon"
+      },
+      {
+        "level": "H3",
+        "text": "Data for Good Competition"
+      },
+      {
+        "level": "H2",
+        "text": "Tim yang tepatsaling melengkapi."
+      },
+      {
+        "level": "H3",
+        "text": "Pixel Pioneers"
+      },
+      {
+        "level": "H3",
+        "text": "Beyond the Bytes"
+      },
+      {
+        "level": "H2",
+        "text": "Mulai dengan memperkenalkan diri."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 345,
+    "width": 345
+  },
+  {
+    "label": "Mobile 360 /partner",
+    "url": "http://127.0.0.1:3000/partner",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari nama, institusi, atau bidang belajar…",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Cari",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Filter",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Bima Pratama",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat profil",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Buka chat",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Citra Maharani",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat profil",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat permintaan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Dimas Saputra",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat profil",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Ajak belajar",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Nadia Rahma",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat profil",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Ajak belajar",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": true,
+        "label": "Halaman sebelumnya",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "1",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "2",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Halaman berikutnya",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Belajar lebih jauh, bersama."
+      },
+      {
+        "level": "H2",
+        "text": " Filter partner"
+      },
+      {
+        "level": "H2",
+        "text": "Bima Pratama"
+      },
+      {
+        "level": "H2",
+        "text": "Citra Maharani"
+      },
+      {
+        "level": "H2",
+        "text": "Dimas Saputra"
+      },
+      {
+        "level": "H2",
+        "text": "Nadia Rahma"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 345,
+    "width": 345
+  },
+  {
+    "label": "Mobile 360 /lomba",
+    "url": "http://127.0.0.1:3000/lomba",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari lomba yang ingin kamu ikuti…",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Cari",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Semua kategoriUI/UX DesignWeb DevelopmentData SciencePythonBisnis",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua tingkatNasionalRegional",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua biayaGratisBerbayar",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Deadline mulai (WIB)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Deadline akhir (WIB)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Terapkan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Reset filter",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Innovate UI/UX Challenge 2026",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail & kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Build for Tomorrow Hackathon",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail & kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Data for Good Competition",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail & kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Student Business Plan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail & kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": true,
+        "label": "Halaman sebelumnya",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "1",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": true,
+        "label": "Halaman berikutnya",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Temukan tantangan berikutnya."
+      },
+      {
+        "level": "H2",
+        "text": "Innovate UI/UX Challenge 2026"
+      },
+      {
+        "level": "H2",
+        "text": "Build for Tomorrow Hackathon"
+      },
+      {
+        "level": "H2",
+        "text": "Data for Good Competition"
+      },
+      {
+        "level": "H2",
+        "text": "Student Business Plan"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 345,
+    "width": 345
+  },
+  {
+    "label": "Mobile 360 /lomba/innovate",
+    "url": "http://127.0.0.1:3000/lomba/innovate",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Jelajahi lomba",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "example.com · tautan contoh (buka tab baru)",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Cari tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Buat tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Daftar di situs penyelenggara (buka tab baru)",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Innovate UI/UX Challenge 2026"
+      },
+      {
+        "level": "H2",
+        "text": "Tentang lomba"
+      },
+      {
+        "level": "H2",
+        "text": "Persyaratan peserta"
+      },
+      {
+        "level": "H2",
+        "text": "Hadiah & kesempatan"
+      },
+      {
+        "level": "H2",
+        "text": "Sumber informasi"
+      },
+      {
+        "level": "H2",
+        "text": "Idemu butuh tim yang tepat."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 345,
+    "width": 345
+  },
+  {
+    "label": "Mobile 360 /tim",
+    "url": "http://127.0.0.1:3000/tim",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Buat tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Cari nama tim…",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Cari",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Semua lombaInnovate UI/UX Challenge 2026Build for Tomorrow HackathonData for Goo",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Bidang / peran",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Hanya slot terbuka",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Tim saya",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Reset filter",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Pixel Pioneers",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Beyond the Bytes",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Insight Collective",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Tim hebat dimulai dari sini."
+      },
+      {
+        "level": "H2",
+        "text": "Pixel Pioneers"
+      },
+      {
+        "level": "H2",
+        "text": "Beyond the Bytes"
+      },
+      {
+        "level": "H2",
+        "text": "Insight Collective"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 345,
+    "width": 345
+  },
+  {
+    "label": "Mobile 360 /tim/byte",
+    "url": "http://127.0.0.1:3000/tim/byte",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Build for Tomorrow Hackathon",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Alya Putri",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Dimas Saputra",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Jadikan ketua",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Buka chat grup",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Edit tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Tinjau lamaran",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Tutup perekrutan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Bubarkan tim",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Beyond the Bytes"
+      },
+      {
+        "level": "H2",
+        "text": "Peran yang dibutuhkan"
+      },
+      {
+        "level": "H2",
+        "text": "Anggota tim"
+      },
+      {
+        "level": "H2",
+        "text": "Ruang kolaborasi timmu"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 345,
+    "width": 345
+  },
+  {
+    "label": "Mobile 360 /tim/buat",
+    "url": "http://127.0.0.1:3000/tim/buat",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Innovate UI/UX Challenge 2026Build for Tomorrow HackathonData for Good Competiti",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Nama tim (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Tentang tim (wajib)",
+        "tag": "TEXTAREA"
+      },
+      {
+        "disabled": false,
+        "label": "Kapasitas total (wajib)Termasuk ketua. Kapasitas mengikuti batas anggota lomba.",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Peran 1 (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Slot",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Tambah peran",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Batal",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Buat tim",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Bangun tim versimu."
+      },
+      {
+        "level": "H2",
+        "text": "Peran & slot terbuka"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 345,
+    "width": 345
+  },
+  {
+    "label": "Mobile 360 /profil",
+    "url": "http://127.0.0.1:3000/profil",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Pengguna diblokir",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Privasi & data",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "1Identitas",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "2Bidang & level",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "3Jadwal belajar",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Pilih foto (opsional)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Nama tampilan (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Institusi (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Jurusan / kelas (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Kota / kabupaten (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Belajar lebih seru kalau ada teman diskusi. Lagi mendalami frontend dan desain p",
+        "tag": "TEXTAREA"
+      },
+      {
+        "disabled": false,
+        "label": "Lanjut",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Profil kecil. Peluang besar."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 375,
+    "width": 345
+  },
+  {
+    "label": "Mobile 360 /aktivitas",
+    "url": "http://127.0.0.1:3000/aktivitas",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Permintaan partner",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Lamaran tim",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Masuk",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Terkirim",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Filter status aktivitas",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Citra Maharani",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Tolak",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Terima",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Setiap koneksi punya cerita."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 345,
+    "width": 345
+  },
+  {
+    "label": "Mobile 360 /pesan/team:byte",
+    "url": "http://127.0.0.1:3000/pesan/team:byte",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Kembali ke daftar pesan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Laporkan percakapan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi putus koneksi",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Laporkan pesan dari Dimas Saputra",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Tulis pesan",
+        "tag": "TEXTAREA"
+      },
+      {
+        "disabled": true,
+        "label": "Kirim pesan",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Pesan."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 360,
+    "width": 360
+  },
+  {
+    "label": "Profil 360 setelah perbaikan input foto tersembunyi",
+    "url": "http://127.0.0.1:3000/profil",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Pengguna diblokir",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Privasi & data",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "1Identitas",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "2Bidang & level",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "3Jadwal belajar",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Pilih foto (opsional)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Nama tampilan (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Institusi (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Jurusan / kelas (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Kota / kabupaten (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Belajar lebih seru kalau ada teman diskusi. Lagi mendalami frontend dan desain p",
+        "tag": "TEXTAREA"
+      },
+      {
+        "disabled": false,
+        "label": "Lanjut",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Profil kecil. Peluang besar."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 345,
+    "width": 345
+  },
+  {
+    "label": "Onboarding: bidang, level, tambah jadwal",
+    "url": "http://127.0.0.1:3000/profil",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Pengguna diblokir",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Privasi & data",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Identitas",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Bidang & level",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "3Jadwal belajar",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "OnlineOfflineKeduanya",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Hapus jadwal 1",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "SeninSelasaRabuKamisJumatSabtuMinggu",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Waktu mulai (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Waktu selesai (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "WIB · UTC+7WITA · UTC+8WIT · UTC+9",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Hapus jadwal 2",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "SeninSelasaRabuKamisJumatSabtuMinggu",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Waktu mulai (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Waktu selesai (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "WIB · UTC+7WITA · UTC+8WIT · UTC+9",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Tambah interval jadwal",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Kembali",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simpan profil",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Profil kecil. Peluang besar."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 345,
+    "width": 345
+  },
+  {
+    "label": "Reflow 320 /",
+    "url": "http://127.0.0.1:3000/",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari partner belajar",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Saya mencari tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "BPBima PratamaWeb DevelopmentMenengah · kemampuan mandiri",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "CMCitra MaharaniData ScienceMenengah · kemampuan mandiri",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "DSDimas SaputraWeb DevelopmentMahir · kemampuan mandiri",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "01Cari teman belajarCocokkan bidang, level, dan waktu luang. Kirim permintaan un",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "02Siapkan tim lombaPilih lomba, baca kebutuhan peran, lalu temukan tempat untuk ",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat daftar lomba",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Innovate UI/UX Challenge 2026",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail Innovate UI/UX Challenge 2026",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Build for Tomorrow Hackathon",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail Build for Tomorrow Hackathon",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Data for Good Competition",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail Data for Good Competition",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Cari tim yang masih merekrut",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Pixel Pioneers",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Beyond the Bytes",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lengkapi profil saya",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Belajar bareng.Melangkah lebih jauh."
+      },
+      {
+        "level": "H2",
+        "text": "Mulai dari minat yang sama."
+      },
+      {
+        "level": "H2",
+        "text": "Mau mulai dari mana?"
+      },
+      {
+        "level": "H3",
+        "text": "Cari teman belajar"
+      },
+      {
+        "level": "H3",
+        "text": "Siapkan tim lomba"
+      },
+      {
+        "level": "H2",
+        "text": "Ada tantangan untuk idemu."
+      },
+      {
+        "level": "H3",
+        "text": "Innovate UI/UX Challenge 2026"
+      },
+      {
+        "level": "H3",
+        "text": "Build for Tomorrow Hackathon"
+      },
+      {
+        "level": "H3",
+        "text": "Data for Good Competition"
+      },
+      {
+        "level": "H2",
+        "text": "Tim yang tepatsaling melengkapi."
+      },
+      {
+        "level": "H3",
+        "text": "Pixel Pioneers"
+      },
+      {
+        "level": "H3",
+        "text": "Beyond the Bytes"
+      },
+      {
+        "level": "H2",
+        "text": "Mulai dengan memperkenalkan diri."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 305,
+    "width": 305
+  },
+  {
+    "label": "Reflow 320 /partner",
+    "url": "http://127.0.0.1:3000/partner",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari nama, institusi, atau bidang belajar…",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Cari",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Filter",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Bima Pratama",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat profil",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Buka chat",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Citra Maharani",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat profil",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat permintaan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Dimas Saputra",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat profil",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Ajak belajar",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Nadia Rahma",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat profil",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Ajak belajar",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": true,
+        "label": "Halaman sebelumnya",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "1",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "2",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Halaman berikutnya",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Belajar lebih jauh, bersama."
+      },
+      {
+        "level": "H2",
+        "text": " Filter partner"
+      },
+      {
+        "level": "H2",
+        "text": "Bima Pratama"
+      },
+      {
+        "level": "H2",
+        "text": "Citra Maharani"
+      },
+      {
+        "level": "H2",
+        "text": "Dimas Saputra"
+      },
+      {
+        "level": "H2",
+        "text": "Nadia Rahma"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 305,
+    "width": 305
+  },
+  {
+    "label": "Reflow 320 /lomba",
+    "url": "http://127.0.0.1:3000/lomba",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari lomba yang ingin kamu ikuti…",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Cari",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Semua kategoriUI/UX DesignWeb DevelopmentData SciencePythonBisnis",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua tingkatNasionalRegional",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua biayaGratisBerbayar",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Deadline mulai (WIB)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Deadline akhir (WIB)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Terapkan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Reset filter",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Innovate UI/UX Challenge 2026",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail & kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Build for Tomorrow Hackathon",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail & kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Data for Good Competition",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail & kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Student Business Plan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail & kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": true,
+        "label": "Halaman sebelumnya",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "1",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": true,
+        "label": "Halaman berikutnya",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Temukan tantangan berikutnya."
+      },
+      {
+        "level": "H2",
+        "text": "Innovate UI/UX Challenge 2026"
+      },
+      {
+        "level": "H2",
+        "text": "Build for Tomorrow Hackathon"
+      },
+      {
+        "level": "H2",
+        "text": "Data for Good Competition"
+      },
+      {
+        "level": "H2",
+        "text": "Student Business Plan"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 305,
+    "width": 305
+  },
+  {
+    "label": "Reflow 320 /tim",
+    "url": "http://127.0.0.1:3000/tim",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Buat tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Cari nama tim…",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Cari",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Semua lombaInnovate UI/UX Challenge 2026Build for Tomorrow HackathonData for Goo",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Bidang / peran",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Hanya slot terbuka",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Tim saya",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Reset filter",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Pixel Pioneers",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Beyond the Bytes",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Insight Collective",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Tim hebat dimulai dari sini."
+      },
+      {
+        "level": "H2",
+        "text": "Pixel Pioneers"
+      },
+      {
+        "level": "H2",
+        "text": "Beyond the Bytes"
+      },
+      {
+        "level": "H2",
+        "text": "Insight Collective"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 305,
+    "width": 305
+  },
+  {
+    "label": "Reflow 320 /tim/buat",
+    "url": "http://127.0.0.1:3000/tim/buat",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Innovate UI/UX Challenge 2026Build for Tomorrow HackathonData for Good Competiti",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Nama tim (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Tentang tim (wajib)",
+        "tag": "TEXTAREA"
+      },
+      {
+        "disabled": false,
+        "label": "Kapasitas total (wajib)Termasuk ketua. Kapasitas mengikuti batas anggota lomba.",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Peran 1 (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Slot",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Tambah peran",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Batal",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Buat tim",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Bangun tim versimu."
+      },
+      {
+        "level": "H2",
+        "text": "Peran & slot terbuka"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 305,
+    "width": 305
+  },
+  {
+    "label": "Reflow 320 /profil",
+    "url": "http://127.0.0.1:3000/profil",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Pengguna diblokir",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Privasi & data",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "1Identitas",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "2Bidang & level",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "3Jadwal belajar",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Pilih foto (opsional)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Nama tampilan (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Institusi (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Jurusan / kelas (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Kota / kabupaten (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Belajar lebih seru kalau ada teman diskusi. Lagi mendalami frontend dan desain p",
+        "tag": "TEXTAREA"
+      },
+      {
+        "disabled": false,
+        "label": "Lanjut",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Profil kecil. Peluang besar."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 305,
+    "width": 305
+  },
+  {
+    "label": "Reflow 320 /bantuan",
+    "url": "http://127.0.0.1:3000/bantuan",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Pengguna diblokir",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Privasi & data",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Butuh bantuan?"
+      },
+      {
+        "level": "H2",
+        "text": "Bagaimana memulai?"
+      },
+      {
+        "level": "H2",
+        "text": "Kapan chat bisa dibuka?"
+      },
+      {
+        "level": "H2",
+        "text": "Bagaimana mencoba kegagalan?"
+      },
+      {
+        "level": "H2",
+        "text": "Kontak bantuan sementara"
+      },
+      {
+        "level": "H2",
+        "text": "Status laporan saya"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 305,
+    "width": 305
+  },
+  {
+    "label": "Reflow 320 /privasi",
+    "url": "http://127.0.0.1:3000/privasi",
+    "controls": [],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Kolaborasi yang kamu pahami."
+      },
+      {
+        "level": "H2",
+        "text": "Ini adalah prototipe frontend"
+      },
+      {
+        "level": "H2",
+        "text": "Data yang digunakan"
+      },
+      {
+        "level": "H2",
+        "text": "Visibilitas profil"
+      },
+      {
+        "level": "H2",
+        "text": "Akses, koreksi, dan penghapusan"
+      },
+      {
+        "level": "H2",
+        "text": "Sebelum peluncuran publik"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 305,
+    "width": 305
+  },
+  {
+    "label": "Reflow 320 /masuk",
+    "url": "http://127.0.0.1:3000/masuk",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "G Lanjutkan dengan Google",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Email (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Password (wajib)Minimal 8 karakter. Gunakan password contoh, bukan password asli",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Tampilkan password",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Lupa password?",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Masuk ke TeamUp",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Daftar gratis",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Senang kamu kembali."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 305,
+    "width": 305
+  },
+  {
+    "label": "Reflow 320 /daftar",
+    "url": "http://127.0.0.1:3000/daftar",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "G Lanjutkan dengan Google",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Nama tampilan (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Email (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Password (wajib)Minimal 8 karakter. Gunakan password contoh, bukan password asli",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Tampilkan password",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "pemberitahuan privasi demo",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Buat akun demo",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Masuk",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Awal dari cerita baru."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 305,
+    "width": 305
+  },
+  {
+    "label": "Reflow 320 /reset-password",
+    "url": "http://127.0.0.1:3000/reset-password",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Email akun",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Minta petunjuk reset demo",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Kembali ke halaman masuk",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Lupa password?"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 305,
+    "width": 305
+  },
+  {
+    "label": "Tablet 768 /",
+    "url": "http://127.0.0.1:3000/",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari partner belajar",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Saya mencari tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "BPBima PratamaWeb DevelopmentMenengah · kemampuan mandiri",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "CMCitra MaharaniData ScienceMenengah · kemampuan mandiri",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "DSDimas SaputraWeb DevelopmentMahir · kemampuan mandiri",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "01Cari teman belajarCocokkan bidang, level, dan waktu luang. Kirim permintaan un",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "02Siapkan tim lombaPilih lomba, baca kebutuhan peran, lalu temukan tempat untuk ",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat daftar lomba",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Innovate UI/UX Challenge 2026",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail Innovate UI/UX Challenge 2026",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Build for Tomorrow Hackathon",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail Build for Tomorrow Hackathon",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Data for Good Competition",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail Data for Good Competition",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Cari tim yang masih merekrut",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Pixel Pioneers",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Beyond the Bytes",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lengkapi profil saya",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Belajar bareng.Melangkah lebih jauh."
+      },
+      {
+        "level": "H2",
+        "text": "Mulai dari minat yang sama."
+      },
+      {
+        "level": "H2",
+        "text": "Mau mulai dari mana?"
+      },
+      {
+        "level": "H3",
+        "text": "Cari teman belajar"
+      },
+      {
+        "level": "H3",
+        "text": "Siapkan tim lomba"
+      },
+      {
+        "level": "H2",
+        "text": "Ada tantangan untuk idemu."
+      },
+      {
+        "level": "H3",
+        "text": "Innovate UI/UX Challenge 2026"
+      },
+      {
+        "level": "H3",
+        "text": "Build for Tomorrow Hackathon"
+      },
+      {
+        "level": "H3",
+        "text": "Data for Good Competition"
+      },
+      {
+        "level": "H2",
+        "text": "Tim yang tepatsaling melengkapi."
+      },
+      {
+        "level": "H3",
+        "text": "Pixel Pioneers"
+      },
+      {
+        "level": "H3",
+        "text": "Beyond the Bytes"
+      },
+      {
+        "level": "H2",
+        "text": "Mulai dengan memperkenalkan diri."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 753,
+    "width": 753
+  },
+  {
+    "label": "Tablet 768 /partner",
+    "url": "http://127.0.0.1:3000/partner",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari nama, institusi, atau bidang belajar…",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Cari",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Filter",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Bima Pratama",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat profil",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Buka chat",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Citra Maharani",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat profil",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat permintaan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Dimas Saputra",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat profil",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Ajak belajar",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Nadia Rahma",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat profil",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Ajak belajar",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": true,
+        "label": "Halaman sebelumnya",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "1",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "2",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Halaman berikutnya",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Belajar lebih jauh, bersama."
+      },
+      {
+        "level": "H2",
+        "text": " Filter partner"
+      },
+      {
+        "level": "H2",
+        "text": "Bima Pratama"
+      },
+      {
+        "level": "H2",
+        "text": "Citra Maharani"
+      },
+      {
+        "level": "H2",
+        "text": "Dimas Saputra"
+      },
+      {
+        "level": "H2",
+        "text": "Nadia Rahma"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 753,
+    "width": 753
+  },
+  {
+    "label": "Tablet 768 /lomba",
+    "url": "http://127.0.0.1:3000/lomba",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari lomba yang ingin kamu ikuti…",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Cari",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Semua kategoriUI/UX DesignWeb DevelopmentData SciencePythonBisnis",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua tingkatNasionalRegional",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua biayaGratisBerbayar",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Deadline mulai (WIB)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Deadline akhir (WIB)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Terapkan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Reset filter",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Innovate UI/UX Challenge 2026",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail & kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Build for Tomorrow Hackathon",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail & kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Data for Good Competition",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail & kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Student Business Plan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail & kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": true,
+        "label": "Halaman sebelumnya",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "1",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": true,
+        "label": "Halaman berikutnya",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Temukan tantangan berikutnya."
+      },
+      {
+        "level": "H2",
+        "text": "Innovate UI/UX Challenge 2026"
+      },
+      {
+        "level": "H2",
+        "text": "Build for Tomorrow Hackathon"
+      },
+      {
+        "level": "H2",
+        "text": "Data for Good Competition"
+      },
+      {
+        "level": "H2",
+        "text": "Student Business Plan"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 753,
+    "width": 753
+  },
+  {
+    "label": "Tablet 768 /tim",
+    "url": "http://127.0.0.1:3000/tim",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Buat tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Cari nama tim…",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Cari",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Semua lombaInnovate UI/UX Challenge 2026Build for Tomorrow HackathonData for Goo",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Bidang / peran",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Hanya slot terbuka",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Tim saya",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Reset filter",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Pixel Pioneers",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Beyond the Bytes",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Insight Collective",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Tim hebat dimulai dari sini."
+      },
+      {
+        "level": "H2",
+        "text": "Pixel Pioneers"
+      },
+      {
+        "level": "H2",
+        "text": "Beyond the Bytes"
+      },
+      {
+        "level": "H2",
+        "text": "Insight Collective"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 753,
+    "width": 753
+  },
+  {
+    "label": "Tablet 768 /profil",
+    "url": "http://127.0.0.1:3000/profil",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Pengguna diblokir",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Privasi & data",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "1Identitas",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "2Bidang & level",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "3Jadwal belajar",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Pilih foto (opsional)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Nama tampilan (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Institusi (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Jurusan / kelas (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Kota / kabupaten (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Belajar lebih seru kalau ada teman diskusi. Lagi mendalami frontend dan desain p",
+        "tag": "TEXTAREA"
+      },
+      {
+        "disabled": false,
+        "label": "Lanjut",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Profil kecil. Peluang besar."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 753,
+    "width": 753
+  },
+  {
+    "label": "Tablet 768 /pesan/team:byte",
+    "url": "http://127.0.0.1:3000/pesan/team:byte",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari percakapan",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "BPBima PratamaPersonalHai Bima! Aku lagi eksplorasi desain sistem dan React. Sab",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Beyond the BytesGrup timHalo tim! Aku sudah menyiapkan beberapa ide untuk kita b",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Laporkan percakapan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi putus koneksi",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Laporkan pesan dari Dimas Saputra",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Tulis pesan",
+        "tag": "TEXTAREA"
+      },
+      {
+        "disabled": true,
+        "label": "Kirim pesan",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Pesan."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "label": "Admin tablet",
+    "url": "http://127.0.0.1:3000/admin/lomba",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Lomba",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Pengguna",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Laporan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Catatan tindakan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Tambah lomba",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Cari data admin",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Filter status admin",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Edit",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Arsipkan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Edit",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Arsipkan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Edit",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Arsipkan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Edit",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Arsipkan",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Lomba"
+      },
+      {
+        "level": "H2",
+        "text": "Innovate UI/UX Challenge 2026"
+      },
+      {
+        "level": "H2",
+        "text": "Build for Tomorrow Hackathon"
+      },
+      {
+        "level": "H2",
+        "text": "Data for Good Competition"
+      },
+      {
+        "level": "H2",
+        "text": "Student Business Plan"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 753,
+    "width": 753
+  },
+  {
+    "label": "Admin mobile /admin/lomba",
+    "url": "http://127.0.0.1:3000/admin/lomba",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Lomba",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Pengguna",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Laporan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Catatan tindakan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Tambah lomba",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Cari data admin",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Filter status admin",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Edit",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Arsipkan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Edit",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Arsipkan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Edit",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Arsipkan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Edit",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Arsipkan",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Lomba"
+      },
+      {
+        "level": "H2",
+        "text": "Innovate UI/UX Challenge 2026"
+      },
+      {
+        "level": "H2",
+        "text": "Build for Tomorrow Hackathon"
+      },
+      {
+        "level": "H2",
+        "text": "Data for Good Competition"
+      },
+      {
+        "level": "H2",
+        "text": "Student Business Plan"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 345,
+    "width": 345
+  },
+  {
+    "label": "Admin mobile /admin/pengguna",
+    "url": "http://127.0.0.1:3000/admin/pengguna",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Lomba",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Pengguna",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Laporan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Catatan tindakan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Cari data admin",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Filter status admin",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Tangguhkan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Tangguhkan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Tangguhkan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Tangguhkan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Tangguhkan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Tangguhkan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Tangguhkan",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Pengguna"
+      },
+      {
+        "level": "H2",
+        "text": "Alya Putri"
+      },
+      {
+        "level": "H2",
+        "text": "Bima Pratama"
+      },
+      {
+        "level": "H2",
+        "text": "Citra Maharani"
+      },
+      {
+        "level": "H2",
+        "text": "Dimas Saputra"
+      },
+      {
+        "level": "H2",
+        "text": "Nadia Rahma"
+      },
+      {
+        "level": "H2",
+        "text": "Rafi Ardiansyah"
+      },
+      {
+        "level": "H2",
+        "text": "Pengguna Baru"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 345,
+    "width": 345
+  },
+  {
+    "label": "Admin mobile /admin/laporan",
+    "url": "http://127.0.0.1:3000/admin/laporan",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Lomba",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Pengguna",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Laporan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Catatan tindakan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Cari data admin",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Filter status admin",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Laporan"
+      },
+      {
+        "level": "H2",
+        "text": "Belum ada laporan"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 345,
+    "width": 345
+  },
+  {
+    "label": "Admin mobile /admin/catatan",
+    "url": "http://127.0.0.1:3000/admin/catatan",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Lomba",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Pengguna",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Laporan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Catatan tindakan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Cari data admin",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Filter status admin",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Catatan tindakan"
+      },
+      {
+        "level": "H2",
+        "text": "Belum ada catatan tindakan"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 345,
+    "width": 345
+  },
+  {
+    "label": "Menu mobile: Escape dan pengembalian fokus",
+    "url": "http://127.0.0.1:3000/admin/catatan",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Lomba",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Pengguna",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Laporan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Catatan tindakan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Cari data admin",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Filter status admin",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Catatan tindakan"
+      },
+      {
+        "level": "H2",
+        "text": "Belum ada catatan tindakan"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 345,
+    "width": 345
+  },
+  {
+    "label": "Chat mobile: pesan gagal memiliki retry",
+    "url": "http://127.0.0.1:3000/pesan/personal:alya:bima",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Kembali ke daftar pesan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Blokir pengguna",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Laporkan percakapan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Sambungkan kembali",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Laporkan pesan dari Bima Pratama",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Kirim ulang",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Tulis pesan",
+        "tag": "TEXTAREA"
+      },
+      {
+        "disabled": true,
+        "label": "Kirim pesan",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Pesan."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 360,
+    "width": 360
+  },
+  {
+    "label": "Chat mobile: retry selesai",
+    "url": "http://127.0.0.1:3000/pesan/personal:alya:bima",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Kembali ke daftar pesan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Blokir pengguna",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Laporkan percakapan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi putus koneksi",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Laporkan pesan dari Bima Pratama",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Tulis pesan",
+        "tag": "TEXTAREA"
+      },
+      {
+        "disabled": true,
+        "label": "Kirim pesan",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Pesan."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 360,
+    "width": 360
+  },
+  {
+    "label": "Konfirmasi blokir: batal, fokus aman",
+    "url": "http://127.0.0.1:3000/pesan/personal:alya:bima",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Kembali ke daftar pesan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Blokir pengguna",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Laporkan percakapan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi putus koneksi",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Laporkan pesan dari Bima Pratama",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Tulis pesan",
+        "tag": "TEXTAREA"
+      },
+      {
+        "disabled": true,
+        "label": "Kirim pesan",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Pesan."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 360,
+    "width": 360
+  },
+  {
+    "label": "Admin laporan: bukti relevan dan simpan keputusan",
+    "url": "http://127.0.0.1:3000/admin/laporan",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Lomba",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Pengguna",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Laporan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Catatan tindakan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Cari data admin",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Filter status admin",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Ditinjau",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Ditindak",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Ditutup tanpa tindakan",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Laporan"
+      },
+      {
+        "level": "H2",
+        "text": "Percakapan Bima Pratama"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 345,
+    "width": 345
+  },
+  {
+    "label": "Admin audit: aktor, waktu, alasan",
+    "url": "http://127.0.0.1:3000/admin/catatan",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Lomba",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Pengguna",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Laporan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Catatan tindakan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Cari data admin",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Filter status admin",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Catatan tindakan"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Catatan tindakan"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 345,
+    "width": 345
+  },
+  {
+    "label": "Klik beranda 1: Cari partner belajar",
+    "url": "http://127.0.0.1:3000/partner",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari nama, institusi, atau bidang belajar…",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Cari",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Reset",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Semua bidangUI/UX DesignWeb DevelopmentData SciencePythonBisnis",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua levelPemulaMenengahMahir",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Kota / kabupaten",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua modeOnlineOffline",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua hariSeninSelasaRabuKamisJumatSabtuMinggu",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Mulai",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Selesai",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "WIB · UTC+7WITA · UTC+8WIT · UTC+9",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Terapkan filter",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Alya Putri",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat profil",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Ajak belajar",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Bima Pratama",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat profil",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Ajak belajar",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Citra Maharani",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat profil",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Ajak belajar",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Dimas Saputra",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat profil",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Ajak belajar",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": true,
+        "label": "Halaman sebelumnya",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "1",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "2",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Halaman berikutnya",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Belajar lebih jauh, bersama."
+      },
+      {
+        "level": "H2",
+        "text": " Filter partner"
+      },
+      {
+        "level": "H2",
+        "text": "Alya Putri"
+      },
+      {
+        "level": "H2",
+        "text": "Bima Pratama"
+      },
+      {
+        "level": "H2",
+        "text": "Citra Maharani"
+      },
+      {
+        "level": "H2",
+        "text": "Dimas Saputra"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Belajar lebih jauh, bersama."
+      },
+      {
+        "level": "H2",
+        "text": " Filter partner"
+      },
+      {
+        "level": "H2",
+        "text": "Alya Putri"
+      },
+      {
+        "level": "H2",
+        "text": "Bima Pratama"
+      },
+      {
+        "level": "H2",
+        "text": "Citra Maharani"
+      },
+      {
+        "level": "H2",
+        "text": "Dimas Saputra"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Klik beranda 2: Saya mencari tim",
+    "url": "http://127.0.0.1:3000/tim",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Buat tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Cari nama tim…",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Cari",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Semua lombaInnovate UI/UX Challenge 2026Build for Tomorrow HackathonData for Goo",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Bidang / peran",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Hanya slot terbuka",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Tim saya",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Reset filter",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Pixel Pioneers",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Beyond the Bytes",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Insight Collective",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Tim hebat dimulai dari sini."
+      },
+      {
+        "level": "H2",
+        "text": "Pixel Pioneers"
+      },
+      {
+        "level": "H2",
+        "text": "Beyond the Bytes"
+      },
+      {
+        "level": "H2",
+        "text": "Insight Collective"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Tim hebat dimulai dari sini."
+      },
+      {
+        "level": "H2",
+        "text": "Pixel Pioneers"
+      },
+      {
+        "level": "H2",
+        "text": "Beyond the Bytes"
+      },
+      {
+        "level": "H2",
+        "text": "Insight Collective"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Klik beranda 3: APAlya PutriUI/UX DesignMenengah · kemampuan mandiri",
+    "url": "http://127.0.0.1:3000/partner/alya",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari partner",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Ajak belajar",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Laporkan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Blokir",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Alya Putri"
+      },
+      {
+        "level": "H2",
+        "text": "Tentang saya"
+      },
+      {
+        "level": "H2",
+        "text": "Bidang & kemampuan"
+      },
+      {
+        "level": "H2",
+        "text": "Preferensi belajar"
+      },
+      {
+        "level": "H2",
+        "text": "Mulai dari satu sapaan."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Alya Putri"
+      },
+      {
+        "level": "H2",
+        "text": "Tentang saya"
+      },
+      {
+        "level": "H2",
+        "text": "Bidang & kemampuan"
+      },
+      {
+        "level": "H2",
+        "text": "Preferensi belajar"
+      },
+      {
+        "level": "H2",
+        "text": "Mulai dari satu sapaan."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Klik beranda 4: BPBima PratamaWeb DevelopmentMenengah · kemampuan mandiri",
+    "url": "http://127.0.0.1:3000/partner/bima",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari partner",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Ajak belajar",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Laporkan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Blokir",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Bima Pratama"
+      },
+      {
+        "level": "H2",
+        "text": "Tentang saya"
+      },
+      {
+        "level": "H2",
+        "text": "Bidang & kemampuan"
+      },
+      {
+        "level": "H2",
+        "text": "Preferensi belajar"
+      },
+      {
+        "level": "H2",
+        "text": "Mulai dari satu sapaan."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Bima Pratama"
+      },
+      {
+        "level": "H2",
+        "text": "Tentang saya"
+      },
+      {
+        "level": "H2",
+        "text": "Bidang & kemampuan"
+      },
+      {
+        "level": "H2",
+        "text": "Preferensi belajar"
+      },
+      {
+        "level": "H2",
+        "text": "Mulai dari satu sapaan."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Klik beranda 5: CMCitra MaharaniData ScienceMenengah · kemampuan mandiri",
+    "url": "http://127.0.0.1:3000/partner/citra",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari partner",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Ajak belajar",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Laporkan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Blokir",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Citra Maharani"
+      },
+      {
+        "level": "H2",
+        "text": "Tentang saya"
+      },
+      {
+        "level": "H2",
+        "text": "Bidang & kemampuan"
+      },
+      {
+        "level": "H2",
+        "text": "Preferensi belajar"
+      },
+      {
+        "level": "H2",
+        "text": "Mulai dari satu sapaan."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Citra Maharani"
+      },
+      {
+        "level": "H2",
+        "text": "Tentang saya"
+      },
+      {
+        "level": "H2",
+        "text": "Bidang & kemampuan"
+      },
+      {
+        "level": "H2",
+        "text": "Preferensi belajar"
+      },
+      {
+        "level": "H2",
+        "text": "Mulai dari satu sapaan."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Klik beranda 6: 01Cari teman belajarCocokkan bidang, level, dan waktu luang. Kirim permintaan untuk mulai diskusi.",
+    "url": "http://127.0.0.1:3000/partner",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari nama, institusi, atau bidang belajar…",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Cari",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Reset",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Semua bidangUI/UX DesignWeb DevelopmentData SciencePythonBisnis",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua levelPemulaMenengahMahir",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Kota / kabupaten",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua modeOnlineOffline",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua hariSeninSelasaRabuKamisJumatSabtuMinggu",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Mulai",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Selesai",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "WIB · UTC+7WITA · UTC+8WIT · UTC+9",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Terapkan filter",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Alya Putri",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat profil",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Ajak belajar",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Bima Pratama",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat profil",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Ajak belajar",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Citra Maharani",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat profil",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Ajak belajar",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Dimas Saputra",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat profil",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Ajak belajar",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": true,
+        "label": "Halaman sebelumnya",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "1",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "2",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Halaman berikutnya",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Belajar lebih jauh, bersama."
+      },
+      {
+        "level": "H2",
+        "text": " Filter partner"
+      },
+      {
+        "level": "H2",
+        "text": "Alya Putri"
+      },
+      {
+        "level": "H2",
+        "text": "Bima Pratama"
+      },
+      {
+        "level": "H2",
+        "text": "Citra Maharani"
+      },
+      {
+        "level": "H2",
+        "text": "Dimas Saputra"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Belajar lebih jauh, bersama."
+      },
+      {
+        "level": "H2",
+        "text": " Filter partner"
+      },
+      {
+        "level": "H2",
+        "text": "Alya Putri"
+      },
+      {
+        "level": "H2",
+        "text": "Bima Pratama"
+      },
+      {
+        "level": "H2",
+        "text": "Citra Maharani"
+      },
+      {
+        "level": "H2",
+        "text": "Dimas Saputra"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Klik beranda 7: 02Siapkan tim lombaPilih lomba, baca kebutuhan peran, lalu temukan tempat untuk kontribusimu.",
+    "url": "http://127.0.0.1:3000/lomba",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari lomba yang ingin kamu ikuti…",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Cari",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Semua kategoriUI/UX DesignWeb DevelopmentData SciencePythonBisnis",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua tingkatNasionalRegional",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua biayaGratisBerbayar",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Deadline mulai (WIB)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Deadline akhir (WIB)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Terapkan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Reset filter",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Innovate UI/UX Challenge 2026",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail & kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Build for Tomorrow Hackathon",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail & kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Data for Good Competition",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail & kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Student Business Plan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail & kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": true,
+        "label": "Halaman sebelumnya",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "1",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": true,
+        "label": "Halaman berikutnya",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Temukan tantangan berikutnya."
+      },
+      {
+        "level": "H2",
+        "text": "Innovate UI/UX Challenge 2026"
+      },
+      {
+        "level": "H2",
+        "text": "Build for Tomorrow Hackathon"
+      },
+      {
+        "level": "H2",
+        "text": "Data for Good Competition"
+      },
+      {
+        "level": "H2",
+        "text": "Student Business Plan"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Temukan tantangan berikutnya."
+      },
+      {
+        "level": "H2",
+        "text": "Innovate UI/UX Challenge 2026"
+      },
+      {
+        "level": "H2",
+        "text": "Build for Tomorrow Hackathon"
+      },
+      {
+        "level": "H2",
+        "text": "Data for Good Competition"
+      },
+      {
+        "level": "H2",
+        "text": "Student Business Plan"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Klik beranda 8: Lihat daftar lomba",
+    "url": "http://127.0.0.1:3000/lomba",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari lomba yang ingin kamu ikuti…",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Cari",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Semua kategoriUI/UX DesignWeb DevelopmentData SciencePythonBisnis",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua tingkatNasionalRegional",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Semua biayaGratisBerbayar",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Deadline mulai (WIB)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Deadline akhir (WIB)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Terapkan",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Reset filter",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Innovate UI/UX Challenge 2026",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail & kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Build for Tomorrow Hackathon",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail & kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Data for Good Competition",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail & kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Student Business Plan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail & kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": true,
+        "label": "Halaman sebelumnya",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "1",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": true,
+        "label": "Halaman berikutnya",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Temukan tantangan berikutnya."
+      },
+      {
+        "level": "H2",
+        "text": "Innovate UI/UX Challenge 2026"
+      },
+      {
+        "level": "H2",
+        "text": "Build for Tomorrow Hackathon"
+      },
+      {
+        "level": "H2",
+        "text": "Data for Good Competition"
+      },
+      {
+        "level": "H2",
+        "text": "Student Business Plan"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Temukan tantangan berikutnya."
+      },
+      {
+        "level": "H2",
+        "text": "Innovate UI/UX Challenge 2026"
+      },
+      {
+        "level": "H2",
+        "text": "Build for Tomorrow Hackathon"
+      },
+      {
+        "level": "H2",
+        "text": "Data for Good Competition"
+      },
+      {
+        "level": "H2",
+        "text": "Student Business Plan"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Klik beranda 9: Innovate UI/UX Challenge 2026",
+    "url": "http://127.0.0.1:3000/lomba/innovate",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Jelajahi lomba",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "example.com · tautan contoh (buka tab baru)",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Cari tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Buat tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Daftar di situs penyelenggara (buka tab baru)",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Innovate UI/UX Challenge 2026"
+      },
+      {
+        "level": "H2",
+        "text": "Tentang lomba"
+      },
+      {
+        "level": "H2",
+        "text": "Persyaratan peserta"
+      },
+      {
+        "level": "H2",
+        "text": "Hadiah & kesempatan"
+      },
+      {
+        "level": "H2",
+        "text": "Sumber informasi"
+      },
+      {
+        "level": "H2",
+        "text": "Idemu butuh tim yang tepat."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Innovate UI/UX Challenge 2026"
+      },
+      {
+        "level": "H2",
+        "text": "Tentang lomba"
+      },
+      {
+        "level": "H2",
+        "text": "Persyaratan peserta"
+      },
+      {
+        "level": "H2",
+        "text": "Hadiah & kesempatan"
+      },
+      {
+        "level": "H2",
+        "text": "Sumber informasi"
+      },
+      {
+        "level": "H2",
+        "text": "Idemu butuh tim yang tepat."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Klik beranda 10: Detail Innovate UI/UX Challenge 2026",
+    "url": "http://127.0.0.1:3000/lomba/innovate",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Jelajahi lomba",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "example.com · tautan contoh (buka tab baru)",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Cari tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Buat tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Daftar di situs penyelenggara (buka tab baru)",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Innovate UI/UX Challenge 2026"
+      },
+      {
+        "level": "H2",
+        "text": "Tentang lomba"
+      },
+      {
+        "level": "H2",
+        "text": "Persyaratan peserta"
+      },
+      {
+        "level": "H2",
+        "text": "Hadiah & kesempatan"
+      },
+      {
+        "level": "H2",
+        "text": "Sumber informasi"
+      },
+      {
+        "level": "H2",
+        "text": "Idemu butuh tim yang tepat."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Innovate UI/UX Challenge 2026"
+      },
+      {
+        "level": "H2",
+        "text": "Tentang lomba"
+      },
+      {
+        "level": "H2",
+        "text": "Persyaratan peserta"
+      },
+      {
+        "level": "H2",
+        "text": "Hadiah & kesempatan"
+      },
+      {
+        "level": "H2",
+        "text": "Sumber informasi"
+      },
+      {
+        "level": "H2",
+        "text": "Idemu butuh tim yang tepat."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Klik beranda 11: Build for Tomorrow Hackathon",
+    "url": "http://127.0.0.1:3000/lomba/hack",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Jelajahi lomba",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "example.com · tautan contoh (buka tab baru)",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Cari tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Buat tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Daftar di situs penyelenggara (buka tab baru)",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Build for Tomorrow Hackathon"
+      },
+      {
+        "level": "H2",
+        "text": "Tentang lomba"
+      },
+      {
+        "level": "H2",
+        "text": "Persyaratan peserta"
+      },
+      {
+        "level": "H2",
+        "text": "Hadiah & kesempatan"
+      },
+      {
+        "level": "H2",
+        "text": "Sumber informasi"
+      },
+      {
+        "level": "H2",
+        "text": "Idemu butuh tim yang tepat."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Build for Tomorrow Hackathon"
+      },
+      {
+        "level": "H2",
+        "text": "Tentang lomba"
+      },
+      {
+        "level": "H2",
+        "text": "Persyaratan peserta"
+      },
+      {
+        "level": "H2",
+        "text": "Hadiah & kesempatan"
+      },
+      {
+        "level": "H2",
+        "text": "Sumber informasi"
+      },
+      {
+        "level": "H2",
+        "text": "Idemu butuh tim yang tepat."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Klik beranda 12: Detail Build for Tomorrow Hackathon",
+    "url": "http://127.0.0.1:3000/lomba/hack",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Jelajahi lomba",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "example.com · tautan contoh (buka tab baru)",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Cari tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Buat tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Daftar di situs penyelenggara (buka tab baru)",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Build for Tomorrow Hackathon"
+      },
+      {
+        "level": "H2",
+        "text": "Tentang lomba"
+      },
+      {
+        "level": "H2",
+        "text": "Persyaratan peserta"
+      },
+      {
+        "level": "H2",
+        "text": "Hadiah & kesempatan"
+      },
+      {
+        "level": "H2",
+        "text": "Sumber informasi"
+      },
+      {
+        "level": "H2",
+        "text": "Idemu butuh tim yang tepat."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Build for Tomorrow Hackathon"
+      },
+      {
+        "level": "H2",
+        "text": "Tentang lomba"
+      },
+      {
+        "level": "H2",
+        "text": "Persyaratan peserta"
+      },
+      {
+        "level": "H2",
+        "text": "Hadiah & kesempatan"
+      },
+      {
+        "level": "H2",
+        "text": "Sumber informasi"
+      },
+      {
+        "level": "H2",
+        "text": "Idemu butuh tim yang tepat."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Klik beranda 13: Data for Good Competition",
+    "url": "http://127.0.0.1:3000/lomba/data",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Jelajahi lomba",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "example.com · tautan contoh (buka tab baru)",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Cari tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Buat tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Daftar di situs penyelenggara (buka tab baru)",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Data for Good Competition"
+      },
+      {
+        "level": "H2",
+        "text": "Tentang lomba"
+      },
+      {
+        "level": "H2",
+        "text": "Persyaratan peserta"
+      },
+      {
+        "level": "H2",
+        "text": "Hadiah & kesempatan"
+      },
+      {
+        "level": "H2",
+        "text": "Sumber informasi"
+      },
+      {
+        "level": "H2",
+        "text": "Idemu butuh tim yang tepat."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Data for Good Competition"
+      },
+      {
+        "level": "H2",
+        "text": "Tentang lomba"
+      },
+      {
+        "level": "H2",
+        "text": "Persyaratan peserta"
+      },
+      {
+        "level": "H2",
+        "text": "Hadiah & kesempatan"
+      },
+      {
+        "level": "H2",
+        "text": "Sumber informasi"
+      },
+      {
+        "level": "H2",
+        "text": "Idemu butuh tim yang tepat."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Klik beranda 14: Detail Data for Good Competition",
+    "url": "http://127.0.0.1:3000/lomba/data",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Jelajahi lomba",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "example.com · tautan contoh (buka tab baru)",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Cari tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Buat tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Daftar di situs penyelenggara (buka tab baru)",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Data for Good Competition"
+      },
+      {
+        "level": "H2",
+        "text": "Tentang lomba"
+      },
+      {
+        "level": "H2",
+        "text": "Persyaratan peserta"
+      },
+      {
+        "level": "H2",
+        "text": "Hadiah & kesempatan"
+      },
+      {
+        "level": "H2",
+        "text": "Sumber informasi"
+      },
+      {
+        "level": "H2",
+        "text": "Idemu butuh tim yang tepat."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Data for Good Competition"
+      },
+      {
+        "level": "H2",
+        "text": "Tentang lomba"
+      },
+      {
+        "level": "H2",
+        "text": "Persyaratan peserta"
+      },
+      {
+        "level": "H2",
+        "text": "Hadiah & kesempatan"
+      },
+      {
+        "level": "H2",
+        "text": "Sumber informasi"
+      },
+      {
+        "level": "H2",
+        "text": "Idemu butuh tim yang tepat."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Klik beranda 15: Cari tim yang masih merekrut",
+    "url": "http://127.0.0.1:3000/tim",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Buat tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Cari nama tim…",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Cari",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Semua lombaInnovate UI/UX Challenge 2026Build for Tomorrow HackathonData for Goo",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Bidang / peran",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Hanya slot terbuka",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Tim saya",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Reset filter",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Simulasi state halaman",
+        "tag": "SELECT"
+      },
+      {
+        "disabled": false,
+        "label": "Pixel Pioneers",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Beyond the Bytes",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Insight Collective",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Tim hebat dimulai dari sini."
+      },
+      {
+        "level": "H2",
+        "text": "Pixel Pioneers"
+      },
+      {
+        "level": "H2",
+        "text": "Beyond the Bytes"
+      },
+      {
+        "level": "H2",
+        "text": "Insight Collective"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Tim hebat dimulai dari sini."
+      },
+      {
+        "level": "H2",
+        "text": "Pixel Pioneers"
+      },
+      {
+        "level": "H2",
+        "text": "Beyond the Bytes"
+      },
+      {
+        "level": "H2",
+        "text": "Insight Collective"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Klik beranda 16: Pixel Pioneers",
+    "url": "http://127.0.0.1:3000/tim/pixel",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Innovate UI/UX Challenge 2026",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Bima Pratama",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Ajukan lamaran",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Pixel Pioneers"
+      },
+      {
+        "level": "H2",
+        "text": "Peran yang dibutuhkan"
+      },
+      {
+        "level": "H2",
+        "text": "Ketua tim"
+      },
+      {
+        "level": "H2",
+        "text": "Bawa idemu ke tim ini."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Pixel Pioneers"
+      },
+      {
+        "level": "H2",
+        "text": "Peran yang dibutuhkan"
+      },
+      {
+        "level": "H2",
+        "text": "Ketua tim"
+      },
+      {
+        "level": "H2",
+        "text": "Bawa idemu ke tim ini."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Klik beranda 17: Lihat kebutuhan tim",
+    "url": "http://127.0.0.1:3000/tim/pixel",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Innovate UI/UX Challenge 2026",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Bima Pratama",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Ajukan lamaran",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Pixel Pioneers"
+      },
+      {
+        "level": "H2",
+        "text": "Peran yang dibutuhkan"
+      },
+      {
+        "level": "H2",
+        "text": "Ketua tim"
+      },
+      {
+        "level": "H2",
+        "text": "Bawa idemu ke tim ini."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Pixel Pioneers"
+      },
+      {
+        "level": "H2",
+        "text": "Peran yang dibutuhkan"
+      },
+      {
+        "level": "H2",
+        "text": "Ketua tim"
+      },
+      {
+        "level": "H2",
+        "text": "Bawa idemu ke tim ini."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Klik beranda 18: Beyond the Bytes",
+    "url": "http://127.0.0.1:3000/tim/byte",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Build for Tomorrow Hackathon",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Alya Putri",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Ajukan lamaran",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Beyond the Bytes"
+      },
+      {
+        "level": "H2",
+        "text": "Peran yang dibutuhkan"
+      },
+      {
+        "level": "H2",
+        "text": "Ketua tim"
+      },
+      {
+        "level": "H2",
+        "text": "Bawa idemu ke tim ini."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Beyond the Bytes"
+      },
+      {
+        "level": "H2",
+        "text": "Peran yang dibutuhkan"
+      },
+      {
+        "level": "H2",
+        "text": "Ketua tim"
+      },
+      {
+        "level": "H2",
+        "text": "Bawa idemu ke tim ini."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Klik beranda 19: Lihat kebutuhan tim",
+    "url": "http://127.0.0.1:3000/tim/byte",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Build for Tomorrow Hackathon",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Alya Putri",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Ajukan lamaran",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Beyond the Bytes"
+      },
+      {
+        "level": "H2",
+        "text": "Peran yang dibutuhkan"
+      },
+      {
+        "level": "H2",
+        "text": "Ketua tim"
+      },
+      {
+        "level": "H2",
+        "text": "Bawa idemu ke tim ini."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Beyond the Bytes"
+      },
+      {
+        "level": "H2",
+        "text": "Peran yang dibutuhkan"
+      },
+      {
+        "level": "H2",
+        "text": "Ketua tim"
+      },
+      {
+        "level": "H2",
+        "text": "Bawa idemu ke tim ini."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Klik beranda 20: Lengkapi profil saya",
+    "url": "http://127.0.0.1:3000/profil",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Pengguna diblokir",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Privasi & data",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "1Identitas",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "2Bidang & level",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "3Jadwal belajar",
+        "tag": "BUTTON"
+      },
+      {
+        "disabled": false,
+        "label": "Pilih foto (opsional)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Nama tampilan (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Institusi (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Jurusan / kelas (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Kota / kabupaten (wajib)",
+        "tag": "INPUT"
+      },
+      {
+        "disabled": false,
+        "label": "Tentang kamu",
+        "tag": "TEXTAREA"
+      },
+      {
+        "disabled": false,
+        "label": "Lanjut",
+        "tag": "BUTTON"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Profil kecil. Peluang besar."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      },
+      {
+        "level": "H1",
+        "text": "Profil kecil. Peluang besar."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1425
+  },
+  {
+    "label": "Akses guest setelah perbaikan heading",
+    "url": "http://127.0.0.1:3000/partner",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Masuk ke TeamUp",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Masuk untuk melanjutkan"
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1440,
+    "width": 1440
+  },
+  {
+    "label": "Final beranda desktop",
+    "url": "http://127.0.0.1:3000/",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari partner belajar",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Saya mencari tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "APAlya PutriUI/UX DesignMenengah · kemampuan mandiri",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "BPBima PratamaWeb DevelopmentMenengah · kemampuan mandiri",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "CMCitra MaharaniData ScienceMenengah · kemampuan mandiri",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "01Cari teman belajarCocokkan bidang, level, dan waktu luang. Kirim permintaan un",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "02Siapkan tim lombaPilih lomba, baca kebutuhan peran, lalu temukan tempat untuk ",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat daftar lomba",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Innovate UI/UX Challenge 2026",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail Innovate UI/UX Challenge 2026",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Build for Tomorrow Hackathon",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail Build for Tomorrow Hackathon",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Data for Good Competition",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail Data for Good Competition",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Cari tim yang masih merekrut",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Pixel Pioneers",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Beyond the Bytes",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Buat profil belajar",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Belajar bareng.Melangkah lebih jauh."
+      },
+      {
+        "level": "H2",
+        "text": "Mulai dari minat yang sama."
+      },
+      {
+        "level": "H2",
+        "text": "Mau mulai dari mana?"
+      },
+      {
+        "level": "H3",
+        "text": "Cari teman belajar"
+      },
+      {
+        "level": "H3",
+        "text": "Siapkan tim lomba"
+      },
+      {
+        "level": "H2",
+        "text": "Ada tantangan untuk idemu."
+      },
+      {
+        "level": "H3",
+        "text": "Innovate UI/UX Challenge 2026"
+      },
+      {
+        "level": "H3",
+        "text": "Build for Tomorrow Hackathon"
+      },
+      {
+        "level": "H3",
+        "text": "Data for Good Competition"
+      },
+      {
+        "level": "H2",
+        "text": "Tim yang tepatsaling melengkapi."
+      },
+      {
+        "level": "H3",
+        "text": "Pixel Pioneers"
+      },
+      {
+        "level": "H3",
+        "text": "Beyond the Bytes"
+      },
+      {
+        "level": "H2",
+        "text": "Mulai dengan memperkenalkan diri."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 1440,
+    "width": 1440
+  },
+  {
+    "label": "Final beranda mobile 360",
+    "url": "http://127.0.0.1:3000/",
+    "controls": [
+      {
+        "disabled": false,
+        "label": "Cari partner belajar",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Saya mencari tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "APAlya PutriUI/UX DesignMenengah · kemampuan mandiri",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "BPBima PratamaWeb DevelopmentMenengah · kemampuan mandiri",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "CMCitra MaharaniData ScienceMenengah · kemampuan mandiri",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "01Cari teman belajarCocokkan bidang, level, dan waktu luang. Kirim permintaan un",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "02Siapkan tim lombaPilih lomba, baca kebutuhan peran, lalu temukan tempat untuk ",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat daftar lomba",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Innovate UI/UX Challenge 2026",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail Innovate UI/UX Challenge 2026",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Build for Tomorrow Hackathon",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail Build for Tomorrow Hackathon",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Data for Good Competition",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Detail Data for Good Competition",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Cari tim yang masih merekrut",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Pixel Pioneers",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Beyond the Bytes",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Lihat kebutuhan tim",
+        "tag": "A"
+      },
+      {
+        "disabled": false,
+        "label": "Buat profil belajar",
+        "tag": "A"
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Belajar bareng.Melangkah lebih jauh."
+      },
+      {
+        "level": "H2",
+        "text": "Mulai dari minat yang sama."
+      },
+      {
+        "level": "H2",
+        "text": "Mau mulai dari mana?"
+      },
+      {
+        "level": "H3",
+        "text": "Cari teman belajar"
+      },
+      {
+        "level": "H3",
+        "text": "Siapkan tim lomba"
+      },
+      {
+        "level": "H2",
+        "text": "Ada tantangan untuk idemu."
+      },
+      {
+        "level": "H3",
+        "text": "Innovate UI/UX Challenge 2026"
+      },
+      {
+        "level": "H3",
+        "text": "Build for Tomorrow Hackathon"
+      },
+      {
+        "level": "H3",
+        "text": "Data for Good Competition"
+      },
+      {
+        "level": "H2",
+        "text": "Tim yang tepatsaling melengkapi."
+      },
+      {
+        "level": "H3",
+        "text": "Pixel Pioneers"
+      },
+      {
+        "level": "H3",
+        "text": "Beyond the Bytes"
+      },
+      {
+        "level": "H2",
+        "text": "Mulai dengan memperkenalkan diri."
+      },
+      {
+        "level": "H2",
+        "text": ""
+      }
+    ],
+    "scrollWidth": 345,
+    "width": 345
+  }
+]

@@ -41,9 +41,6 @@ const paths: Record<string, ReactNode> = {
   close: <path d="m6 6 12 12M18 6 6 18" />,
   plus: <path d="M12 5v14M5 12h14" />,
   filter: <path d="M4 7h16M7 12h10m-7 5h4" />,
-  spark: (
-    <path d="m12 3 2.4 6.6L21 12l-6.6 2.4L12 21l-2.4-6.6L3 12l6.6-2.4L12 3Z" />
-  ),
   book: (
     <path d="M12 5v16M3 3c4-1 6 0 9 2 3-2 5-3 9-2v16c-4-1-6 0-9 2-3-2-5-3-9-2V3Z" />
   ),
@@ -121,7 +118,7 @@ export function Icon({ name, size = 20 }: { name: string; size?: number }) {
       strokeLinejoin="round"
       aria-hidden="true"
     >
-      {paths[name] || paths.spark}
+      {paths[name] || paths.info}
     </svg>
   );
 }
@@ -188,17 +185,20 @@ export function Empty({
   title = "Belum ada hasil",
   text = "Coba kurangi filter atau mulai aktivitas baru.",
   children,
+  page = false,
 }: {
   title?: string;
   text?: string;
   children?: ReactNode;
+  page?: boolean;
 }) {
+  const Heading = page ? "h1" : "h2";
   return (
     <div className="empty">
       <span className="empty-icon">
         <Icon name="search" size={32} />
       </span>
-      <h3>{title}</h3>
+      <Heading>{title}</Heading>
       <p>{text}</p>
       {children}
     </div>
