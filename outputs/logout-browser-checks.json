@@ -1,0 +1,120 @@
+{
+  "checks": [
+    {
+      "label": "desktop light initial focus and colors",
+      "buttons": [
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgba(0, 0, 0, 0)",
+          "color": "rgb(70, 82, 104)",
+          "text": ""
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 3, 33)",
+          "text": "Tidak"
+        },
+        {
+          "background": "rgb(180, 35, 52)",
+          "border": "rgba(0, 0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "text": "Ya"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgba(0, 0, 0, 0)",
+          "color": "rgb(70, 82, 104)",
+          "text": ""
+        }
+      ],
+      "client": 1425,
+      "dialogOpen": true,
+      "focus": "Tidak",
+      "scroll": 1425,
+      "sessionVisible": true,
+      "theme": "light"
+    },
+    {
+      "label": "Tidak retains session",
+      "buttons": [
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgba(0, 0, 0, 0)",
+          "color": "rgb(70, 82, 104)",
+          "text": ""
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgba(0, 0, 0, 0)",
+          "color": "rgb(70, 82, 104)",
+          "text": ""
+        }
+      ],
+      "client": 1425,
+      "dialogOpen": false,
+      "focus": "",
+      "scroll": 1425,
+      "sessionVisible": true,
+      "theme": "light"
+    },
+    {
+      "label": "Escape retains session and restores focus",
+      "buttons": [
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgba(0, 0, 0, 0)",
+          "color": "rgb(70, 82, 104)",
+          "text": ""
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgba(0, 0, 0, 0)",
+          "color": "rgb(70, 82, 104)",
+          "text": ""
+        }
+      ],
+      "client": 1425,
+      "dialogOpen": false,
+      "focus": "",
+      "scroll": 1425,
+      "sessionVisible": true,
+      "theme": "light"
+    },
+    {
+      "label": "Close retains session",
+      "buttons": [
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgba(0, 0, 0, 0)",
+          "color": "rgb(70, 82, 104)",
+          "text": ""
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgba(0, 0, 0, 0)",
+          "color": "rgb(70, 82, 104)",
+          "text": ""
+        }
+      ],
+      "client": 1425,
+      "dialogOpen": false,
+      "focus": "",
+      "scroll": 1425,
+      "sessionVisible": true,
+      "theme": "light"
+    },
+    {
+      "label": "Ya logs out and returns home after navigation",
+      "buttons": [],
+      "client": 1425,
+      "dialogOpen": false,
+      "focus": "Lewati ke kontenTeamUp.Cari PartnerLombaCari TimAk",
+      "path": "/",
+      "scroll": 1425,
+      "sessionVisible": false,
+      "theme": "light"
+    }
+  ],
+  "console": []
+}

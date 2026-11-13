@@ -167,6 +167,35 @@ export default function TeamUp() {
         "Permintaan terkirim. Lihat statusnya di Aktivitas.",
       );
   }
+  function requestLogout() {
+    setModal({
+      title: "yakin ingin keluar dari akun?",
+      content: (
+        <div className="actions end">
+          <button
+            type="button"
+            className="button ghost"
+            autoFocus
+            data-dialog-initial-focus
+            onClick={() => setModal(null)}
+          >
+            Tidak
+          </button>
+          <button
+            type="button"
+            className="button logout-confirm"
+            onClick={() => {
+              setState((s) => ({ ...s, session: null }));
+              setModal(null);
+              router.push("/");
+            }}
+          >
+            Ya
+          </button>
+        </div>
+      ),
+    });
+  }
   function report(target: string, evidence = "") {
     if (!requireUser()) return;
     setModal({
@@ -517,10 +546,7 @@ export default function TeamUp() {
                 <button
                   className="icon-button logout"
                   aria-label="Keluar dari akun"
-                  onClick={() => {
-                    setState((s) => ({ ...s, session: null }));
-                    router.push("/");
-                  }}
+                  onClick={requestLogout}
                 >
                   <Icon name="logout" size={18} />
                 </button>
@@ -575,11 +601,7 @@ export default function TeamUp() {
                       </Link>
                       {user && (
                         <button
-                          onClick={() => {
-                            setState((s) => ({ ...s, session: null }));
-                            setModal(null);
-                            router.push("/");
-                          }}
+                          onClick={requestLogout}
                         >
                           <Icon name="logout" />
                           Keluar dari akun

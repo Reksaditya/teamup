@@ -2,6 +2,8 @@
 
 ## Revisi aktif 1.2, 13 November 2026
 
+Tambahan interaksi logout: pada desktop maupun mobile tampilkan dialog “yakin ingin keluar dari akun?” sebelum sesi diakhiri. Tombol “Ya” berwarna merah dan mengakhiri sesi lokal; “Tidak” bergaya ghost dan membatalkan. Fokus awal pada Tidak; Escape/tutup membatalkan dan mengembalikan fokus. Warna destruktif bertoken terpusat dan tetap merah dalam kedua tema.
+
 Arahan terbaru pengguna: light mode default dengan canvas #FFFFFF, teks/aksi navy #000321, switch tema pada navbar, hero terpusat mengikuti referensi lampiran terbaru, dan underline sedikit melengkung pada “lebih jauh”. Light/dark memakai token terpusat dalam app/globals.css; rincian alasan desain pada [DESIGN.md](../DESIGN.md). Ini menggantikan keputusan tema gelap tetap, tanpa toggle, hero terbagi, dan larangan underline pada revisi sebelumnya. Panel partner/tim berfungsi sebagai preview interaktif; logo, statistik, dan testimoni referensi tidak disalin. Label demo/contoh serta kontrol simulasi dihapus dari UI atas permintaan langsung pengguna. Frontend tetap lokal; perubahan visual tidak mengesahkan backend, integrasi OAuth/email, atau kesiapan produksi. Seluruh cakupan P1 serta aturan akses/domain tetap mengacu PRD.
 
 ## Revisi visual 1.1, 13 November 2026

@@ -46,6 +46,10 @@
   --neutral-bg: #eef1f5;
   --neutral-text: #465268;
   --underline: #7695b8;
+  --destructive: #b42334;
+  --destructive-hover: #961c2b;
+  --destructive-pressed: #7d1724;
+  --on-destructive: #ffffff;
   --gutter: 32px;
   --header: 80px;
   --toolbar: 0px;
@@ -350,6 +354,28 @@ select {
   background: var(--text);
 }
 .button.danger:active {
+  transform: translateY(1px);
+}
+.button.ghost {
+  background: transparent;
+  border-color: transparent;
+  color: var(--text);
+}
+.button.ghost:hover {
+  background: var(--raised);
+}
+.button.ghost:active {
+  background: var(--selected);
+}
+.button.logout-confirm {
+  background: var(--destructive);
+  color: var(--on-destructive);
+}
+.button.logout-confirm:hover {
+  background: var(--destructive-hover);
+}
+.button.logout-confirm:active {
+  background: var(--destructive-pressed);
   transform: translateY(1px);
 }
 .button.small {

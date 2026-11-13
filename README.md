@@ -23,7 +23,7 @@ Untuk pengujian login email gunakan email seed, misalnya alya@teamup.test atau a
 
 ### Berpindah akun
 
-1. Klik tombol **Keluar** di kanan atas. Pada mobile, buka menu **☰**, lalu pilih **Keluar dari akun**.
+1. Klik tombol **Keluar** di kanan atas. Pada mobile, buka menu **☰**, lalu pilih **Keluar dari akun**. Pada dialog **yakin ingin keluar dari akun?**, pilih **Ya** (merah) untuk keluar, atau **Tidak** (ghost) untuk tetap masuk. Escape atau tombol tutup juga membatalkan logout.
 2. Klik **Masuk**, lalu isi email akun yang ingin digunakan dari tabel berikut.
 3. Isi password dengan teks uji apa pun minimal **8 karakter**, misalnya `teamup123`, lalu klik **Masuk ke TeamUp**. Ini hanya berlaku untuk frontend lokal; password belum diverifikasi melalui backend.
 

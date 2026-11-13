@@ -30,6 +30,9 @@ pairs.push(
   ["on-accent", "hover", 4.5],
   ["on-accent", "pressed", 4.5],
   ["neutral-text", "neutral-bg", 4.5],
+  ["on-destructive", "destructive", 4.5],
+  ["on-destructive", "destructive-hover", 4.5],
+  ["on-destructive", "destructive-pressed", 4.5],
 );
 for (const bg of ["canvas", "surface", "raised", "input", "selected"])
   pairs.push(["control", bg, 3], ["focus", bg, 3]);
@@ -38,7 +41,10 @@ const results = ["light", "dark"].flatMap((theme) => {
     theme === "light"
       ? /:root\s*\{([^}]+)\}/
       : /\[data-theme="dark"\]\s*\{([^}]+)\}/;
-  const tokens = readTokens(css.match(selector)[1]);
+  const tokens = {
+    ...readTokens(css.match(/:root\s*\{([^}]+)\}/)[1]),
+    ...readTokens(css.match(selector)[1]),
+  };
   return pairs.map(([a, b, target]) => ({
     theme,
     foreground: a,

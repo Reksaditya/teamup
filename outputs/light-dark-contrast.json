@@ -225,6 +225,30 @@
   },
   {
     "theme": "light",
+    "foreground": "on-destructive",
+    "background": "destructive",
+    "ratio": 6.5,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "theme": "light",
+    "foreground": "on-destructive",
+    "background": "destructive-hover",
+    "ratio": 8.41,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "theme": "light",
+    "foreground": "on-destructive",
+    "background": "destructive-pressed",
+    "ratio": 10.4,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "theme": "light",
     "foreground": "control",
     "background": "canvas",
     "ratio": 3.95,
@@ -524,6 +548,30 @@
     "foreground": "neutral-text",
     "background": "neutral-bg",
     "ratio": 8.61,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "theme": "dark",
+    "foreground": "on-destructive",
+    "background": "destructive",
+    "ratio": 6.5,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "theme": "dark",
+    "foreground": "on-destructive",
+    "background": "destructive-hover",
+    "ratio": 8.41,
+    "target": 4.5,
+    "pass": true
+  },
+  {
+    "theme": "dark",
+    "foreground": "on-destructive",
+    "background": "destructive-pressed",
+    "ratio": 10.4,
     "target": 4.5,
     "pass": true
   },
