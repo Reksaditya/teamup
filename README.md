@@ -21,6 +21,25 @@ Alya memiliki permintaan masuk dari Citra, partner Bima, dan memimpin Beyond the
 
 Untuk pengujian login email gunakan email seed, misalnya alya@teamup.test atau admin@teamup.test, serta teks password uji minimal delapan karakter. Password tidak disimpan atau diverifikasi sebagai kredensial nyata. Registrasi membuat akun lokal. Google menampilkan pesan belum terhubung. Verifikasi dan reset belum terintegrasi layanan email. Jangan menggunakan password atau data pribadi asli.
 
+### Berpindah akun
+
+1. Klik tombol **Keluar** di kanan atas. Pada mobile, buka menu **☰**, lalu pilih **Keluar dari akun**.
+2. Klik **Masuk**, lalu isi email akun yang ingin digunakan dari tabel berikut.
+3. Isi password dengan teks uji apa pun minimal **8 karakter**, misalnya `teamup123`, lalu klik **Masuk ke TeamUp**. Ini hanya berlaku untuk frontend lokal; password belum diverifikasi melalui backend.
+
+| Akun | Email |
+| --- | --- |
+| Alya | `alya@teamup.test` |
+| Bima | `bima@teamup.test` |
+| Citra | `citra@teamup.test` |
+| Dimas | `dimas@teamup.test` |
+| Nadia | `nadia@teamup.test` |
+| Rafi | `rafi@teamup.test` |
+| Pengguna Baru (belum terverifikasi) | `baru@teamup.test` |
+| Admin | `admin@teamup.test` |
+
+### Alur pengujian
+
 Coba dua alur berikut dengan logout dan login ke akun seed penerima setelah mengirim permintaan atau lamaran:
 
 1. Daftar → verifikasi simulasi → onboarding → cari partner → ajak belajar → penerima menerima di Aktivitas → chat personal.
