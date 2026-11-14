@@ -1,5 +1,15 @@
 # Design Requirement — TeamUp Belajar
 
+## Tambahan About Us, 13 November 2026
+
+Arahan terbaru pengguna: kartu SRS/User Manual tidak lagi menampilkan teks “Tautan sementara”, menggantikan ketentuan label pada revisi sebelumnya. URL dummy tetap sampai link asli diberikan.
+
+Dokumen Website (14 November): tambahkan h2 “Dokumen Website” sebelum bagian anggota, dengan kartu SRS dan User Manual horizontal dua kolom. Kartu menavigasi ke URL Google Drive dummy pada tab baru, berlabel “Tautan sementara”, dengan petunjuk tab baru untuk pembaca layar. Warna mengikuti token light/dark; mobile tetap dua kolom dengan padding 16 px.
+
+Revisi aktif 14 November 2026: tampilkan 10 identitas sesuai data pengguna, tanpa foto, siluet, atau placeholder foto. Kartu berisi nama, kelas, NIM, NID, dan kelompok; NIM/NID berupa string. Grid 3/2/1 kolom (desktop/tablet/mobile) menjaga keterbacaan nama lengkap. Headline “Kelompok 20 Fortran” dan “Anggota:” tetap. Revisi ini menggantikan kebutuhan foto/placeholder pada uraian awal berikut.
+
+Atas permintaan pengguna, tambahkan section About Us terakhir sebelum footer landing, dengan deskripsi singkat dan tombol ke `/aboutus`. Halaman publik memuat penjelasan aplikasi, headline “Kelompok 20 Fortran”, subheader “Anggota:”, dan 10 kartu profil: foto, nama, kelas, NIM, NID, kelompok. Pengguna mengesahkan placeholder foto/identitas terlebih dahulu. Adaptasi referensi https://www.pinterest.com/pin/883972233107601632/ berupa potret kapsul, judul terpusat, dan grid profil; tidak menyalin foto/identitas referensi. Detail arah dan responsif tercatat pada DESIGN.md. Ini tambahan halaman informasi, tidak mengubah domain partner/tim atau prioritas produk lain.
+
 ## Revisi aktif 1.2, 13 November 2026
 
 Tambahan interaksi logout: pada desktop maupun mobile tampilkan dialog “yakin ingin keluar dari akun?” sebelum sesi diakhiri. Tombol “Ya” berwarna merah dan mengakhiri sesi lokal; “Tidak” bergaya ghost dan membatalkan. Fokus awal pada Tidak; Escape/tutup membatalkan dan mengembalikan fokus. Warna destruktif bertoken terpusat dan tetap merah dalam kedua tema.

@@ -694,6 +694,207 @@ small {
   margin-top: 24px;
   margin-inline: auto;
 }
+.about-teaser {
+  background: var(--raised);
+  border-top: 1px solid var(--border);
+}
+.about-teaser-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  padding-block: 64px;
+}
+.about-teaser h2 {
+  max-width: 360px;
+}
+.about-teaser-copy > p {
+  color: var(--secondary);
+  max-width: 540px;
+}
+.about-teaser-copy > .button {
+  margin-top: 24px;
+}
+.about-page {
+  padding-block: 64px 80px;
+}
+.about-intro {
+  max-width: 720px;
+  margin-inline: auto;
+  text-align: center;
+}
+.about-intro h1 {
+  margin-bottom: 20px;
+}
+.about-intro > p:not(.section-label) {
+  color: var(--secondary);
+}
+.about-intro > p + p {
+  margin-top: 12px;
+}
+.about-documents {
+  margin-top: 64px;
+}
+.about-documents > h2 {
+  margin-bottom: 24px;
+}
+.document-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+.document-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.document-card:hover {
+  border-color: var(--control);
+  background: var(--raised);
+}
+.document-card:active {
+  background: var(--selected);
+}
+.document-card-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--secondary);
+}
+.document-card > p {
+  color: var(--secondary);
+  font-size: 14px;
+  line-height: 22px;
+}
+@media (max-width: 767px) {
+  .about-documents {
+    margin-top: 48px;
+  }
+  .document-grid {
+    gap: 16px;
+  }
+  .document-card {
+    padding: 16px;
+  }
+  .document-card h3 {
+    font-size: 18px;
+    line-height: 26px;
+    min-height: 52px;
+  }
+}
+.about-members {
+  margin-top: 64px;
+}
+.about-team-heading {
+  text-align: center;
+}
+.about-team-heading h2 {
+  font-size: 36px;
+  line-height: 44px;
+}
+.about-team-heading > p:last-child {
+  color: var(--secondary);
+  margin-top: 12px;
+}
+.member-list-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-block: 40px 24px;
+}
+.member-list-heading > p {
+  font-size: 14px;
+  color: var(--muted);
+}
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+.member-card {
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  background: var(--surface);
+}
+.member-details {
+  min-width: 0;
+}
+.member-details h4 {
+  font:
+    600 18px/26px "Plus Jakarta Sans",
+    Inter,
+    sans-serif;
+  letter-spacing: -0.02em;
+  margin: 0 0 12px;
+  overflow-wrap: anywhere;
+}
+.member-details dl {
+  display: grid;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.member-details dl > div {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr);
+  gap: 8px;
+}
+.member-details dt {
+  color: var(--muted);
+}
+.member-details dd {
+  color: var(--secondary);
+  overflow-wrap: anywhere;
+}
+.about-return {
+  margin-top: 48px;
+  text-align: center;
+}
+@media (max-width: 1099px) {
+  .member-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .about-teaser-inner {
+    gap: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .about-teaser-inner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-block: 40px;
+  }
+  .about-page {
+    padding-block: 40px;
+  }
+  .about-members {
+    margin-top: 48px;
+  }
+  .about-team-heading h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .member-list-heading {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 32px;
+  }
+  .member-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .member-card {
+    padding: 20px;
+  }
+}
+
 .study-board {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -3347,8 +3548,12 @@ input.sr-only {
   }
 }
 @media (max-width: 359px) {
-  .header-inner { gap: 8px; }
-  .header-actions { gap: 4px; }
+  .header-inner {
+    gap: 8px;
+  }
+  .header-actions {
+    gap: 4px;
+  }
   .header-actions .login-link {
     display: none;
   }

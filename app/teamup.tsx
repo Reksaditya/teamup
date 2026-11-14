@@ -16,6 +16,7 @@ import {
 import { Icon, Avatar, Empty, Title, formData } from "./ui";
 import { useDemoState } from "./store";
 import { ThemeSwitch } from "./theme";
+import { AboutUs } from "./about";
 import { PartnerCard, CompetitionCard, TeamCard, Landing } from "./discovery";
 import {
   PartnerSearch,
@@ -383,6 +384,7 @@ export default function TeamUp() {
   const parts = path.split("/").filter(Boolean);
   let content: ReactNode;
   if (path === "/") content = <Landing {...shared} />;
+  else if (path === "/aboutus") content = <AboutUs />;
   else if (parts[0] === "partner")
     content = parts[1] ? (
       <ProfileDetail {...shared} id={parts[1]} />

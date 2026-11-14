@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AboutTeaser } from "./about";
 import { useState } from "react";
 import {
   closed,
@@ -566,6 +567,7 @@ export function Landing(p: Shared) {
           {p.user ? "Lengkapi profil saya" : "Buat profil belajar"}
         </Link>
       </section>
+      <AboutTeaser />
     </main>
   );
 }

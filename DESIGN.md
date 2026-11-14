@@ -1,5 +1,19 @@
 # TeamUp: arah pembaruan visual
 
+## About Us: tambahan halaman publik
+
+Arahan terbaru pengguna: hapus teks “Tautan sementara” dari kartu SRS/User Manual. Ini menggantikan keputusan label sebelumnya; URL dummy dan TODO penggantian tetap tercatat pada source/dokumen teknis.
+
+Dokumen Website, 14 November 2026: dua kartu SRS dan User Manual sebelum bagian anggota, tersusun horizontal dalam dua kolom termasuk mobile dengan padding lebih ringkas. Kartu seluruhnya berupa tautan, ikon buku menandai dokumen dan ikon external menjelaskan tab baru. Status “Tautan sementara” mengidentifikasi URL dummy yang diminta pengguna; TODO penggantian URL berada pada websiteDocuments di app/about.tsx. Tidak menambahkan warna/efek dekoratif baru.
+
+Revisi aktif 14 November 2026: pengguna mengganti placeholder dengan data 10 anggota yang diberikan langsung, serta menghapus seluruh foto. Kartu kini teks saja dengan nama, kelas, NIM, NID, kelompok; format dan kapitalisasi data pengguna dipertahankan, termasuk nol awal NID. Grid 3 kolom desktop, 2 tablet, 1 mobile memberi ruang bagi nama panjang dan NIM. Border tipis dan padding membedakan identitas tanpa mengandalkan potret. Tidak lagi menampilkan pesan identitas sedang dilengkapi. Revisi ini menggantikan detail potret/placeholder di bawah; warna dan dials tetap.
+
+Permintaan pengguna: section About Us menjadi section terakhir landing sebelum footer, dengan deskripsi aplikasi dan tombol menuju `/aboutus`. Halaman publik ini menjelaskan TeamUp lalu menampilkan headline “Kelompok 20 Fortran”, subheader “Anggota:”, dan 10 profil dengan foto, nama, kelas, NIM, NID serta kelompok.
+
+Referensi Pinterest pengguna (pin 883972233107601632) dipakai untuk judul terpusat, bentuk kapsul pada potret, dan grid profil yang ringan. ENERGY 1 / RHYTHM 2 / MOTION 1 tetap berlaku. Kartu menggunakan pemisah tipis agar identitas mudah dipindai; tanpa social link atau aksi fiktif. Grid 5 kolom desktop, 3 tablet, 2 pada layar menengah, dan kartu horizontal 1 kolom pada ponsel sempit menjaga label terbaca.
+
+Pengguna memilih placeholder. Foto memakai siluet netral berlabel “Foto belum diisi”, nama “Nama anggota 01–10”, identitas kosong berlabel “Belum diisi”, kelompok “20 Fortran” sesuai instruksi. Tidak membuat foto/nama/NIM/NID nyata atau menebak arti NID. Konten dapat diganti pada array members di app/about.tsx. Warna, font, serta tema tetap dari token aktif.
+
 ## Revisi aktif 1.2: light mode dan referensi landing
 
 Arahan langsung pengguna 13 November 2026 menggantikan keputusan tema tetap gelap dan hero terbagi di bawah. Pembacaan: landing kolaborasi siswa/mahasiswa dengan hero terpusat, bahasa visual putih–navy, ENERGY 1 / RHYTHM 2 / MOTION 1.

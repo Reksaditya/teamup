@@ -1,5 +1,13 @@
 # Keputusan implementasi TeamUp
 
+Revisi copy dokumen: pengguna meminta label “Tautan sementara” dihapus dari kedua kartu. URL masih dummy; penghapusan label tidak membuat dokumen Drive asli tersedia.
+
+Dokumen Website, 14 November 2026: dua kartu horizontal SRS/User Manual pada About Us menaut ke URL Google Drive dummy, ditandai Tautan sementara. Ganti href pada websiteDocuments di app/about.tsx ketika URL asli tersedia. Kartu membuka tab baru; tidak ada API Drive, upload, atau dokumen yang diklaim tersedia.
+
+About Us, 14 November 2026: pengguna memberikan 10 nama beserta kelas/NIM/NID/kelompok dan mengizinkan penampilannya pada kartu publik. Placeholder identitas diganti sesuai data tersebut; seluruh foto dan placeholder foto dihapus. NIM/NID tetap string dan kapitalisasi kelompok dipertahankan. Ini menggantikan keputusan placeholder pada paragraf berikut. Data tim tetap terpisah dari akun member.
+
+Tambahan yang disetujui pengguna: halaman publik `/aboutus` dan section terakhir landing sebelum footer. Identitas tim memakai headline “Kelompok 20 Fortran”, subheader “Anggota:”, 10 profil placeholder dengan foto/nama/kelas/NIM/NID/kelompok. Pengguna memilih placeholder; jangan menebak data atau arti NID. Source identitas terpisah pada app/about.tsx, tanpa koneksi ke akun member.
+
 Pembaruan visual 1.1: pengguna menyetujui antislop during dan meminta warna tidak mencolok serta desain tidak generik. `../DESIGN.md` dan revisi 1.1 pada Design Requirement menjadi arah visual aktif. Perubahan hanya pada presentasi dan perbaikan aksesibilitas terkait; batas frontend demo tetap berlaku.
 
 Disetujui pengguna pada 13 November 2026. Catatan ini memperjelas PRD dan Design Requirement, tanpa menyatakan MVP produksi telah selesai.

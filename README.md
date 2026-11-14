@@ -54,6 +54,7 @@ Perubahan tersimpan di localStorage dengan kunci teamup-demo-v1. Penghapusan pen
 | Area | Rute |
 | --- | --- |
 | Beranda | / |
+| Tentang aplikasi dan tim | /aboutus |
 | Akun | /masuk, /daftar, /verifikasi, /reset-password |
 | Profil | /onboarding, /profil, /partner/[id] |
 | Partner | /partner |
@@ -68,6 +69,7 @@ Perubahan tersimpan di localStorage dengan kunci teamup-demo-v1. Penghapusan pen
 
 - app/teamup.tsx — shell, navigasi, dialog, dispatch halaman.
 - app/discovery.tsx — landing, kartu partner/lomba/tim.
+- app/about.tsx — section About Us dan 10 identitas tim sesuai data pengguna (nama, kelas, NIM, NID, kelompok), tanpa foto.
 - app/pages.tsx — pencarian, detail, formulir tim, state data.
 - app/workspace.tsx — aktivitas, chat, profil, akun, admin, bantuan.
 - app/controls.tsx — foto lokal, jadwal berulang, editor peran/slot.

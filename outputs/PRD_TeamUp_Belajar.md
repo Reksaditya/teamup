@@ -326,3 +326,13 @@ Perubahan terhadap cakupan P1, aturan akses, atau penggunaan data harus memperba
 ## Keputusan pengguna — 13 November 2026
 
 Nama TeamUp, frontend interaktif dengan data demo untuk seluruh halaman P1, satu tim aktif per pengguna per lomba, password contoh minimal 8 karakter, pesan 2.000 karakter, dan foto 2 MB telah disetujui. Logo teks dan kontak dummy digunakan sementara. Detail cakupan, penerimaan frontend, dan batas integrasi: [Implementation_Decisions.md](Implementation_Decisions.md). Ketentuan usulan lain tetap terbuka.
+
+### Halaman informasi About Us
+
+Revisi copy terbaru: atas permintaan pengguna, hapus label “Tautan sementara” pada kartu SRS/User Manual. Ini menggantikan ketentuan konteks label pada catatan sebelumnya; URL dummy tetap didokumentasikan secara teknis sampai link asli tersedia.
+
+Tambahan dokumen, 14 November 2026: di atas bagian anggota tampilkan headline “Dokumen Website” dengan dua kartu horizontal SRS dan User Manual. Kartu menaut ke Google Drive; pengguna meminta URL dummy terlebih dahulu, sehingga tampilkan konteks tautan sementara sampai URL dokumen asli tersedia. Ini hanya konten publik, tanpa integrasi atau pengambilan berkas Drive.
+
+Pembaruan 14 November 2026: pengguna memberikan data lengkap 10 anggota untuk ditampilkan pada About Us dan meminta seluruh foto dihapus. Kriteria aktif: tepat 10 kartu teks berisi nama, kelas, NIM, NID, serta kelompok sesuai data pengguna; NIM/NID disimpan sebagai string agar nol awal tetap ada. Headline “Kelompok 20 Fortran” dan subheader “Anggota:” tetap. Tidak ada foto atau placeholder foto. Ini menggantikan persetujuan placeholder sebelumnya dan tidak mengubah data profil member.
+
+Pengguna menambahkan section About Us sebelum footer landing dan halaman publik `/aboutus`. Kriteria penerimaan: deskripsi singkat aplikasi serta tombol menuju halaman; halaman memuat deskripsi, headline “Kelompok 20 Fortran”, subheader “Anggota:”, dan tepat 10 profil tim berisi foto/nama/kelas/NIM/NID/kelompok. Pengguna menyetujui placeholder terlebih dahulu. Identitas ini merupakan konten tim pengembang yang terpisah dari profil member; tidak menambah pengumpulan NIM/NID pada registrasi. Tidak menebak data pribadi atau arti NID. Halaman mengikuti light/dark dan layout responsif aktif. Aturan akses/domain P1 lain tetap berlaku.
