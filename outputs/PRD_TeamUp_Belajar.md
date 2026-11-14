@@ -329,6 +329,8 @@ Nama TeamUp, frontend interaktif dengan data demo untuk seluruh halaman P1, satu
 
 ### Halaman informasi About Us
 
+Persetujuan tambahan 14 November 2026: [Dashboard_Requirements.md](Dashboard_Requirements.md) memuat NAV-01, DASH-01, GROUP-01-03, CAL-01-03, CAR-01 dan DATA-01 yang disetujui pengguna. Kalender dan kelompok belajar kini masuk lingkup frontend yang diminta, menggantikan pembatasan cakupan sebelumnya untuk tugas ini. Aturan domain/server P1 yang tidak diubah tetap berlaku.
+
 Revisi copy terbaru: atas permintaan pengguna, hapus label “Tautan sementara” pada kartu SRS/User Manual. Ini menggantikan ketentuan konteks label pada catatan sebelumnya; URL dummy tetap didokumentasikan secara teknis sampai link asli tersedia.
 
 Tambahan dokumen, 14 November 2026: di atas bagian anggota tampilkan headline “Dokumen Website” dengan dua kartu horizontal SRS dan User Manual. Kartu menaut ke Google Drive; pengguna meminta URL dummy terlebih dahulu, sehingga tampilkan konteks tautan sementara sampai URL dokumen asli tersedia. Ini hanya konten publik, tanpa integrasi atau pengambilan berkas Drive.

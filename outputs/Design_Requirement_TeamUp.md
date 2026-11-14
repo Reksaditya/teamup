@@ -1,5 +1,9 @@
 # Design Requirement — TeamUp Belajar
 
+## Revisi dashboard, kalender, dan carousel: 14 November 2026
+
+Persetujuan terbaru dirinci pada [Dashboard_Requirements.md](Dashboard_Requirements.md), dengan arah pada DESIGN.md. Navbar publik kini hanya Beranda, Kompetisi, Cari Tim, Cari Partner, Tentang Kami. Menu avatar mengarah ke dashboard/profil dan logout. Sidebar dashboard mengikuti susunan referensi, kalender berupa bulan + agenda tanggal terpilih, carousel empat langkah mengganti pilihan alur landing. Tetap token putih-navy dan kedua tema; detail kelompok/tim tetap layout lama. Revisi ini menggantikan susunan navigasi dan larangan kalender yang bertentangan pada rekomendasi sebelumnya.
+
 ## Tambahan About Us, 13 November 2026
 
 Arahan terbaru pengguna: kartu SRS/User Manual tidak lagi menampilkan teks “Tautan sementara”, menggantikan ketentuan label pada revisi sebelumnya. URL dummy tetap sampai link asli diberikan.

@@ -1,5 +1,9 @@
 # Keputusan implementasi TeamUp
 
+Pembaruan tautan About Us: pengguna memberikan URL Drive SRS dan User Manual. Keduanya dipasang pada websiteDocuments di app/about.tsx, menggantikan URL dummy dan TODO penggantian. Kartu tetap membuka tab baru. Ketersediaan dan izin berbagi berkas mengikuti pengaturan Google Drive pemilik.
+
+Dashboard 14 November 2026: pengguna menyetujui kalender pribadi/bersama (semua anggota mengelola agenda bersama), kelompok belajar baru, menu avatar, navigasi publik lima item, sidebar dashboard dan carousel empat langkah. Label navbar Cari Kelompok dikoreksi menjadi Cari Partner; persetujuan aturan kelompok baru tetap diterapkan pada dashboard. Detail tim/kelompok tetap di layout lama. Kriteria penerimaan dan asumsi kapasitas: Dashboard_Requirements.md. Migrasi penyimpanan menjaga data lama; tetap frontend lokal tanpa integrasi server, commit atau deployment.
+
 Revisi copy dokumen: pengguna meminta label “Tautan sementara” dihapus dari kedua kartu. URL masih dummy; penghapusan label tidak membuat dokumen Drive asli tersedia.
 
 Dokumen Website, 14 November 2026: dua kartu horizontal SRS/User Manual pada About Us menaut ke URL Google Drive dummy, ditandai Tautan sementara. Ganti href pada websiteDocuments di app/about.tsx ketika URL asli tersedia. Kartu membuka tab baru; tidak ada API Drive, upload, atau dokumen yang diklaim tersedia.

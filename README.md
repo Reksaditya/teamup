@@ -13,7 +13,7 @@ Memerlukan Node.js 22.6+ (pengujian menggunakan Node.js 24) dan npm.
 - npm run build — build produksi.
 - npm start — menjalankan hasil build.
 - npm run lint — ESLint.
-- npm test — 14 pengujian aturan domain dengan Node test runner.
+- npm test — 20 pengujian aturan domain dan kalender dengan Node test runner.
 
 ## Menjelajahi demo
 
@@ -23,7 +23,7 @@ Untuk pengujian login email gunakan email seed, misalnya alya@teamup.test atau a
 
 ### Berpindah akun
 
-1. Klik tombol **Keluar** di kanan atas. Pada mobile, buka menu **☰**, lalu pilih **Keluar dari akun**. Pada dialog **yakin ingin keluar dari akun?**, pilih **Ya** (merah) untuk keluar, atau **Tidak** (ghost) untuk tetap masuk. Escape atau tombol tutup juga membatalkan logout.
+1. Klik **gambar/inisial profil** di navbar, lalu pilih **Logout**. Pada dialog **yakin ingin keluar dari akun?**, pilih **Ya** (merah) untuk keluar, atau **Tidak** (ghost) untuk tetap masuk. Escape atau tombol tutup juga membatalkan logout.
 2. Klik **Masuk**, lalu isi email akun yang ingin digunakan dari tabel berikut.
 3. Isi password dengan teks uji apa pun minimal **8 karakter**, misalnya `teamup123`, lalu klik **Masuk ke TeamUp**. Ini hanya berlaku untuk frontend lokal; password belum diverifikasi melalui backend.
 
@@ -55,6 +55,10 @@ Perubahan tersimpan di localStorage dengan kunci teamup-demo-v1. Penghapusan pen
 | --- | --- |
 | Beranda | / |
 | Tentang aplikasi dan tim | /aboutus |
+| Dashboard | /dashboard |
+| Profil, kalender, aktivitas | /dashboard/profil, /dashboard/kalender, /dashboard/aktivitas |
+| Kelompok belajar | /dashboard/kelompok, /kelompok/[id] |
+| Pesan dashboard | /dashboard/pesan, /dashboard/pesan/study:react, /dashboard/pesan/team:byte |
 | Akun | /masuk, /daftar, /verifikasi, /reset-password |
 | Profil | /onboarding, /profil, /partner/[id] |
 | Partner | /partner |
@@ -69,6 +73,11 @@ Perubahan tersimpan di localStorage dengan kunci teamup-demo-v1. Penghapusan pen
 
 - app/teamup.tsx — shell, navigasi, dialog, dispatch halaman.
 - app/discovery.tsx — landing, kartu partner/lomba/tim.
+- app/how-it-works.tsx — carousel empat langkah, tombol, indikator, keyboard dan gestur geser.
+- app/account-menu.tsx — menu avatar menuju dashboard, profil, admin, dan logout.
+- app/dashboard.tsx — sidebar, dropdown keanggotaan, ringkasan dan agenda terdekat.
+- app/calendar.tsx dan lib/calendar.ts — agenda pribadi/bersama, kalender WIB, jadwal berulang dan tanggal kompetisi otomatis.
+- app/groups.tsx — pencarian, pembuatan, permintaan anggota dan pengelolaan kelompok belajar.
 - app/about.tsx — section About Us dan 10 identitas tim sesuai data pengguna (nama, kelas, NIM, NID, kelompok), tanpa foto.
 - app/pages.tsx — pencarian, detail, formulir tim, state data.
 - app/workspace.tsx — aktivitas, chat, profil, akun, admin, bantuan.
@@ -81,6 +90,12 @@ Perubahan tersimpan di localStorage dengan kunci teamup-demo-v1. Penghapusan pen
 - outputs — dokumen acuan, keputusan, hasil verifikasi, screenshot.
 
 ## Batas implementasi
+
+Dashboard dapat dibuka dari menu profil. Navbar publik berisi Beranda, Kompetisi, Cari Tim, Cari Partner, dan Tentang Kami. Detail tim dan kelompok tetap memakai layout detail tersendiri. Rute profil, aktivitas, dan pesan lama tetap tersedia.
+
+Kalender menyimpan agenda pribadi dan agenda bersama tim/kelompok. Semua anggota aktif dengan email terverifikasi dan profil lengkap dapat mengelola agenda bersama. Deadline dan pelaksanaan kompetisi yang diikuti serta jadwal berulang profil ditampilkan otomatis sebagai hanya-baca. Waktu agenda disimpan UTC dan ditampilkan WIB. Data lama dimigrasikan dengan menambahkan kelompok/agenda yang belum ada tanpa mereset perubahan sebelumnya. Tidak ada pengiriman pengingat atau sinkronisasi lintas perangkat.
+
+Kelompok belajar dapat ditemukan melalui **Kelompok Saya → Temukan / buat kelompok**. Ketua menerima permintaan, mengatur kapasitas/status, dan memindahkan kepemimpinan sebelum keluar. Anggota yang keluar kehilangan akses chat dan agenda bersama. Lihat `outputs/Dashboard_Requirements.md` untuk keputusan dan kriteria penerimaan penambahan ini.
 
 Ini adalah prototipe frontend, bukan MVP produksi. Semua data demo tersedia pada klien; menyembunyikan UI bukan otorisasi server. Jam perangkat dipakai untuk simulasi deadline. Tidak ada database, layanan email, OAuth, token aman, pengiriman pesan nyata, transaksi lintas pengguna, atau integrasi situs lomba. Tautan lomba memakai example.com dan kontak halo@teamup.example tidak menerima pesan.
 

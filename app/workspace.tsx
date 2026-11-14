@@ -29,6 +29,7 @@ import {
   levels,
 } from "./ui";
 import { StateView } from "./pages";
+import { GroupApplications } from "./groups";
 import { PhotoInput, ScheduleEditor } from "./controls";
 export function Activities(p: Shared) {
   const [tab, setTab] = useState("partner"),
@@ -338,6 +339,7 @@ export function Activities(p: Shared) {
           </Empty>
         )}
       </StateView>
+      <GroupApplications {...p} />
     </main>
   );
 }
@@ -367,6 +369,15 @@ export function Chat(p: Shared & { id?: string }) {
           type: "Personal",
         };
       }),
+    ...p.state.groups
+      .filter((g) => g.members.includes(p.user!.id))
+      .map((g) => ({
+        id: "study:" + g.id,
+        name: g.name,
+        user: undefined,
+        type:
+          g.status === "Bubar" ? "Kelompok · hanya-baca" : "Kelompok belajar",
+      })),
     ...p.state.teams
       .filter((t) => t.members.includes(p.user!.id))
       .map((t) => ({
@@ -378,7 +389,9 @@ export function Chat(p: Shared & { id?: string }) {
   ];
   const conversation = convs.find((c) => c.id === id);
   const allowed = canRead(p.state, id, p.user!.id);
-  const t = p.state.teams.find((t) => "team:" + t.id === id);
+  const group = p.state.groups.find((g) => "study:" + g.id === id);
+  const t = p.state.teams.find((t) => "team:" + t.id === id) || group;
+  const roomHref = t ? (group ? "/kelompok/" : "/tim/") + t.id : "";
   const locked =
     !p.user?.verified ||
     t?.status === "Bubar" ||
@@ -441,7 +454,7 @@ export function Chat(p: Shared & { id?: string }) {
                   className={
                     "conversation-item " + (id === c.id ? "selected" : "")
                   }
-                  href={"/pesan/" + c.id}
+                  href={"/dashboard/pesan/" + c.id}
                   key={c.id}
                 >
                   {c.user ? (
@@ -498,7 +511,7 @@ export function Chat(p: Shared & { id?: string }) {
               <button
                 className="icon-button chat-back"
                 aria-label="Kembali ke daftar pesan"
-                onClick={() => router.push("/pesan")}
+                onClick={() => router.push("/dashboard/pesan")}
               >
                 <Icon name="back" />
               </button>
@@ -526,7 +539,7 @@ export function Chat(p: Shared & { id?: string }) {
                 {t && (
                   <Link
                     className="icon-button"
-                    href={"/tim/" + t.id}
+                    href={roomHref}
                     aria-label="Lihat tim"
                   >
                     <Icon name="users" />
@@ -554,7 +567,7 @@ export function Chat(p: Shared & { id?: string }) {
                 <div className="notice">
                   Kamu masih satu tim dengan pengguna yang diblokir. Pesannya
                   disembunyikan untukmu.{" "}
-                  <Link className="text-link" href={"/tim/" + t.id}>
+                  <Link className="text-link" href={roomHref}>
                     Kelola keanggotaan
                   </Link>
                 </div>
@@ -808,7 +821,7 @@ export function ProfileForm(p: Shared) {
             }),
             "Profil berhasil disimpan.",
           );
-          router.push("/partner");
+          router.push("/dashboard");
         }}
       >
         {error && (
@@ -992,7 +1005,7 @@ export function Auth(p: Shared & { kind: string }) {
     router.push(
       target && target.startsWith("/") && !target.startsWith("//")
         ? target
-        : "/partner",
+        : "/dashboard",
     );
   }
   const kind = p.kind;
@@ -1283,10 +1296,10 @@ export function Auth(p: Shared & { kind: string }) {
                 </button>
               </form>
             ) : (
-                <div className="notice" role="status">
-                  Pengiriman email belum tersedia. Permintaan reset belum dapat
-                  diproses.
-                </div>
+              <div className="notice" role="status">
+                Pengiriman email belum tersedia. Permintaan reset belum dapat
+                diproses.
+              </div>
             )}
             <Link className="text-link" href="/masuk">
               Kembali ke halaman masuk

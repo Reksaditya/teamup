@@ -17,6 +17,10 @@ import { Icon, Avatar, Empty, Title, formData } from "./ui";
 import { useDemoState } from "./store";
 import { ThemeSwitch } from "./theme";
 import { AboutUs } from "./about";
+import { AccountMenu } from "./account-menu";
+import { DashboardShell, DashboardOverview } from "./dashboard";
+import { Calendar } from "./calendar";
+import { Groups, GroupDetail } from "./groups";
 import { PartnerCard, CompetitionCard, TeamCard, Landing } from "./discovery";
 import {
   PartnerSearch,
@@ -382,9 +386,49 @@ export default function TeamUp() {
     return content;
   }
   const parts = path.split("/").filter(Boolean);
+  const dashboardMode =
+    parts[0] === "dashboard" ||
+    ["profil", "aktivitas", "pesan"].includes(parts[0]);
   let content: ReactNode;
   if (path === "/") content = <Landing {...shared} />;
   else if (path === "/aboutus") content = <AboutUs />;
+  else if (parts[0] === "dashboard") {
+    const section = parts[1] || "ringkasan";
+    let view: ReactNode;
+    if (section === "ringkasan") view = <DashboardOverview {...shared} />;
+    else if (section === "profil")
+      view = <ProfileForm key={user?.id} {...shared} />;
+    else if (section === "kalender")
+      view = <Calendar key={user?.id} {...shared} />;
+    else if (section === "aktivitas") view = <Activities {...shared} />;
+    else if (section === "kelompok") view = <Groups {...shared} />;
+    else if (section === "pesan")
+      view = <Chat key={`${user?.id}:${parts[2]}`} {...shared} id={parts[2]} />;
+    else
+      view = (
+        <main className="dashboard-page">
+          <Empty
+            page
+            title="Halaman dashboard tidak ditemukan"
+            text="Pilih halaman melalui navigasi dashboard."
+          />
+        </main>
+      );
+    content = gate(
+      user ? <DashboardShell p={shared}>{view}</DashboardShell> : null,
+    );
+  } else if (parts[0] === "kelompok")
+    content = parts[1] ? (
+      <GroupDetail {...shared} id={parts[1]} />
+    ) : (
+      gate(
+        user ? (
+          <DashboardShell p={shared}>
+            <Groups {...shared} />
+          </DashboardShell>
+        ) : null,
+      )
+    );
   else if (parts[0] === "partner")
     content = parts[1] ? (
       <ProfileDetail {...shared} id={parts[1]} />
@@ -489,14 +533,16 @@ export default function TeamUp() {
         </Empty>
       </main>
     );
+  if (dashboardMode && parts[0] !== "dashboard" && user && !user.suspended)
+    content = <DashboardShell p={shared}>{content}</DashboardShell>;
   if (user?.suspended && !["bantuan", "privasi"].includes(parts[0]))
     content = gate(null);
   const nav = [
-    ["/partner", "Cari Partner", "users"],
-    ["/lomba", "Lomba", "trophy"],
+    ["/", "Beranda", "grid"],
+    ["/lomba", "Kompetisi", "trophy"],
     ["/tim", "Cari Tim", "grid"],
-    ["/aktivitas", "Aktivitas", "activity"],
-    ["/pesan", "Pesan", "chat"],
+    ["/partner", "Cari Partner", "users"],
+    ["/aboutus", "Tentang Kami", "info"],
   ];
   return (
     <>
@@ -514,45 +560,21 @@ export default function TeamUp() {
               <Link
                 key={href}
                 className={
-                  path.startsWith(href) ? "nav-item active" : "nav-item"
+                  (href === "/" ? path === "/" : path.startsWith(href))
+                    ? "nav-item active"
+                    : "nav-item"
                 }
                 href={href}
               >
                 <Icon name={icon} size={17} />
                 {label}
-                {href === "/aktivitas" &&
-                  user &&
-                  state.requests.some(
-                    (r) => r.to === user.id && r.status === "Menunggu",
-                  ) && <span className="nav-dot" />}
               </Link>
             ))}
-            {user?.admin && (
-              <Link className="nav-item" href="/admin">
-                Admin
-              </Link>
-            )}
           </nav>
           <div className="header-actions">
             <ThemeSwitch />
             {user ? (
-              <>
-                <Link
-                  className="account-link"
-                  href="/profil"
-                  aria-label="Profil saya"
-                >
-                  <Avatar user={user} size="tiny" />
-                  <span>{user.name.split(" ")[0]}</span>
-                </Link>
-                <button
-                  className="icon-button logout"
-                  aria-label="Keluar dari akun"
-                  onClick={requestLogout}
-                >
-                  <Icon name="logout" size={18} />
-                </button>
-              </>
+              <AccountMenu user={user} logout={requestLogout} />
             ) : (
               <>
                 <Link className="login-link" href="/masuk">
@@ -585,30 +607,6 @@ export default function TeamUp() {
                           {label}
                         </Link>
                       ))}
-                      {user && (
-                        <Link href="/profil" onClick={() => setModal(null)}>
-                          <Icon name="edit" />
-                          Profil saya
-                        </Link>
-                      )}
-                      {user?.admin && (
-                        <Link href="/admin" onClick={() => setModal(null)}>
-                          <Icon name="shield" />
-                          Admin
-                        </Link>
-                      )}
-                      <Link href="/bantuan" onClick={() => setModal(null)}>
-                        <Icon name="info" />
-                        Bantuan
-                      </Link>
-                      {user && (
-                        <button
-                          onClick={requestLogout}
-                        >
-                          <Icon name="logout" />
-                          Keluar dari akun
-                        </button>
-                      )}
                     </nav>
                   ),
                 })
@@ -641,7 +639,12 @@ export default function TeamUp() {
             {user &&
               !user.suspended &&
               (!user.verified || !user.complete) &&
-              !["/onboarding", "/profil", "/verifikasi"].includes(path) && (
+              ![
+                "/onboarding",
+                "/profil",
+                "/dashboard/profil",
+                "/verifikasi",
+              ].includes(path) && (
                 <div className="container notice account-notice">
                   <Icon name="info" />
                   <span>
@@ -662,7 +665,7 @@ export default function TeamUp() {
           </>
         )}
       </div>
-      {!path.startsWith("/pesan") && (
+      {!dashboardMode && (
         <footer>
           <div className="container footer-inner">
             <div>

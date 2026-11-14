@@ -100,6 +100,9 @@ export type Audit = {
   at: string;
 };
 export type State = {
+  groups: StudyGroup[];
+  groupRequests: GroupRequest[];
+  agenda: Agenda[];
   users: User[];
   competitions: Competition[];
   teams: Team[];
@@ -110,6 +113,37 @@ export type State = {
   reports: Report[];
   audit: Audit[];
   session: string | null;
+};
+export type StudyGroup = {
+  id: string;
+  name: string;
+  topic: string;
+  description: string;
+  mode: string;
+  leader: string;
+  members: string[];
+  capacity: number;
+  status: "Merekrut" | "Ditutup" | "Bubar";
+};
+export type GroupRequest = {
+  id: string;
+  group: string;
+  user: string;
+  message: string;
+  status: "Menunggu" | "Diterima" | "Ditolak" | "Dibatalkan" | "Ditutup sistem";
+  reason: string;
+  at: string;
+};
+export type Agenda = {
+  id: string;
+  owner: string;
+  scope: "personal" | "team" | "group";
+  target: string;
+  title: string;
+  at: string;
+  category: string;
+  notes: string;
+  done: boolean;
 };
 export const uid = () => crypto.randomUUID();
 export const now = () => new Date().toISOString();
@@ -142,23 +176,48 @@ export function eligible(s: State, id: string) {
 }
 export const personalId = (a: string, b: string) =>
   "personal:" + [a, b].sort().join(":");
-export function matchesAvailability(user: User, filters: Record<string, string>) {
-  const days = ['Senin','Selasa','Rabu','Kamis','Jumat','Sabtu','Minggu'];
-  const offset = (zone: string) => zone === 'Asia/Makassar' ? 480 : zone === 'Asia/Jayapura' ? 540 : 420;
-  const minutes = (time: string) => Number(time.split(':')[0]) * 60 + Number(time.split(':')[1]);
-  const queryDays = filters.day ? [days.indexOf(filters.day)] : days.map((_, i) => i);
-  return (user.availability || [user]).some(interval => {
-    const start = days.indexOf(interval.day) * 1440 + minutes(interval.start) - offset(interval.zone);
-    const end = days.indexOf(interval.day) * 1440 + minutes(interval.end) - offset(interval.zone);
-    return queryDays.some(day => {
-      const a = day * 1440 + minutes(filters.start || '00:00') - offset(filters.zone || 'Asia/Jakarta');
-      const b = day * 1440 + minutes(filters.end || '24:00') - offset(filters.zone || 'Asia/Jakarta');
-      return [-10080, 0, 10080].some(shift => Math.max(a, start + shift) < Math.min(b, end + shift));
+export function matchesAvailability(
+  user: User,
+  filters: Record<string, string>,
+) {
+  const days = ["Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu"];
+  const offset = (zone: string) =>
+    zone === "Asia/Makassar" ? 480 : zone === "Asia/Jayapura" ? 540 : 420;
+  const minutes = (time: string) =>
+    Number(time.split(":")[0]) * 60 + Number(time.split(":")[1]);
+  const queryDays = filters.day
+    ? [days.indexOf(filters.day)]
+    : days.map((_, i) => i);
+  return (user.availability || [user]).some((interval) => {
+    const start =
+      days.indexOf(interval.day) * 1440 +
+      minutes(interval.start) -
+      offset(interval.zone);
+    const end =
+      days.indexOf(interval.day) * 1440 +
+      minutes(interval.end) -
+      offset(interval.zone);
+    return queryDays.some((day) => {
+      const a =
+        day * 1440 +
+        minutes(filters.start || "00:00") -
+        offset(filters.zone || "Asia/Jakarta");
+      const b =
+        day * 1440 +
+        minutes(filters.end || "24:00") -
+        offset(filters.zone || "Asia/Jakarta");
+      return [-10080, 0, 10080].some(
+        (shift) => Math.max(a, start + shift) < Math.min(b, end + shift),
+      );
     });
   });
 }
 export function canRead(s: State, conversation: string, id: string) {
   if (!active(s, id)) return false;
+  if (conversation.startsWith("study:"))
+    return !!s.groups?.find(
+      (g) => "study:" + g.id === conversation && g.members.includes(id),
+    );
   if (conversation.startsWith("team:"))
     return !!s.teams.find(
       (t) => "team:" + t.id === conversation && t.members.includes(id),
@@ -340,6 +399,19 @@ export function blockUser(s: State, from: string, to: string): State {
         ? { ...r, status: "Dibatalkan" }
         : r,
     ),
+    groupRequests: (s.groupRequests || []).map((r) =>
+      r.status === "Menunggu" &&
+      ((r.user === from &&
+        s.groups.find((g) => g.id === r.group)?.members.includes(to)) ||
+        (r.user === to &&
+          s.groups.find((g) => g.id === r.group)?.members.includes(from)))
+        ? {
+            ...r,
+            status: "Ditutup sistem",
+            reason: "Interaksi dibatasi karena blokir.",
+          }
+        : r,
+    ),
     applications: s.applications.map((a) =>
       a.status === "Menunggu" &&
       ((a.user === from &&
@@ -365,7 +437,8 @@ export function sendMessage(
   if (!text.trim() || text.length > 2000)
     throw Error("Pesan wajib diisi, maksimal 2.000 karakter.");
   const t = s.teams.find((t) => "team:" + t.id === conversation);
-  if (t?.status === "Bubar")
+  const group = s.groups?.find((g) => "study:" + g.id === conversation);
+  if (t?.status === "Bubar" || group?.status === "Bubar")
     throw Error("Tim sudah bubar. Percakapan hanya dapat dibaca.");
   if (
     conversation.startsWith("personal:") &&
@@ -385,6 +458,278 @@ export function sendMessage(
     status: "Terkirim",
   };
   return { ...s, messages: [...s.messages.filter((x) => x.id !== id), m] };
+}
+export const GROUP_CAPACITY_MAX = 50;
+function getGroup(s: State, id: string) {
+  const group = s.groups.find((g) => g.id === id);
+  if (!group) throw Error("Kelompok tidak ditemukan.");
+  return group;
+}
+export function saveGroup(
+  s: State,
+  actor: string,
+  data: Pick<
+    StudyGroup,
+    "name" | "topic" | "description" | "mode" | "capacity"
+  >,
+  id = uid(),
+): State {
+  eligible(s, actor);
+  const current = s.groups.find((g) => g.id === id);
+  if (current && (current.leader !== actor || current.status === "Bubar"))
+    throw Error("Hanya ketua kelompok aktif dapat mengubah kelompok.");
+  if (
+    !data.name.trim() ||
+    data.name.trim().length > 100 ||
+    !data.topic.trim() ||
+    !data.description.trim() ||
+    data.description.length > 2000 ||
+    !["Online", "Offline", "Keduanya"].includes(data.mode)
+  )
+    throw Error(
+      "Isi nama, bidang, mode, dan deskripsi kelompok. Nama maksimal 100 karakter dan deskripsi maksimal 2.000 karakter.",
+    );
+  if (
+    !Number.isInteger(data.capacity) ||
+    data.capacity < Math.max(2, current?.members.length || 1) ||
+    data.capacity > GROUP_CAPACITY_MAX
+  )
+    throw Error(
+      `Kapasitas harus mencukupi anggota, antara 2-${GROUP_CAPACITY_MAX}.`,
+    );
+  const group: StudyGroup = {
+    id,
+    leader: actor,
+    members: [actor],
+    status: "Merekrut",
+    ...current,
+    ...data,
+    name: data.name.trim(),
+  };
+  return {
+    ...s,
+    groups: [...s.groups.filter((g) => g.id !== id), group],
+    groupRequests: s.groupRequests.map((r) =>
+      r.group === id &&
+      r.status === "Menunggu" &&
+      group.members.length >= group.capacity
+        ? {
+            ...r,
+            status: "Ditutup sistem",
+            reason: "Kapasitas kelompok penuh.",
+          }
+        : r,
+    ),
+  };
+}
+export function requestGroup(
+  s: State,
+  actor: string,
+  id: string,
+  message: string,
+): State {
+  eligible(s, actor);
+  const g = getGroup(s, id);
+  if (!message.trim() || message.length > 2000)
+    throw Error("Isi pesan bergabung, maksimal 2.000 karakter.");
+  if (
+    g.status !== "Merekrut" ||
+    g.members.length >= g.capacity ||
+    g.members.includes(actor) ||
+    g.members.some((id) => blocked(s, id, actor))
+  )
+    throw Error(
+      "Kelompok penuh, ditutup, sudah kamu ikuti, atau interaksi dibatasi.",
+    );
+  if (
+    s.groupRequests.some(
+      (r) => r.group === id && r.user === actor && r.status === "Menunggu",
+    )
+  )
+    throw Error("Permintaan bergabung sudah menunggu keputusan.");
+  return {
+    ...s,
+    groupRequests: [
+      ...s.groupRequests,
+      {
+        id: uid(),
+        group: id,
+        user: actor,
+        message: message.trim(),
+        status: "Menunggu",
+        reason: "",
+        at: now(),
+      },
+    ],
+  };
+}
+export function decideGroup(
+  s: State,
+  actor: string,
+  id: string,
+  status: "Diterima" | "Ditolak" | "Dibatalkan",
+): State {
+  if (!["Diterima", "Ditolak", "Dibatalkan"].includes(status))
+    throw Error("Keputusan tidak valid.");
+  if (!active(s, actor)) throw Error("Akun tidak memiliki akses.");
+  const request = s.groupRequests.find((r) => r.id === id);
+  if (!request || request.status !== "Menunggu")
+    throw Error("Status permintaan sudah berubah.");
+  const g = getGroup(s, request.group);
+  if ((status === "Dibatalkan" ? request.user : g.leader) !== actor)
+    throw Error("Kamu tidak berhak memutuskan permintaan ini.");
+  let next = g;
+  if (status === "Diterima") {
+    eligible(s, request.user);
+    eligible(s, actor);
+    if (
+      g.status !== "Merekrut" ||
+      g.members.length >= g.capacity ||
+      g.members.includes(request.user) ||
+      g.members.some((id) => blocked(s, id, request.user))
+    )
+      throw Error(
+        "Keanggotaan, kapasitas, status atau relasi blokir sudah berubah.",
+      );
+    next = { ...g, members: [...g.members, request.user] };
+  }
+  const full = next.members.length >= next.capacity;
+  return {
+    ...s,
+    groups: s.groups.map((x) => (x.id === g.id ? next : x)),
+    groupRequests: s.groupRequests.map((r) =>
+      r.id === id
+        ? { ...r, status }
+        : full && r.group === g.id && r.status === "Menunggu"
+          ? {
+              ...r,
+              status: "Ditutup sistem",
+              reason: "Kapasitas kelompok penuh.",
+            }
+          : r,
+    ),
+  };
+}
+export function manageGroup(
+  s: State,
+  actor: string,
+  id: string,
+  action: "leave" | "transfer" | "toggle" | "dissolve",
+  target = "",
+): State {
+  if (!["leave", "transfer", "toggle", "dissolve"].includes(action))
+    throw Error("Tindakan tidak valid.");
+  eligible(s, actor);
+  const g = getGroup(s, id);
+  if (g.status === "Bubar" || !g.members.includes(actor))
+    throw Error("Kamu bukan anggota kelompok aktif.");
+  let next = g;
+  if (action === "leave") {
+    if (g.leader === actor)
+      throw Error(
+        "Pindahkan kepemimpinan sebelum keluar, atau bubarkan jika sendirian.",
+      );
+    next = { ...g, members: g.members.filter((id) => id !== actor) };
+  } else {
+    if (g.leader !== actor)
+      throw Error("Hanya ketua dapat mengelola kelompok.");
+    if (action === "transfer") {
+      if (target === actor || !g.members.includes(target) || !active(s, target))
+        throw Error("Pilih anggota aktif lain sebagai ketua.");
+      next = { ...g, leader: target };
+    } else if (action === "dissolve") {
+      if (g.members.length !== 1)
+        throw Error(
+          "Pindahkan kepemimpinan sebelum keluar dari kelompok beranggota lain.",
+        );
+      next = { ...g, status: "Bubar" };
+    } else {
+      if (g.status === "Ditutup" && g.members.length >= g.capacity)
+        throw Error(
+          "Kelompok penuh. Tambah kapasitas sebelum membuka permintaan.",
+        );
+      next = { ...g, status: g.status === "Merekrut" ? "Ditutup" : "Merekrut" };
+    }
+  }
+  return {
+    ...s,
+    groups: s.groups.map((x) => (x.id === id ? next : x)),
+    groupRequests: s.groupRequests.map((r) =>
+      r.group === id && r.status === "Menunggu" && next.status === "Bubar"
+        ? { ...r, status: "Ditutup sistem", reason: "Kelompok dibubarkan." }
+        : r,
+    ),
+  };
+}
+export const agendaCategories = [
+  "Tugas",
+  "Belajar",
+  "Pendaftaran",
+  "Kompetisi",
+];
+export function canSeeAgenda(s: State, event: Agenda, actor: string) {
+  if (!active(s, actor)) return false;
+  if (event.scope === "personal") return event.owner === actor;
+  const entity =
+    event.scope === "team"
+      ? s.teams.find((t) => t.id === event.target)
+      : s.groups.find((g) => g.id === event.target);
+  return !!entity?.members.includes(actor);
+}
+export function canManageAgenda(s: State, event: Agenda, actor: string) {
+  if (!canSeeAgenda(s, event, actor)) return false;
+  if (event.scope === "personal") return true;
+  const user = active(s, actor)!;
+  const entity =
+    event.scope === "team"
+      ? s.teams.find((t) => t.id === event.target)
+      : s.groups.find((g) => g.id === event.target);
+  return user.verified && user.complete && entity?.status !== "Bubar";
+}
+export function saveAgenda(
+  s: State,
+  actor: string,
+  data: Omit<Agenda, "id" | "owner">,
+  id = uid(),
+): State {
+  const old = s.agenda.find((a) => a.id === id);
+  if (old && !canManageAgenda(s, old, actor))
+    throw Error("Kamu tidak berhak mengubah agenda ini.");
+  const event: Agenda = { ...data, id, owner: old?.owner || actor };
+  if (
+    !["personal", "team", "group"].includes(event.scope) ||
+    !canManageAgenda(s, event, actor)
+  )
+    throw Error(
+      "Agenda hanya dapat dikelola pemilik atau anggota aktif yang berhak.",
+    );
+  if (
+    !event.title.trim() ||
+    event.title.trim().length > 120 ||
+    !Number.isFinite(new Date(event.at).getTime()) ||
+    !agendaCategories.includes(event.category) ||
+    event.notes.length > 2000
+  )
+    throw Error(
+      "Isi judul maksimal 120 karakter, waktu valid, kategori, dan catatan maksimal 2.000 karakter.",
+    );
+  return {
+    ...s,
+    agenda: [
+      ...s.agenda.filter((a) => a.id !== id),
+      {
+        ...event,
+        title: event.title.trim(),
+        at: new Date(event.at).toISOString(),
+      },
+    ],
+  };
+}
+export function deleteAgenda(s: State, actor: string, id: string): State {
+  const event = s.agenda.find((a) => a.id === id);
+  if (!event || !canManageAgenda(s, event, actor))
+    throw Error("Kamu tidak berhak menghapus agenda ini.");
+  return { ...s, agenda: s.agenda.filter((a) => a.id !== id) };
 }
 export function seed(): State {
   const base = {
@@ -593,6 +938,57 @@ export function seed(): State {
     },
   ];
   return {
+    groups: [
+      {
+        id: "react",
+        name: "Ruang React",
+        topic: "Web Development",
+        description:
+          "Belajar komponen, membahas latihan, dan saling membantu memahami React.",
+        mode: "Online",
+        leader: "alya",
+        members: ["alya", "bima"],
+        capacity: 6,
+        status: "Merekrut",
+      },
+      {
+        id: "data-lab",
+        name: "Latihan Data",
+        topic: "Data Science",
+        description:
+          "Diskusi Python dan analisis data melalui latihan bersama.",
+        mode: "Online",
+        leader: "citra",
+        members: ["citra", "rafi"],
+        capacity: 6,
+        status: "Merekrut",
+      },
+    ],
+    groupRequests: [],
+    agenda: [
+      {
+        id: "agenda-react",
+        owner: "alya",
+        scope: "group",
+        target: "react",
+        title: "Diskusi komponen React",
+        at: "2026-11-16T12:00:00Z",
+        category: "Belajar",
+        notes: "Bawa satu pertanyaan tentang komponen dan state.",
+        done: false,
+      },
+      {
+        id: "agenda-byte",
+        owner: "dimas",
+        scope: "team",
+        target: "byte",
+        title: "Batas rancangan awal",
+        at: "2026-11-20T13:00:00Z",
+        category: "Tugas",
+        notes: "Tinjau rancangan bersama anggota tim.",
+        done: false,
+      },
+    ],
     session: null,
     users,
     competitions,

@@ -1,6 +1,12 @@
 # TeamUp: arah pembaruan visual
 
+## Dashboard dan Cara Kerja: revisi 14 November 2026
+
+Lihat outputs/Dashboard_Requirements.md. Pengguna mempertahankan putih-navy, font serta light/dark. ENERGY 1 / RHYTHM 2 / MOTION 1. Sidebar kiri memisahkan navigasi kerja dari navbar publik, ringkasan tengah berisi kegiatan akun, panel kanan agenda terdekat dan kalender kecil. Kalender besar menggunakan grid bulan dan daftar tanggal terpilih agar deadline dapat dibaca bersama catatan. Warna semantik hanya menunjukkan jenis/status, selalu disertai teks. Dropdown kelompok/tim menampilkan keanggotaan sebenarnya. Carousel 4 langkah setelah hero menarasikan alur produk; tombol/pagination/swipe memindahkan langkah tanpa autoplay. Menu avatar menyediakan akses dashboard/profil/logout. Tidak menyalin logo, ornamen atau warna krem referensi.
+
 ## About Us: tambahan halaman publik
+
+Tautan dokumen aktif: SRS dan User Manual kini memakai URL Google Drive yang diberikan pengguna pada app/about.tsx, menggantikan URL dummy dan TODO sebelumnya. Kartu tetap membuka tab baru tanpa label tautan sementara.
 
 Arahan terbaru pengguna: hapus teks “Tautan sementara” dari kartu SRS/User Manual. Ini menggantikan keputusan label sebelumnya; URL dummy dan TODO penggantian tetap tercatat pada source/dokumen teknis.
 

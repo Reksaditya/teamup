@@ -1,19 +1,18 @@
 import Link from "next/link";
 import { Icon } from "./ui";
 
-// TODO: Replace these temporary Drive URLs with the approved document links.
 const websiteDocuments = [
   {
     id: "srs",
     title: "SRS",
     description: "Kebutuhan dan ruang lingkup aplikasi TeamUp.",
-    href: "https://drive.google.com/file/d/TEAMUP_SRS_DUMMY/view",
+    href: "https://drive.google.com/file/d/1yG-AxbGD5aTxhFeCaeNEolJj8OAvYYO5/view?usp=drive_link",
   },
   {
     id: "user-manual",
     title: "User Manual",
     description: "Panduan menggunakan fitur-fitur TeamUp.",
-    href: "https://drive.google.com/file/d/TEAMUP_USER_MANUAL_DUMMY/view",
+    href: "https://drive.google.com/file/d/1tF3nl9l3RnxrHWIiWscgW6U21e9d4ed5/view?usp=drive_link",
   },
 ];
 

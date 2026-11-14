@@ -34,6 +34,11 @@ function read() {
     // Migrate presentation labels from the earlier seed without discarding local edits.
     state = {
       ...state,
+      groups: Array.isArray(state.groups) ? state.groups : initial.groups,
+      groupRequests: Array.isArray(state.groupRequests)
+        ? state.groupRequests
+        : [],
+      agenda: Array.isArray(state.agenda) ? state.agenda : initial.agenda,
       users: state.users.map((user) => ({
         ...user,
         email: user.email.replace(/@demo\.teamup\.test$/, "@teamup.test"),

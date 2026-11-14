@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { AboutTeaser } from "./about";
+import { HowItWorks } from "./how-it-works";
 import { useState } from "react";
 import {
   closed,
@@ -404,39 +405,7 @@ export function Landing(p: Shared) {
         </aside>
       </section>
 
-      <section
-        className="learning-paths container"
-        aria-labelledby="paths-title"
-      >
-        <div className="paths-intro">
-          <p className="section-label">Pilih langkahmu</p>
-          <h2 id="paths-title">Mau mulai dari mana?</h2>
-        </div>
-        <div className="path-options">
-          <Link href="/partner" className="path-option">
-            <span className="path-number">01</span>
-            <div>
-              <h3>Cari teman belajar</h3>
-              <p>
-                Cocokkan bidang, level, dan waktu luang. Kirim permintaan untuk
-                mulai diskusi.
-              </p>
-            </div>
-            <Icon name="arrow" size={20} />
-          </Link>
-          <Link href="/lomba" className="path-option">
-            <span className="path-number">02</span>
-            <div>
-              <h3>Siapkan tim lomba</h3>
-              <p>
-                Pilih lomba, baca kebutuhan peran, lalu temukan tempat untuk
-                kontribusimu.
-              </p>
-            </div>
-            <Icon name="arrow" size={20} />
-          </Link>
-        </div>
-      </section>
+      <HowItWorks />
 
       <section
         className="competition-agenda container"
@@ -508,8 +477,7 @@ export function Landing(p: Shared) {
           <div className="team-section-copy">
             <p className="section-label">Ruang untuk kontribusimu</p>
             <h2>
-              Tim yang tepat{" "}
-              <br />
+              Tim yang tepat <br />
               saling melengkapi.
             </h2>
             <p>
