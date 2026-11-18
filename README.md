@@ -1,6 +1,6 @@
 # TeamUp
 
-Pembaruan visual 1.2 mengikuti `DESIGN.md`: light mode default putih/navy, switch tema navbar, hero terpusat dengan underline lengkung, serta panel partner/tim interaktif. Pemeriksaan pasangan warna kedua tema dapat diulang dengan `node work/check-design.mjs` dan menghasilkan `outputs/light-dark-contrast.json`.
+Website yang dibuat dengan tujuan untuk menyelesaikan tugas besar Fortran 2026.
 
 Frontend interaktif berbahasa Indonesia untuk partner belajar dan tim lomba. Dibangun dengan Next.js 16, React 19, TypeScript, serta CSS token terpusat berdasarkan AGENTS.md, PRD, dan Design Requirement pada folder outputs. Seluruh profil, lomba, dan percakapan adalah contoh.
 
